@@ -1,0 +1,278 @@
+{
+    "TABLE_vrf": {
+        "ROW_vrf": {
+            "vrf-name-out": "all", 
+            "cnt-total": "38", 
+            "TABLE_adj": {
+                "ROW_adj": [
+                    {
+                        "intf-out": "Vlan3903", 
+                        "ip-addr-out": "10.87.8.63", 
+                        "time-stamp": "P1M12DT13H9M25S", 
+                        "mac": "843d.c61c.3f69", 
+                        "flags": "+"
+                    }, 
+                    {
+                        "intf-out": "Vlan3903", 
+                        "ip-addr-out": "10.87.11.200", 
+                        "time-stamp": "P1M12DT12H55M36S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": "+"
+                    }, 
+                    {
+                        "intf-out": "Vlan3903", 
+                        "ip-addr-out": "10.87.11.201", 
+                        "time-stamp": "P1M12DT12H55M36S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": "+"
+                    }, 
+                    {
+                        "intf-out": "Vlan3903", 
+                        "ip-addr-out": "10.87.11.202", 
+                        "time-stamp": "P1M12DT13H6M6S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": "+"
+                    }, 
+                    {
+                        "intf-out": "Vlan3903", 
+                        "ip-addr-out": "10.87.11.203", 
+                        "time-stamp": "P1M12DT13H9M23S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": "+"
+                    }, 
+                    {
+                        "intf-out": "Vlan3903", 
+                        "ip-addr-out": "10.87.11.204", 
+                        "time-stamp": "P1M12DT12H55M36S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": "+"
+                    }, 
+                    {
+                        "intf-out": "Vlan3903", 
+                        "ip-addr-out": "10.87.11.205", 
+                        "time-stamp": "P1M12DT12H55M36S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": "+"
+                    }, 
+                    {
+                        "intf-out": "Vlan3903", 
+                        "ip-addr-out": "10.87.11.206", 
+                        "time-stamp": "P1M12DT12H55M36S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": "+"
+                    }, 
+                    {
+                        "intf-out": "Vlan3903", 
+                        "ip-addr-out": "10.87.11.207", 
+                        "time-stamp": "P1M12DT12H55M36S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": "+"
+                    }, 
+                    {
+                        "intf-out": "Vlan3903", 
+                        "ip-addr-out": "10.87.11.208", 
+                        "time-stamp": "P1M12DT12H55M36S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": "+"
+                    }, 
+                    {
+                        "intf-out": "Vlan3903", 
+                        "ip-addr-out": "10.87.11.209", 
+                        "time-stamp": "P1M12DT12H55M36S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": "+"
+                    }, 
+                    {
+                        "intf-out": "Vlan3903", 
+                        "ip-addr-out": "10.87.11.212", 
+                        "time-stamp": "P1M12DT12H55M36S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": "+"
+                    }, 
+                    {
+                        "intf-out": "Vlan3903", 
+                        "ip-addr-out": "10.87.11.213", 
+                        "time-stamp": "P1M12DT12H55M36S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": "+"
+                    }, 
+                    {
+                        "intf-out": "Vlan3903", 
+                        "ip-addr-out": "10.87.11.216", 
+                        "time-stamp": "P1M12DT12H55M36S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": "+"
+                    }, 
+                    {
+                        "intf-out": "Vlan3903", 
+                        "ip-addr-out": "10.87.11.220", 
+                        "time-stamp": "P1M12DT12H55M36S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": "+"
+                    }, 
+                    {
+                        "intf-out": "Vlan3903", 
+                        "ip-addr-out": "10.87.11.237", 
+                        "time-stamp": "P1M12DT13H1M26S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": "+"
+                    }, 
+                    {
+                        "intf-out": "Vlan3903", 
+                        "ip-addr-out": "10.87.11.249", 
+                        "time-stamp": "P1M12DT13H9M35S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": "+"
+                    }, 
+                    {
+                        "intf-out": "Vlan3902", 
+                        "ip-addr-out": "10.87.8.62", 
+                        "time-stamp": "P1M12DT13H9M24S", 
+                        "mac": "843d.c61c.42a3", 
+                        "flags": null
+                    }, 
+                    {
+                        "intf-out": "Vlan3902", 
+                        "ip-addr-out": "10.87.11.200", 
+                        "time-stamp": "P1M12DT12H56M34S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": null
+                    }, 
+                    {
+                        "intf-out": "Vlan3902", 
+                        "ip-addr-out": "10.87.11.201", 
+                        "time-stamp": "P1M12DT13H13M26S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": null
+                    }, 
+                    {
+                        "intf-out": "Vlan3902", 
+                        "ip-addr-out": "10.87.11.204", 
+                        "time-stamp": "P1M12DT12H56M32S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": null
+                    }, 
+                    {
+                        "intf-out": "Vlan3902", 
+                        "ip-addr-out": "10.87.11.205", 
+                        "time-stamp": "P1M12DT12H56M32S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": null
+                    }, 
+                    {
+                        "intf-out": "Vlan3902", 
+                        "ip-addr-out": "10.87.11.206", 
+                        "time-stamp": "P1M12DT12H56M33S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": null
+                    }, 
+                    {
+                        "intf-out": "Vlan3902", 
+                        "ip-addr-out": "10.87.11.207", 
+                        "time-stamp": "P1M12DT12H56M32S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": null
+                    }, 
+                    {
+                        "intf-out": "Vlan3902", 
+                        "ip-addr-out": "10.87.11.208", 
+                        "time-stamp": "P1M12DT12H57M35S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": null
+                    }, 
+                    {
+                        "intf-out": "Vlan3902", 
+                        "ip-addr-out": "10.87.11.209", 
+                        "time-stamp": "P1M12DT12H57M28S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": null
+                    }, 
+                    {
+                        "intf-out": "Vlan3902", 
+                        "ip-addr-out": "10.87.11.212", 
+                        "time-stamp": "P1M12DT12H57M20S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": null
+                    }, 
+                    {
+                        "intf-out": "Vlan3902", 
+                        "ip-addr-out": "10.87.11.213", 
+                        "time-stamp": "P1M12DT12H56M51S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": null
+                    }, 
+                    {
+                        "intf-out": "Vlan3902", 
+                        "ip-addr-out": "10.87.11.216", 
+                        "time-stamp": "P1M12DT12H58M22S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": null
+                    }, 
+                    {
+                        "intf-out": "Vlan3902", 
+                        "ip-addr-out": "10.87.11.220", 
+                        "time-stamp": "P1M12DT12H56M33S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": null
+                    }, 
+                    {
+                        "intf-out": "Vlan3902", 
+                        "ip-addr-out": "10.87.11.237", 
+                        "time-stamp": "P1M12DT12H56M5S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": null
+                    }, 
+                    {
+                        "intf-out": "Vlan3902", 
+                        "ip-addr-out": "10.87.11.249", 
+                        "time-stamp": "P1M12DT13H9M32S", 
+                        "mac": "00a0.c90a.0101", 
+                        "flags": null
+                    }, 
+                    {
+                        "intf-out": "Vlan2555", 
+                        "ip-addr-out": "10.232.127.194", 
+                        "time-stamp": "P1M12DT13H2M47S", 
+                        "mac": "f4cf.e228.d053", 
+                        "flags": "+"
+                    }, 
+                    {
+                        "intf-out": "Vlan2555", 
+                        "ip-addr-out": "10.232.127.195", 
+                        "time-stamp": "P1M12DT13H2M46S", 
+                        "mac": "84b8.02f0.df6f", 
+                        "flags": "+"
+                    }, 
+                    {
+                        "intf-out": "mgmt0", 
+                        "ip-addr-out": "10.232.124.1", 
+                        "time-stamp": "P1M12DT12H57M52S", 
+                        "mac": "0000.0c9f.f9fb", 
+                        "flags": null
+                    }, 
+                    {
+                        "intf-out": "mgmt0", 
+                        "ip-addr-out": "10.232.124.3", 
+                        "time-stamp": "P1M12DT12H57M54S", 
+                        "mac": "0042.686d.84af", 
+                        "flags": null
+                    }, 
+                    {
+                        "intf-out": "mgmt0", 
+                        "ip-addr-out": "10.232.124.33", 
+                        "time-stamp": "P1M12DT12H57M52S", 
+                        "mac": "002a.1029.97c0", 
+                        "flags": null
+                    }, 
+                    {
+                        "intf-out": "mgmt0", 
+                        "ip-addr-out": "10.232.124.57", 
+                        "time-stamp": "P1M12DT13H12M39S", 
+                        "mac": "707d.b922.e3fc", 
+                        "flags": null
+                    }
+                ]
+            }
+        }
+    }
+}

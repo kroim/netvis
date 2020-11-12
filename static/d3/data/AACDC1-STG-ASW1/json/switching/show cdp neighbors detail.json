@@ -1,0 +1,131 @@
+{
+    "TABLE_cdp_neighbor_detail_info": {
+        "ROW_cdp_neighbor_detail_info": [
+            {
+                "ifindex": "83886080", 
+                "device_id": "AACDC-DCN-DSW1.corpaa.aa.com(SAL1922FQSE)", 
+                "sysname": "AACDC-DCN-DSW1", 
+                "numaddr": "1", 
+                "v4addr": "10.232.124.2", 
+                "platform_id": "N9K-C9396PX", 
+                "capability": [
+                    "router", 
+                    "switch", 
+                    "IGMP_cnd_filtering", 
+                    "Supports-STP-Dispute"
+                ], 
+                "intf_id": "mgmt0", 
+                "port_id": "Ethernet101/1/10", 
+                "ttl": "157", 
+                "version": "Cisco Nexus Operating System (NX-OS) Software, Version 7.0(3)I4(8a)", 
+                "version_no": "v2", 
+                "nativevlan": "2555", 
+                "duplexmode": "full", 
+                "mtu": "1500", 
+                "syslocation": "D1.M.067", 
+                "num_mgmtaddr": "1", 
+                "v4mgmtaddr": "10.232.124.2"
+            }, 
+            {
+                "ifindex": "436232192", 
+                "device_id": "AACDC1-STG-ASW2.corpaa.aa.com(SAL2028T6A1)", 
+                "sysname": "AACDC1-STG-ASW2", 
+                "numaddr": "1", 
+                "v4addr": "10.232.127.233", 
+                "platform_id": "N9K-C9396PX", 
+                "capability": [
+                    "router", 
+                    "switch", 
+                    "IGMP_cnd_filtering", 
+                    "Supports-STP-Dispute"
+                ], 
+                "intf_id": "Ethernet2/1", 
+                "port_id": "Ethernet2/1", 
+                "ttl": "174", 
+                "version": "Cisco Nexus Operating System (NX-OS) Software, Version 7.0(3)I7(6)", 
+                "version_no": "v2", 
+                "nativevlan": "1", 
+                "duplexmode": "full", 
+                "mtu": "1500", 
+                "syslocation": "D1.M.070.RU30", 
+                "num_mgmtaddr": "1", 
+                "v4mgmtaddr": "10.232.124.33"
+            }, 
+            {
+                "ifindex": "436232704", 
+                "device_id": "AACDC1-STG-ASW2.corpaa.aa.com(SAL2028T6A1)", 
+                "sysname": "AACDC1-STG-ASW2", 
+                "numaddr": "1", 
+                "v4addr": "10.232.127.233", 
+                "platform_id": "N9K-C9396PX", 
+                "capability": [
+                    "router", 
+                    "switch", 
+                    "IGMP_cnd_filtering", 
+                    "Supports-STP-Dispute"
+                ], 
+                "intf_id": "Ethernet2/2", 
+                "port_id": "Ethernet2/2", 
+                "ttl": "174", 
+                "version": "Cisco Nexus Operating System (NX-OS) Software, Version 7.0(3)I7(6)", 
+                "version_no": "v2", 
+                "nativevlan": "1", 
+                "duplexmode": "full", 
+                "mtu": "1500", 
+                "syslocation": "D1.M.070.RU30", 
+                "num_mgmtaddr": "1", 
+                "v4mgmtaddr": "10.232.124.33"
+            }, 
+            {
+                "ifindex": "436234240", 
+                "device_id": "AACDC-STG-DSW1.corpaa.aa.com(SAL19048M1S)", 
+                "sysname": "AACDC-STG-DSW1", 
+                "numaddr": "1", 
+                "v4addr": "10.76.194.2", 
+                "platform_id": "N9K-C9396PX", 
+                "capability": [
+                    "router", 
+                    "switch", 
+                    "IGMP_cnd_filtering", 
+                    "Supports-STP-Dispute"
+                ], 
+                "intf_id": "Ethernet2/5", 
+                "port_id": "Ethernet2/7", 
+                "ttl": "121", 
+                "version": "Cisco Nexus Operating System (NX-OS) Software, Version 7.0(3)I4(8a)", 
+                "version_no": "v2", 
+                "nativevlan": "3967", 
+                "duplexmode": "full", 
+                "mtu": "9216", 
+                "syslocation": "D1.M.067", 
+                "num_mgmtaddr": "1", 
+                "v4mgmtaddr": "10.232.124.13"
+            }, 
+            {
+                "ifindex": "436234752", 
+                "device_id": "AACDC-STG-DSW2.corpaa.aa.com(SAL1915D81Z)", 
+                "sysname": "AACDC-STG-DSW2", 
+                "numaddr": "1", 
+                "v4addr": "10.76.194.3", 
+                "platform_id": "N9K-C9396PX", 
+                "capability": [
+                    "router", 
+                    "switch", 
+                    "IGMP_cnd_filtering", 
+                    "Supports-STP-Dispute"
+                ], 
+                "intf_id": "Ethernet2/6", 
+                "port_id": "Ethernet2/7", 
+                "ttl": "121", 
+                "version": "Cisco Nexus Operating System (NX-OS) Software, Version 7.0(3)I4(8a)", 
+                "version_no": "v2", 
+                "nativevlan": "3967", 
+                "duplexmode": "full", 
+                "mtu": "9216", 
+                "syslocation": "D1.M.094", 
+                "num_mgmtaddr": "1", 
+                "v4mgmtaddr": "10.232.124.14"
+            }
+        ]
+    }
+}
