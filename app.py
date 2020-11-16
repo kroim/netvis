@@ -5,9 +5,7 @@ from sqlite3 import Error
 import json
 import xmltodict
 import os
-import ipaddress
 import functions
-
 app = Flask(__name__)
 uploads_dir = os.path.join(app.static_folder, 'uploads')
 vr_key = "nf:rpc-reply.nf:data.show.ip.interface.__XML__BLK_Cmd_ip_show_interface_command_brief.__XML__OPT_Cmd_ip_show_interface_command_operational.__XML__OPT_Cmd_ip_show_interface_command_vrf.__XML__OPT_Cmd_ip_show_interface_command___readonly__.__readonly__.TABLE_vrf"
