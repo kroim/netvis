@@ -14,43 +14,44 @@ int_key = "nf:rpc-reply.nf:data.show.ip.interface.__XML__BLK_Cmd_ip_show_interfa
 
 @app.route('/')
 def dashboard():
-    if 'name' not in session:
+    if 'user' not in session:
         return redirect(url_for('login'))
     else:
         sidebar = {'title': 'Netvis', 'menu': 'dashboard', 'submenu': ''}
-        return render_template('dashboard.html', name=session['name'], sidebar=sidebar)
+        print(session)
+        return render_template('dashboard.html', session=session, sidebar=sidebar)
 
 
 @app.route('/pdc')
 def pdc():
-    if 'name' not in session:
+    if 'user' not in session:
         return redirect(url_for('login'))
     else:
         sidebar = {'title': 'D 3 | PDC', 'menu': 'pdc', 'submenu': ''}
-        return render_template('pdc.html', name=session['name'], sidebar=sidebar)
+        return render_template('pdc.html', session=session, sidebar=sidebar)
 
 
 @app.route('/mpls')
 def mpls():
-    if 'name' not in session:
+    if 'user' not in session:
         return redirect(url_for('login'))
     else:
         sidebar = {'title': 'D 3 | PDC', 'menu': 'mpls', 'submenu': ''}
-        return render_template('/aspath/index.html', name=session['name'], sidebar=sidebar)
+        return render_template('/aspath/index.html', session=session, sidebar=sidebar)
 
 
 @app.route('/ip_finder')
 def ip_finder():
-    if 'name' not in session:
+    if 'user' not in session:
         return redirect(url_for('login'))
     else:
         sidebar = {'title': 'D 3 | PDC', 'menu': 'ip_finder', 'submenu': ''}
-        return render_template('ip_finder.html', name=session['name'], sidebar=sidebar)
+        return render_template('ip_finder.html', session=session, sidebar=sidebar)
 
 
 @app.route('/admin')
 def admin():
-    if 'name' not in session:
+    if 'user' not in session:
         return redirect(url_for('login'))
     else:
         table_names = functions.get_table_names()
@@ -61,12 +62,12 @@ def admin():
                 cur.execute("SELECT * FROM DC_PCI")
                 pci_rows = cur.fetchall()
         sidebar = {'title': 'Netvis', 'menu': 'admin', 'submenu': ''}
-        return render_template('admin.html', name=session['name'], sidebar=sidebar, db_rows=pci_rows, table_names=table_names)
+        return render_template('admin.html', session=session, sidebar=sidebar, db_rows=pci_rows, table_names=table_names)
 
 
 @app.route('/admin-xml', methods=['POST', 'OPTIONS'])
 def admin_xml():
-    if 'name' not in session:
+    if 'user' not in session:
         return jsonify({'status': 'error', 'message': 'You are not logged in'})
     else:
         if request.method == 'OPTIONS':
@@ -111,13 +112,13 @@ def admin_xml():
                 # print(data_dict)
                 check_vrf = ''
                 try:
-                    vr_data = custom_find_key(vr_key, data_dict)
+                    vr_data = functions.custom_find_key(vr_key, data_dict)
                 except Exception as error:
                     print("vr_data error: ", error)
                     check_vrf = 'N/A'
                     vr_data = []
                 try:
-                    int_data = custom_find_key(int_key, data_dict)
+                    int_data = functions.custom_find_key(int_key, data_dict)
                 except Exception as error:
                     print("int_data error: ", error)
                     int_data = data_dict['TABLE_intf']['ROW_intf']
@@ -178,7 +179,7 @@ def admin_xml():
 
 @app.route('/search-ip', methods=['POST', 'OPTIONS'])
 def search_ip_finder():
-    if 'name' not in session:
+    if 'user' not in session:
         return jsonify({'status': 'error', 'message': 'You are not logged in'})
     else:
         if request.method == 'OPTIONS':
@@ -198,7 +199,7 @@ def search_ip_finder():
 
 @app.route('/manage-pci', methods=['POST', 'OPTIONS'])
 def manage_pci():
-    if 'name' not in session:
+    if 'user' not in session:
         return jsonify({'status': 'error', 'message': 'You are not logged in'})
     else:
         if request.method == 'OPTIONS':
@@ -250,7 +251,7 @@ def manage_pci():
 
 @app.route('/remove-table', methods=['POST', 'OPTIONS'])
 def remove_table():
-    if 'name' not in session:
+    if 'user' not in session:
         return jsonify({'status': 'error', 'message': 'You are not logged in'})
     else:
         if request.method == 'OPTIONS':
@@ -296,16 +297,14 @@ def upload_pci():
 @app.route('/login', methods=['POST', 'GET'])
 def login():
     if request.method == 'GET':
+        if 'user' in session:
+            return redirect(url_for('dashboard'))
         return render_template('login.html')
-
     else:
-        # session['name'] = ''
         email = request.form['email']
         pwd = request.form['pwd']
-
         if email == '' or pwd == '':
             return render_template('login.html', email=email, pwd=pwd)
-
         try:
             with sqlite3.connect(database='database.db') as conn:
                 cur = conn.cursor()
@@ -314,14 +313,13 @@ def login():
                 if len(users) < 1:
                     print("doesn't exist")
                     return redirect(url_for('login'))
-
-                stored_pwd = users[0][3]
-                name = users[0][1]
-
+                user = users[0]
+                stored_pwd = user[4]
                 if not pwd_hasher.verify_password(stored_pwd, pwd):
                     print('wrong password')
                     return redirect(url_for('login'))
-                session['name'] = name
+                print("Login success")
+                session['user'] = user
                 print('login ok')
         except Error as e:
             print(e)
@@ -331,15 +329,29 @@ def login():
         return redirect(url_for('dashboard'))
 
 
+@app.route('/login', methods=['POST', 'GET'])
+def user_management():
+    if request.method == 'GET':
+        if 'user' not in session:
+            return redirect(url_for('login'))
+        if session['user'][3] == 1:
+            return redirect(url_for('error404'))
+        return render_template('user_management.html')
+    else:
+        pass
+
+
 @app.route('/logout')
 def logout():
-    session.pop('name', None)
+    session.pop('user', None)
     return redirect(url_for('dashboard'))
 
 
 @app.route('/register', methods=['POST', 'GET'])
 def register():
     if request.method == 'GET':
+        if 'user' in session:
+            return redirect(url_for('dashboard'))
         return render_template('register.html')
     else:
         email = request.form['email']
@@ -358,6 +370,11 @@ def register():
         finally:
             conn.close()
         return redirect(url_for('login'))
+
+
+@app.route('/404', methods=['GET'])
+def error404():
+    return "Not found page"
 
 
 if __name__ == '__main__':

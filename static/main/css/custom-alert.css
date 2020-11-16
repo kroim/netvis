@@ -75,3 +75,6 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
 textarea {
     resize: both;
 }
+body {
+    line-height: 1;
+}

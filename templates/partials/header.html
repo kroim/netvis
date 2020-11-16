@@ -27,12 +27,15 @@
         </div>
     </form>
 
-
-    <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
         <li class="nav-item">
             <a class="nav-link">
-                <i class="nav-icon fas fa-user-tie"></i> : {{name}}
+                {% if session.user[3] == 1 %}
+                <span style="padding-right: 10px; font-weight: bold;">Admin</span>
+                {% else %}
+                <span style="padding-right: 10px; font-weight: bold;">User</span>
+                {% endif %}
+                <i class="nav-icon fas fa-user-tie"></i> {{session.user[1]}}
             </a>
         </li>
         <li class="nav-item">
