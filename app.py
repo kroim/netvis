@@ -329,16 +329,33 @@ def login():
         return redirect(url_for('dashboard'))
 
 
-@app.route('/login', methods=['POST', 'GET'])
+@app.route('/user-manage', methods=['POST', 'GET'])
 def user_management():
     if request.method == 'GET':
         if 'user' not in session:
             return redirect(url_for('login'))
-        if session['user'][3] == 1:
+        print(session['user'])
+        if session['user'][3] != 1:
             return redirect(url_for('error404'))
-        return render_template('user_management.html')
+        sidebar = {'title': 'User Management', 'menu': 'user-manage'}
+        users = functions.db_manage_user('all', 'none', 'none')
+        print("users: ", users)
+        return render_template('user_management.html', session=session, sidebar=sidebar, users=users)
     else:
-        pass
+        if 'user' not in session:
+            return jsonify({'status': 'error', 'message': 'You are not logged in'})
+        if session['user'][3] != 1:
+            return jsonify({'status': 'error', 'message': 'Permission is not defined'})
+        method_type = request.get_json()['method_type']
+        if method_type == 'edit':
+            user_id = request.get_json()['user_id']
+            user_role = request.get_json()['user_role']
+            functions.db_manage_user('edit', user_id, user_role)
+            return jsonify({'status': 'success', 'message': 'User is updated successfully'})
+        elif method_type == 'remove':
+            user_id = request.get_json()['user_id']
+            functions.db_manage_user('remove', user_id, 'none')
+            return jsonify({'status': 'success', 'message': 'User is removed successfully'})
 
 
 @app.route('/logout')

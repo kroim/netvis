@@ -11,244 +11,74 @@
         <!-- Content Header (Page header) -->
         <div class="content-header">
             <div class="container-fluid">
-                <!--                <h4 class="m-3">Manage XML and JSON for Tables</h4>-->
-                <div class="row mb-2">
-                    <div class="col-md-3">
-                        <div class="card card-danger">
-                            <div class="card-header">
-                                <h3 class="card-title">Delete a table</h3>
-                            </div>
-                            <div class="card-body">
-                                <div class="form-group">
-                                    <label>Tables</label>
-                                    <select class="form-control" id="delete_table_name">
-                                        <option value="none">Select a table</option>
-                                        {% for table_name in table_names %}
-                                        <option value="{{ table_name }}">{{ table_name }}</option>
-                                        {% endfor %}
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <button class="btn btn-danger" onclick="deleteTableName()">Delete a table</button>
-                                </div>
-                            </div>
+                <h4 class="m-3">Manage Users</h4>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table id="users_table" class="table table-bordered table-striped text-center">
+                                <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Role</th>
+                                    <th>Actions</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for user in users %}
+                                <tr data-id="{{ user[0] }}">
+                                    <td class="user-id">{{ user[0] }}</td>
+                                    <td class="user-name">{{ user[1] }}</td>
+                                    <td class="user-email">{{ user[2] }}</td>
+                                    {% if user[3] == 1 %}
+                                        <td class="user-role">Admin</td>
+                                    {% else %}
+                                        <td class="user-role">User</td>
+                                    {% endif %}
+                                    <td class="user-action">
+                                        <button class="btn btn-warning btn-sm" onclick="openEditUserModal('{{ user[0] }}')">edit</button>
+                                        <button class="btn btn-danger btn-sm" onclick="openRemoveUserModal('{{ user[0] }}')">remove</button>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="card card-primary">
-                            <div class="card-header">
-                                <h3 class="card-title">Convert XML to JSON</h3>
-                            </div>
-                            <!-- /.card-header -->
-                            <!-- form start -->
-                            <form id="xml-form">
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        <label for="xml_file">XML FILE UPLOAD</label>
-                                        <div class="input-group">
-                                            <input type="file" class="form-control" id="xml_file" accept="application/xml">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="json_file">JSON FILE UPLOAD</label>
-                                        <div class="input-group">
-                                            <input type="file" class="form-control" id="json_file" accept="application/json">
-                                        </div>
-                                    </div>
-                                    <!--                                    <label class="mt-4">Table Structure</label>-->
-                                    <div class="form-group">
-                                        <label>Table Name</label>
-                                        <input class="form-control" id="xml_table_name" required>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label>Field Keys</label>
-                                            <div class="form-group">
-                                                <input class="form-control" value="subnet&masklen" disabled>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label>Field Names</label>
-                                            <div class="form-group">
-                                                <input class="form-control" value="IP" disabled>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input class="form-control" value="none" disabled>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input class="form-control" value="Location" disabled>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input class="form-control" value="ROW_vrf/vrf-name-out" disabled>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input class="form-control" value="VRF" disabled>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="table-names">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input class="form-control" data-class="table_key" value="intf-name" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input class="form-control" data-class="table_name" value="L3" required>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input class="form-control" data-class="table_key" value="mtu" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input class="form-control" data-class="table_name" value="MTU" required>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input class="form-control" data-class="table_key" value="tag" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input class="form-control" data-class="table_name" value="TAG" required>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="xml-form-buttons">
-                                        <button type="button" class="btn btn-outline-info btn-sm" onclick="addField()">Add more field</button>
-                                        <button type="button" class="btn btn-outline-warning btn-sm" onclick="removeField()">Remove the last field</button>
-                                    </div>
-                                </div>
-                                <!-- /.card-body -->
-                                <div class="card-footer">
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div><!-- /.col -->
-                    <div class="col-sm-5">
-                        <div class="card card-success">
-                            <div class="card-header">
-                                <h3 class="card-title">Manage PCI/PII items</h3>
-                            </div>
-                            <div class="card-body">
-                                <div class="text-right mb-4">
-                                    <button class="btn btn-warning" onclick="$('#modal-upload-PCI').modal('show')">Upload Excel</button>
-                                    <button class="btn btn-success" onclick="$('#modal-add-PCI').modal('show')">Add Item</button>
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered table-striped" id="pci_table">
-                                        <thead>
-                                        <tr>
-                                            <th style="width: 10%;">ID</th>
-                                            <th style="width: 30%;">IP</th>
-                                            <th style="width: 20%;">Status</th>
-                                            <th style="width: 40%;">Action</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        {% for db_row in db_rows %}
-                                        <tr>
-                                            <td class="pci-id">{{ db_row[0] }}</td>
-                                            <td class="pci-ip">{{ db_row[1] }}</td>
-                                            <td class="pci-status">{{ db_row[2] }}</td>
-                                            <td class="pci-actions">
-                                                <button class="btn btn-warning btn-sm"
-                                                        onclick="openEditModal('{{ db_row[0] }}', '{{ db_row[1] }}', '{{ db_row[2] }}')">edit
-                                                </button>
-                                                <button class="btn btn-danger btn-sm"
-                                                        onclick="openRemoveModal('{{ db_row[0] }}', '{{ db_row[1] }}', '{{ db_row[2] }}')">remove
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        {% endfor %}
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div><!-- /.col -->
-                </div><!-- /.row -->
+                </div>
             </div><!-- /.container-fluid -->
         </div>
         <!-- /.content-header -->
 
     </div>
 
-    <div class="modal fade" id="modal-add-PCI">
+    <div class="modal fade" id="modal-edit-user">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Add PCI/PII Item</h4>
+                    <h4 class="modal-title">Edit User</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form id="modal-add-ip-form">
+                <form id="modal-edit-user-form">
                     <div class="modal-body">
+                        <input type="hidden" id="modal_edit_user_id">
                         <div class="form-group">
-                            <label>IP</label>
-                            <input class="form-control" id="modal_add_ip" required>
+                            <label>Name</label>
+                            <input class="form-control" id="modal_edit_user_name" disabled>
                         </div>
                         <div class="form-group">
-                            <label>Status</label>
-                            <input class="form-control" id="modal_add_status" required>
-                        </div>
-                    </div>
-                    <div class="modal-footer justify-content-between">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-success">Save an item</button>
-                    </div>
-                </form>
-            </div>
-            <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dialog -->
-    </div>
-    <!-- /.modal -->
-
-    <div class="modal fade" id="modal-edit-PCI">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Edit PCI/PII Item</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <form id="modal-edit-ip-form">
-                    <div class="modal-body">
-                        <input type="hidden" id="modal_edit_id">
-                        <div class="form-group">
-                            <label>IP</label>
-                            <input class="form-control" id="modal_edit_ip" required>
+                            <label>Email</label>
+                            <input type="email" class="form-control" id="modal_edit_user_email" disabled>
                         </div>
                         <div class="form-group">
-                            <label>Status</label>
-                            <input class="form-control" id="modal_edit_status" required>
+                            <label>Role</label>
+                            <select class="form-control" id="modal_edit_user_role">
+                                <option value="2">User</option>
+                                <option value="1">Admin</option>
+                            </select>
                         </div>
                     </div>
                     <div class="modal-footer justify-content-between">
@@ -263,58 +93,37 @@
     </div>
     <!-- /.modal -->
 
-    <div class="modal fade" id="modal-remove-PCI">
+    <div class="modal fade" id="modal-remove-user">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Remove PCI/PII Item</h4>
+                    <h4 class="modal-title">Remove User</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form id="modal-remove-ip-form">
+                <form id="modal-remove-user-form">
                     <div class="modal-body">
-                        <input type="hidden" id="modal_remove_id">
+                        <input type="hidden" id="modal_remove_user_id">
                         <div class="form-group">
-                            <label>IP</label>
-                            <input class="form-control" id="modal_remove_ip" required>
+                            <label>Name</label>
+                            <input class="form-control" id="modal_remove_user_name" disabled>
                         </div>
                         <div class="form-group">
-                            <label>Status</label>
-                            <input class="form-control" id="modal_remove_status" required>
+                            <label>Email</label>
+                            <input class="form-control" id="modal_remove_user_email" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label>Role</label>
+                            <select class="form-control" id="modal_remove_user_role" disabled>
+                                <option value="2">User</option>
+                                <option value="1">Admin</option>
+                            </select>
                         </div>
                     </div>
                     <div class="modal-footer justify-content-between">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-danger">Remove Item</button>
-                    </div>
-                </form>
-            </div>
-            <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dialog -->
-    </div>
-    <!-- /.modal -->
-
-    <div class="modal fade" id="modal-upload-PCI">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Upload PCI/PII Excel</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <form id="modal-upload-ip-form">
-                    <div class="modal-body">
-                        <div class="form-group">
-                            <label>Select a excel file</label>
-                            <input type="file" class="form-control" id="modal_upload_pci" required>
-                        </div>
-                    </div>
-                    <div class="modal-footer justify-content-between">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-warning">Submit upload</button>
+                        <button type="submit" class="btn btn-danger">Remove User</button>
                     </div>
                 </form>
             </div>
@@ -330,187 +139,73 @@
 {% include "partials/foot.html" %}
 <script>
     $(function () {
-        $('#pci_table').DataTable();
+        $('#users_table').DataTable();
     });
-
-    function addField() {
-        let html = '<div class="row"><div class="col-md-6"><div class="form-group"><input class="form-control" data-class="table_key" required></div></div>\n' +
-            '<div class="col-md-6"><div class="form-group"><input class="form-control" data-class="table_name" required></div></div></div>';
-        $('.table-names').append(html);
+    function openEditUserModal(id) {
+        let name = $('tr[data-id="' + id + '"] .user-name').text();
+        let email = $('tr[data-id="' + id + '"] .user-email').text();
+        let roleText = $('tr[data-id="' + id + '"] .user-role').text();
+        let role = 2;
+        if (roleText === 'Admin') role = 1;
+        $('#modal_edit_user_id').val(id);
+        $('#modal_edit_user_name').val(name);
+        $('#modal_edit_user_email').val(email);
+        $('#modal_edit_user_role').val(role);
+        $('#modal-edit-user').modal('show');
+    }
+    function openRemoveUserModal(id) {
+        let name = $('tr[data-id="' + id + '"] .user-name').text();
+        let email = $('tr[data-id="' + id + '"] .user-email').text();
+        let roleText = $('tr[data-id="' + id + '"] .user-role').text();
+        let role = 2;
+        if (roleText === 'Admin') role = 1;
+        $('#modal_remove_user_id').val(id);
+        $('#modal_remove_user_name').val(name);
+        $('#modal_remove_user_email').val(email);
+        $('#modal_remove_user_role').val(role);
+        $('#modal-remove-user').modal('show');
     }
 
-    function removeField() {
-        let tableNameTag = $('.table-names .row');
-        if (tableNameTag.length > 1) tableNameTag[tableNameTag.length - 1].remove();
-    }
-
-    function openEditModal(id, ip, status) {
-        $('#modal_edit_id').val(id);
-        $('#modal_edit_ip').val(ip);
-        $('#modal_edit_status').val(status);
-        $('#modal-edit-PCI').modal('show');
-    }
-
-    function openRemoveModal(id, ip, status) {
-        $('#modal_remove_id').val(id);
-        $('#modal_remove_ip').val(ip);
-        $('#modal_remove_status').val(status);
-        $('#modal-remove-PCI').modal('show');
-    }
-
-    function deleteTableName() {
-        let table_name = $('#delete_table_name').val();
-        if (table_name === 'none') {
-            alert("Select a table");
-            return;
-        }
-        $.ajax({
-            url: "{{url_for('remove_table')}}",
-            type: "POST",
-            contentType: "application/json",
-            data: JSON.stringify({
-                table_name: table_name
-            }),
-            success: function (res) {
-                if (res.status === 'success') {
-                    customAlert(res.message, true);
-                    setTimeout(function () {
-                        location.reload()
-                    }, 1500)
-                } else customAlert(res.message)
-            }
-        })
-    }
-
-    $('#xml-form').on('submit', function (e) {
+    $('#modal-edit-user-form').on('submit', function (e) {
         e.preventDefault();
-        let xmlFormData = new FormData();
-        let xmlTag = $('#xml_file');
-        let jsonTag = $('#json_file');
-        if (xmlTag[0].files.length > 0) xmlFormData.append('xml_file', xmlTag[0].files[0]);
-        else if (jsonTag[0].files.length > 0) xmlFormData.append('json_file', jsonTag[0].files[0]);
-        else {
-            alert("Select a xml or json file");
-            return;
-        }
-        let table_keys = [];
-        let table_fields = [];
-        let table_name = $('#xml_table_name').val();
-        $('.table-names input[data-class="table_key"]').each(function () {
-            table_keys.push($(this).val())
-        });
-        $('.table-names input[data-class="table_name"]').each(function () {
-            table_fields.push($(this).val())
-        });
-        xmlFormData.append('table_name', table_name);
-        xmlFormData.append('table_keys', JSON.stringify(table_keys));
-        xmlFormData.append('table_fields', JSON.stringify(table_fields));
+        let user_id = $('#modal_edit_user_id').val();
+        let user_role = $('#modal_edit_user_role').val();
         $.ajax({
-            url: "{{url_for('admin_xml')}}",
-            method: 'post',
-            data: xmlFormData,
-            contentType: false,
-            cache: false,
-            processData: false,
-            mimeType: 'multipart/form-data',
-            success: function (res) {
-                console.log("res: ", res);
-                res = JSON.parse(res);
-                if (res.status === 'success') customAlert("Table is created successfully", true);
-                else customAlert(res.message);
-                setTimeout(function () {
-                    // location.reload();
-                }, 2500);
-            }
-        })
-    });
-    $('#modal-add-ip-form').on('submit', function (e) {
-        e.preventDefault();
-        $.ajax({
-            url: "{{url_for('manage_pci')}}",
-            type: "POST",
-            contentType: "application/json",
-            data: JSON.stringify({
-                method_type: 'add',
-                ip: $('#modal_add_ip').val(),
-                status: $('#modal_add_status').val()
-            }),
-            success: function (res) {
-                if (res.status === 'success') {
-                    customAlert(res.message, true);
-                    setTimeout(function () {
-                        location.reload()
-                    }, 1500)
-                } else customAlert(res.message)
-            }
-        })
-    });
-    $('#modal-edit-ip-form').on('submit', function (e) {
-        e.preventDefault();
-        $.ajax({
-            url: "{{url_for('manage_pci')}}",
+            url: "{{url_for('user_management')}}",
             type: "POST",
             contentType: "application/json",
             data: JSON.stringify({
                 method_type: 'edit',
-                id: $('#modal_edit_id').val(),
-                ip: $('#modal_edit_ip').val(),
-                status: $('#modal_edit_status').val()
+                user_id: user_id,
+                user_role: user_role,
             }),
             success: function (res) {
                 if (res.status === 'success') {
                     customAlert(res.message, true);
                     setTimeout(function () {
                         location.reload()
-                    }, 1500)
-                } else customAlert(res.message)
+                    }, 2500);
+                } else customAlert(res.message);
             }
         })
     });
-    $('#modal-remove-ip-form').on('submit', function (e) {
+
+    $('#modal-remove-user-form').on('submit', function (e) {
         e.preventDefault();
+        let user_id = $('#modal_remove_user_id').val();
         $.ajax({
-            url: "{{url_for('manage_pci')}}",
+            url: "{{url_for('user_management')}}",
             type: "POST",
             contentType: "application/json",
             data: JSON.stringify({
                 method_type: 'remove',
-                id: $('#modal_remove_id').val()
+                user_id: user_id,
             }),
             success: function (res) {
                 if (res.status === 'success') {
                     customAlert(res.message, true);
                     setTimeout(function () {
                         location.reload()
-                    }, 1500)
-                } else customAlert(res.message)
-            }
-        })
-    });
-    $('#modal-upload-ip-form').on('submit', function (e) {
-        e.preventDefault();
-        let pciFormData = new FormData();
-        let pciFileTag = $('#modal_upload_pci');
-        if (pciFileTag[0].files.length > 0) pciFormData.append('pci_file', pciFileTag[0].files[0]);
-        else {
-            alert("Select a xml or json file");
-            return;
-        }
-        $.ajax({
-            url: "{{url_for('upload_pci')}}",
-            method: 'post',
-            data: pciFormData,
-            contentType: false,
-            cache: false,
-            processData: false,
-            mimeType: 'multipart/form-data',
-            success: function (res) {
-                console.log("res: ", res);
-                res = JSON.parse(res);
-                if (res.status === 'success') {
-                    customAlert("Table is created successfully", true);
-                    setTimeout(function () {
-                        location.reload();
                     }, 2500);
                 } else customAlert(res.message);
             }

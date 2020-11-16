@@ -90,3 +90,25 @@ def get_table_names():
     cursor.close()
     db.close()
     return table_names
+
+
+def db_manage_user(method_type, user_id, role):
+    db = sqlite3.connect('database.db')
+    cursor = db.cursor()
+    if method_type == 'all':
+        sql = "SELECT * FROM user"
+        cursor.execute(sql)
+        users = cursor.fetchall()
+        return users
+    elif method_type == 'edit':
+        sql = "UPDATE user SET role = '" + role + "' WHERE id = '" + user_id + "'"
+        cursor.execute(sql)
+        db.commit()
+        return True
+    elif method_type == 'remove':
+        sql = "DELETE FROM user WHERE id = " + user_id
+        cursor.execute(sql)
+        db.commit()
+        return True
+    else:
+        return False
