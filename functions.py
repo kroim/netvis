@@ -4,6 +4,13 @@ import pandas as pd
 import ipaddress
 
 
+def custom_find_key(element, json_data):
+    paths = element.split(".")
+    for i in range(0, len(paths)):
+        json_data = json_data[paths[i]]
+    return json_data
+
+
 def excel_database(file, table_name):
     df = pd.read_excel(file)
     df_array = df.to_numpy()

@@ -66,13 +66,6 @@ def admin():
         return render_template('admin.html', name=session['name'], sidebar=sidebar, db_rows=pci_rows, table_names=table_names)
 
 
-def custom_find_key(element, json_data):
-    paths = element.split(".")
-    for i in range(0, len(paths)):
-        json_data = json_data[paths[i]]
-    return json_data
-
-
 @app.route('/admin-xml', methods=['POST', 'OPTIONS'])
 def admin_xml():
     if 'name' not in session:
@@ -354,11 +347,13 @@ def register():
         email = request.form['email']
         name = request.form['name']
         pwd = pwd_hasher.hash_password(request.form['pwd'])
+        # user role
+        role = 2
         try:
             with sqlite3.connect(database='database.db') as conn:
                 cur = conn.cursor()
-                cur.execute("INSERT INTO user (name, email, pwd) VALUES (?, ?, ?)",
-                            (name, email, pwd))
+                cur.execute("INSERT INTO user (name, email, role, pwd) VALUES (?, ?, ?, ?)",
+                            (name, email, role, pwd))
                 conn.commit()
         except:
             conn.rollback()
