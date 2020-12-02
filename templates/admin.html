@@ -24,7 +24,7 @@
                                     <select class="form-control" id="delete_table_name">
                                         <option value="none">Select a table</option>
                                         {% for table_name in table_names %}
-                                        <option value="{{ table_name }}">{{ table_name }}</option>
+                                        <option value="{{ table_name[0] }}">{{ table_name[0] }} ({{ table_name[1] }})</option>
                                         {% endfor %}
                                     </select>
                                 </div>

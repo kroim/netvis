@@ -6,6 +6,7 @@ import json
 import xmltodict
 import os
 import functions
+
 app = Flask(__name__)
 uploads_dir = os.path.join(app.static_folder, 'uploads')
 vr_key = "nf:rpc-reply.nf:data.show.ip.interface.__XML__BLK_Cmd_ip_show_interface_command_brief.__XML__OPT_Cmd_ip_show_interface_command_operational.__XML__OPT_Cmd_ip_show_interface_command_vrf.__XML__OPT_Cmd_ip_show_interface_command___readonly__.__readonly__.TABLE_vrf"
@@ -55,14 +56,10 @@ def admin():
         return redirect(url_for('login'))
     else:
         table_names = functions.get_table_names()
-        pci_rows = []
-        if 'DC_PCI' in table_names:
-            with sqlite3.connect(database='database.db') as conn:
-                cur = conn.cursor()
-                cur.execute("SELECT * FROM DC_PCI")
-                pci_rows = cur.fetchall()
-        sidebar = {'title': 'Netvis', 'menu': 'admin', 'submenu': ''}
-        return render_template('admin.html', session=session, sidebar=sidebar, db_rows=pci_rows, table_names=table_names)
+        pci_rows = functions.get_pci()
+    records = functions.get_record_time()
+    sidebar = {'title': 'Netvis', 'menu': 'admin', 'submenu': ''}
+    return render_template('admin.html', session=session, sidebar=sidebar, db_rows=pci_rows, table_names=table_names)
 
 
 @app.route('/admin-xml', methods=['POST', 'OPTIONS'])
@@ -171,6 +168,7 @@ def admin_xml():
                     print(insert_sql)
                     cur.execute(insert_sql)
                     conn.commit()
+                functions.db_record_time(table_name)
             return jsonify({'status': 'success', 'message': 'success added table', 'vr_data': vr_data, 'int_data': int_data}), 201
         except Exception as err:
             print("error: ", err)
@@ -226,6 +224,7 @@ def manage_pci():
                     insert_sql = "INSERT INTO DC_PCI(id, IP, STATUS) VALUES (" + str(insert_id) + ", '" + item_ip + "', '" + item_status + "')"
                     cur.execute(insert_sql)
                     conn.commit()
+                    functions.db_record_time('DC_PCI')
                 elif method_type == 'edit':
                     item_id = request.get_json()['id']
                     item_ip = request.get_json()['ip']
@@ -233,11 +232,13 @@ def manage_pci():
                     update_sql = "UPDATE DC_PCI SET IP = '" + item_ip + "', STATUS = '" + item_status + "' WHERE id = '" + item_id + "'"
                     cur.execute(update_sql)
                     conn.commit()
+                    functions.db_record_time('DC_PCI')
                 elif method_type == 'remove':
                     item_id = request.get_json()['id']
                     delete_sql = "DELETE FROM DC_PCI WHERE id = " + item_id
                     cur.execute(delete_sql)
                     conn.commit()
+                    functions.db_record_time('DC_PCI')
                 else:
                     return jsonify({'status': 'error', 'message': 'Undefined method'})
         except Exception as error:
@@ -382,6 +383,7 @@ def register():
                 cur.execute("INSERT INTO user (name, email, role, pwd) VALUES (?, ?, ?, ?)",
                             (name, email, role, pwd))
                 conn.commit()
+            functions.db_record_time('user')
         except:
             conn.rollback()
         finally:
