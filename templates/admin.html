@@ -81,7 +81,7 @@
                     <div class="col-sm-6">
                         <div class="card card-primary">
                             <div class="card-header">
-                                <h3 class="card-title">Convert XML to JSON</h3>
+                                <h3 class="card-title">XML or JSON to DB</h3>
                             </div>
                             <!-- /.card-header -->
                             <!-- form start -->
@@ -99,7 +99,6 @@
                                             <input type="file" class="form-control" id="json_file" accept="application/json">
                                         </div>
                                     </div>
-                                    <!--                                    <label class="mt-4">Table Structure</label>-->
                                     <div class="form-group">
                                         <label>Table Name</label>
                                         <input class="form-control" id="xml_table_name" required>
@@ -195,7 +194,7 @@
                     <div class="col-md-6">
                         <div class="card card-primary">
                             <div class="card-header">
-                                <h3 class="card-title">Convert XML to JSON</h3>
+                                <h3 class="card-title">RT to DB</h3>
                             </div>
                             <!-- /.card-header -->
                             <!-- form start -->
@@ -213,46 +212,25 @@
                                             <input type="file" class="form-control" id="json_file_2" accept="application/json">
                                         </div>
                                     </div>
-                                    <!--                                    <label class="mt-4">Table Structure</label>-->
                                     <div class="form-group">
                                         <label>Table Name</label>
                                         <input class="form-control" id="xml_table_name_2" required>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-6">
-                                            <label>Field Keys</label>
+                                        <div class="col-md-4">
                                             <div class="form-group">
-                                                <input class="form-control" value="subnet&masklen" disabled>
+                                                <label>Exclude VRF</label>
+                                                <textarea id="exclude_vrf" class="form-control"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Exclude ipnexthop</label>
+                                                <textarea id="exclude_ipnexthop" class="form-control"></textarea>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <label>Field Names</label>
+                                        <div class="col-md-8">
                                             <div class="form-group">
-                                                <input class="form-control" value="IP" disabled>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input class="form-control" value="none" disabled>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input class="form-control" value="Location" disabled>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input class="form-control" value="ROW_vrf/vrf-name-out" disabled>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input class="form-control" value="VRF" disabled>
+                                                <label>Map ipnexthop</label>
+                                                <textarea id="map_ipnexthop" class="form-control" rows="6"></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -260,7 +238,7 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <input class="form-control" data-class="table_key_2" value="intf-name" required>
+                                                    <input class="form-control" data-class="table_key_2" value="ifname" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
