@@ -55,6 +55,8 @@ def admin():
     if 'user' not in session:
         return redirect(url_for('login'))
     else:
+        if not session['user'][3] == 1:
+            return redirect(url_for('error404'))
         table_names = functions.get_table_names()
         pci_rows = functions.get_pci()
     records = functions.get_record_time()
@@ -173,6 +175,11 @@ def admin_xml():
         except Exception as err:
             print("error: ", err)
             return jsonify({'status': 'error', 'message': 'Failed to upload file'})
+
+
+@app.route('/admin-xml', methods=['POST', 'OPTIONS'])
+def admin_xml_2():
+    pass
 
 
 @app.route('/search-ip', methods=['POST', 'OPTIONS'])
@@ -335,6 +342,8 @@ def user_management():
     if request.method == 'GET':
         if 'user' not in session:
             return redirect(url_for('login'))
+        if not session['user'][3] == 1:
+            return redirect(url_for('error404'))
         print(session['user'])
         if session['user'][3] != 1:
             return redirect(url_for('error404'))

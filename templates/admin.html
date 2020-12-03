@@ -220,17 +220,31 @@
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label>Exclude VRF</label>
-                                                <textarea id="exclude_vrf" class="form-control"></textarea>
+                                                <textarea id="exclude_vrf" class="form-control">
+                                                    management
+                                                    dxc_oob
+                                                </textarea>
                                             </div>
                                             <div class="form-group">
                                                 <label>Exclude ipnexthop</label>
-                                                <textarea id="exclude_ipnexthop" class="form-control"></textarea>
+                                                <textarea id="exclude_ipnexthop" class="form-control">
+                                                    10.234.125.70
+                                                    10.234.126.48
+                                                    10.234.126.52
+                                                </textarea>
                                             </div>
                                         </div>
                                         <div class="col-md-8">
                                             <div class="form-group">
                                                 <label>Map ipnexthop</label>
-                                                <textarea id="map_ipnexthop" class="form-control" rows="6"></textarea>
+                                                <textarea id="map_ipnexthop" class="form-control" rows="6">
+                                                    10.234.125.14, 10.234.125.18 = PDC DC OOB
+                                                    10.234.125.62 = PDC-DC-FW
+                                                    10.234.126.6 = PDC DCW HORIZON
+                                                    10.234.126.29, 10.234.126.37 = PDC DCI
+                                                    10.245.128.225 = PDC ANYCAST-GTM
+                                                    10.111.250.45, 10.111.250.48 = AAA
+                                                </textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -238,12 +252,12 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <input class="form-control" data-class="table_key_2" value="ifname" required>
+                                                    <input class="form-control" value="ifname(if exist) + clientname" disabled>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <input class="form-control" data-class="table_name_2" value="L3" required>
+                                                    <input class="form-control" value="L3" disabled>
                                                 </div>
                                             </div>
                                         </div>
@@ -511,6 +525,54 @@
         xmlFormData.append('table_fields', JSON.stringify(table_fields));
         $.ajax({
             url: "{{url_for('admin_xml')}}",
+            method: 'post',
+            data: xmlFormData,
+            contentType: false,
+            cache: false,
+            processData: false,
+            mimeType: 'multipart/form-data',
+            success: function (res) {
+                console.log("res: ", res);
+                res = JSON.parse(res);
+                if (res.status === 'success') customAlert("Table is created successfully", true);
+                else customAlert(res.message);
+                setTimeout(function () {
+                    // location.reload();
+                }, 2500);
+            }
+        })
+    });
+    $('#xml-form-2').on('submit', function (e) {
+        e.preventDefault();
+        let xmlFormData = new FormData();
+        let xmlTag = $('#xml_file_2');
+        let jsonTag = $('#json_file_2');
+        if (xmlTag[0].files.length > 0) xmlFormData.append('xml_file', xmlTag[0].files[0]);
+        else if (jsonTag[0].files.length > 0) xmlFormData.append('json_file', jsonTag[0].files[0]);
+        else {
+            alert("Select a xml or json file");
+            return;
+        }
+        let table_keys = [];
+        let table_fields = [];
+        let table_name = $('#xml_table_name_2').val();
+        $('.table-names-2 input[data-class="table_key_2"]').each(function () {
+            table_keys.push($(this).val())
+        });
+        $('.table-names input[data-class="table_name_2"]').each(function () {
+            table_fields.push($(this).val())
+        });
+        let exclude_vrf = $('#exclude_vrf').val();
+        let exclude_ipnexthop = $('#exclude_ipnexthop').val();
+        let map_ipnexthop = $('#map_ipnexthop').val();
+        xmlFormData.append('table_name', table_name);
+        xmlFormData.append('exclude_vrf', exclude_vrf);
+        xmlFormData.append('exclude_ipnexthop', exclude_ipnexthop);
+        xmlFormData.append('map_ipnexthop', map_ipnexthop);
+        xmlFormData.append('table_keys', JSON.stringify(table_keys));
+        xmlFormData.append('table_fields', JSON.stringify(table_fields));
+        $.ajax({
+            url: "{{url_for('admin_xml_2')}}",
             method: 'post',
             data: xmlFormData,
             contentType: false,
