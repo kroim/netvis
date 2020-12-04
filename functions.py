@@ -299,6 +299,7 @@ def rt_to_db(file_type, filename, table_name, str_vrf, str_ipnexthop, str_map, t
                     conn.commit()
                     # if dt_id > 2:
                     #     break
+        db_record_time(table_name)
         return {'status': 'success'}
 
 
