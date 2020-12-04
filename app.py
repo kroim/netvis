@@ -177,9 +177,44 @@ def admin_xml():
             return jsonify({'status': 'error', 'message': 'Failed to upload file'})
 
 
-@app.route('/admin-xml', methods=['POST', 'OPTIONS'])
+@app.route('/admin-xml-2', methods=['POST', 'OPTIONS'])
 def admin_xml_2():
-    pass
+    if 'user' not in session:
+        return jsonify({'status': 'error', 'message': 'You are not logged in'})
+    if request.method == 'OPTIONS':
+        headers = {
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
+            'Access-Control-Max-Age': 1000,
+            'Access-Control-Allow-Headers': 'origin, x-csrftoken, content-type, accept',
+        }
+        return '', 200, headers
+    try:
+        file = request.files['xml_file']
+        xml_json_flag = 'xml'
+    except Exception as xml_error:
+        print("xml_error: ", xml_error)
+        try:
+            file = request.files['json_file']
+            xml_json_flag = 'json'
+        except Exception as json_error:
+            print('json_error: ', json_error)
+            return jsonify({'status': 'error', 'message': 'File is not selected'})
+    if not file or not file.filename:
+        return jsonify({'status': 'error', 'message': 'File is not selected'})
+    table_name = request.form['table_name']
+    exclude_vrf = request.form['exclude_vrf']
+    exclude_ipnexthop = request.form['exclude_ipnexthop']
+    map_ipnexthop = request.form['map_ipnexthop']
+    table_keys = json.loads(request.form['table_keys'])
+    table_fields = json.loads(request.form['table_fields'])
+    filename = os.path.join(uploads_dir, file.filename)
+    file.save(filename)
+    table_name = table_name.replace('-', '_').strip()
+    rt_res = functions.rt_to_db(xml_json_flag, filename, table_name, exclude_vrf, exclude_ipnexthop, map_ipnexthop, table_keys, table_fields)
+    if rt_res['status'] == 'error':
+        return jsonify(rt_res)
+    return jsonify({'status': 'success', 'message': 'success added table'}), 201
 
 
 @app.route('/search-ip', methods=['POST', 'OPTIONS'])

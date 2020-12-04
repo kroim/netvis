@@ -220,31 +220,25 @@
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label>Exclude VRF</label>
-                                                <textarea id="exclude_vrf" class="form-control">
-                                                    management
-                                                    dxc_oob
-                                                </textarea>
+                                                <textarea id="exclude_vrf" class="form-control">management
+dxc_oob</textarea>
                                             </div>
                                             <div class="form-group">
                                                 <label>Exclude ipnexthop</label>
-                                                <textarea id="exclude_ipnexthop" class="form-control">
-                                                    10.234.125.70
-                                                    10.234.126.48
-                                                    10.234.126.52
-                                                </textarea>
+                                                <textarea id="exclude_ipnexthop" class="form-control">10.234.125.70
+10.234.126.48
+10.234.126.52</textarea>
                                             </div>
                                         </div>
                                         <div class="col-md-8">
                                             <div class="form-group">
                                                 <label>Map ipnexthop</label>
-                                                <textarea id="map_ipnexthop" class="form-control" rows="6">
-                                                    10.234.125.14, 10.234.125.18 = PDC DC OOB
-                                                    10.234.125.62 = PDC-DC-FW
-                                                    10.234.126.6 = PDC DCW HORIZON
-                                                    10.234.126.29, 10.234.126.37 = PDC DCI
-                                                    10.245.128.225 = PDC ANYCAST-GTM
-                                                    10.111.250.45, 10.111.250.48 = AAA
-                                                </textarea>
+                                                <textarea id="map_ipnexthop" class="form-control" rows="6">10.234.125.14, 10.234.125.18 = PDC DC OOB
+10.234.125.62 = PDC-DC-FW
+10.234.126.6 = PDC DCW HORIZON
+10.234.126.29, 10.234.126.37 = PDC DCI
+10.245.128.225 = PDC ANYCAST-GTM
+10.111.250.45, 10.111.250.48 = AAA</textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -571,6 +565,7 @@
         xmlFormData.append('map_ipnexthop', map_ipnexthop);
         xmlFormData.append('table_keys', JSON.stringify(table_keys));
         xmlFormData.append('table_fields', JSON.stringify(table_fields));
+        $('#xml-form-2 button[type="submit"]').attr('disabled', true).text("Submitting ...");
         $.ajax({
             url: "{{url_for('admin_xml_2')}}",
             method: 'post',
@@ -587,6 +582,7 @@
                 setTimeout(function () {
                     // location.reload();
                 }, 2500);
+                $('#xml-form-2 button[type="submit"]').attr('disabled', false).text("Submit");
             }
         })
     });

@@ -1,5 +1,6 @@
-import datetime
 
-date_string = str(datetime.datetime.now())
-cur_date = date_string.split('.')[0]
-print(cur_date)
+li = ['a', 'b', 'new', 'mpilgrim', 'z', 'example', 'new', 'two', 'elements']
+item = 'example1'
+if item in li:
+    dex = li.index(item)
+    print(dex)
