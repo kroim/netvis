@@ -75,10 +75,11 @@ def func_search_ip(ips, dbs):
                             continue
                         if ipaddress.IPv4Address(ip) in ipaddress.IPv4Network(net[1]):
                             net = net + (pci_status,)
+                            net = net + (ip,)
                             search_res.append(net)
                             exist_flag = True
                 if not exist_flag:
-                    search_res.append(('None', ip, 'N/A', 'N/A', 'N/A', 'N/A', 'N/A', pci_status))
+                    search_res.append(('None', ip, 'N/A', 'N/A', 'N/A', 'N/A', 'N/A', pci_status, ip))
             print(search_res)
     except Error as e:
         print(e)

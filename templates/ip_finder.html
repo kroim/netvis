@@ -325,21 +325,14 @@
 
             function BindJqurery(jsondata, dropid) {
                 /*Function used to convert the JSON array to select tag*/
-
                 var count = jsondata.length;
-                //console.log(count);
-
                 var data = "";
                 var table = "<table class='table table-bordered table-striped'>";
                 table += "<tr style='background:#ffffc5;'>";
                 table += "<td style='font-weight:bold;font-size:14'>Server Name</td><td style='font-weight:bold;font-size:14'>Port Type</td><td style='font-weight:bold;font-size:14'>Vlan's Allowed</td><td style='font-weight:bold;font-size:14'>Switch</td><td style='font-weight:bold;font-size:14'>Interface</td><td style='font-weight:bold;font-size:14'>BPDU Guard</td><td style='font-weight:bold;font-size:14'>Port Fast</td><td style='font-weight:bold;font-size:14'>MTU</td><td style='font-weight:bold;font-size:14'>Speed</td><td style='font-weight:bold;font-size:14'>Admin State UP</td>";
                 table += "</tr>";
-
-                ;
                 $.each(jsondata, function (key, value) {
-
                     if (key == (count - 1)) {
-
                         var module1 = value["Module"];
                         if (typeof module1 === "undefined") {
                             module1 = "1";
@@ -553,11 +546,12 @@
                                                             <tr>
                                                                 <td style="width: 15%">IP</td>
                                                                 <td style="width: 20%">Location</td>
-                                                                <td style="width: 25%">VRF</td>
-                                                                <td style="width: 15%">L3</td>
-                                                                <td style="width: 9%">MTU</td>
+                                                                <td style="width: 20%">VRF</td>
+                                                                <td style="width: 12%">L3</td>
+                                                                <td style="width: 10%">MTU</td>
                                                                 <td style="width: 9%">TAG</td>
                                                                 <td style="width: 7%">PCI/PII</td>
+                                                                <td style="width: 7%">Input</td>
                                                             </tr>
                                                             </thead>
                                                             <tbody>
@@ -572,57 +566,6 @@
                                     </ul>
                                 </li>
                             </div>
-
-
-                            <!--                            <script>-->
-                            <!--                                $(function () {-->
-                            <!--                                    $("#jsGrid1").jsGrid({-->
-                            <!--                                        height: "100%",-->
-                            <!--                                        width: "100%",-->
-                            <!--                                        sorting: true,-->
-                            <!--                                        paging: false,-->
-                            <!--                                        autoload: true,-->
-                            <!--                                        controller: db,-->
-                            <!--                                        fields: [-->
-                            <!--                                            {name: "IP", type: "text", width: 100},-->
-                            <!--                                            {name: "Location", type: "text", width: 50},-->
-                            <!--                                            {name: "VRF", type: "text", width: 50},-->
-                            <!--                                            {name: "L3", type: "text", width: 50},-->
-                            <!--                                            {name: "MTU", type: "text", width: 50},-->
-                            <!--                                            {name: "TAG", type: "text", width: 50}-->
-                            <!--                                        ]-->
-                            <!--                                    });-->
-                            <!--                                });-->
-                            <!--                            </script>-->
-
-
-                            <script>
-                                function process_token() {
-                                    var username = $("#ogn_username").val();
-                                    var password = $("#ogn_password").val();
-                                    console.log(username, password);
-                                    var token_data = username + ":" + password;
-                                    var auth_header = btoa(token_data);
-                                    console.log(auth_header);
-                                    $.ajax({
-                                        type: "POST",
-                                        url: "https://10.130.16.169/rest/logon",
-
-                                        data: {
-                                            'authorization': "Basic" + " " + auth_header,
-                                            'expirationTime': 300000,
-                                            csrfmiddlewaretoken: '{{ csrf_token }}'
-
-                                        },
-                                        contentType: "application/json",
-                                        async: false,
-                                        success: function (data) {
-                                            $("#ogn_token").html(data);
-                                        }
-                                    });
-
-                                }
-                            </script>
 
                             <! -- PARENT1 and Child 2 -->
                             <li class="endpoint child2">
@@ -1098,7 +1041,8 @@
                             + rItem[4] + '</td><td>'
                             + rItem[5] + '</td><td>'
                             + rItem[6] + '</td><td>'
-                            + rItem[7] + '</td></tr>';
+                            + rItem[7] + '</td><td>'
+                            + rItem[8] + '</td></tr>';
                     }
                     if (tbody_html !== '') {
                         ipTable.destroy();
