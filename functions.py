@@ -262,10 +262,14 @@ def rt_to_db(file_type, filename, table_name, str_vrf, str_ipnexthop, str_map, t
                         path_item = row_path[path_item_index]
                         # print("path_item: ", path_item)
                         if dt_l3 == '':
-                            if 'ifname' in path_item:
-                                dt_l3 = path_item['ifname'] + path_item['clientname']
-                            else:
+                            if 'ifname' in path_item and 'clientname' in path_item:
+                                dt_l3 = path_item['ifname'] + ' ' + path_item['clientname']
+                            elif not 'ifname' in path_item and 'clientname' in path_item:
                                 dt_l3 = path_item['clientname']
+                            elif 'ifname' in path_item and not 'clientname' in path_item:
+                                dt_l3 = path_item['ifname']
+                            else:
+                                dt_l3 = 'N/A'
                         if dt_mtu == '':
                             if 'mtu' in path_item:
                                 dt_mtu = path_item['mtu']
@@ -279,23 +283,27 @@ def rt_to_db(file_type, filename, table_name, str_vrf, str_ipnexthop, str_map, t
                         if 'ipnexthop' in path_item:
                             ip_location = path_item['ipnexthop']
                         else:
-                            ip_location = 'N/A'
+                            ip_location = table_name
                         if ip_location in ex_ipnexthop:
                             continue
                         if ip_location in map_ips:
                             dt_location = map_locations[map_ips.index(ip_location)]
                         else:
-                            if not dt_location == '':
-                                dt_location = dt_location + ", " + ip_location
-                            else:
+                            if dt_location == '':
                                 dt_location = ip_location
+                            elif not dt_location in map_ips and not ip_location == table_name:
+                                    dt_location = dt_location + ", " + ip_location
+                            elif not dt_location in map_ips and ip_location == table_name:
+                                dt_location = dt_location
+                            else:
+                                dt_location = table_name
                     if dt_location == '':
                         continue
                     dt_id = dt_id + 1
                     dt_insert_sql = "INSERT INTO " + table_name + " (id, IP, Location, VRF, L3, MTU, TAG) VALUES ("
                     dt_insert_sql = dt_insert_sql + str(dt_id) + ", '" + dt_ip + "', '" + dt_location + "', '"
                     dt_insert_sql = dt_insert_sql + dt_vrf + "', '" + dt_l3 + "', '" + dt_mtu + "', '" + dt_tag + "')"
-                    # print(dt_insert_sql)
+                    print(dt_insert_sql)
                     cur.execute(dt_insert_sql)
                     conn.commit()
                     # if dt_id > 2:

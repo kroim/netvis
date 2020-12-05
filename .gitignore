@@ -25,6 +25,7 @@ pip-delete-this-directory.txt
 # Django stuff:
 
 # Flask stuff:
+*.db
 
 # Environments
 /.idea
