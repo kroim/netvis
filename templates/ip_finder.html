@@ -544,14 +544,14 @@
                                                         <table class="table table-striped table-bordered" id="ip_search_table" style="width: 100%;">
                                                             <thead>
                                                             <tr>
-                                                                <td style="width: 15%">IP</td>
-                                                                <td style="width: 20%">Location</td>
-                                                                <td style="width: 20%">VRF</td>
-                                                                <td style="width: 12%">L3</td>
+                                                                <td style="width: 10%">Input</td>
+                                                                <td style="width: 10%">IP</td>
+                                                                <td style="width: 25%">Location</td>
+                                                                <td style="width: 15%">VRF</td>
+                                                                <td style="width: 10%">L3</td>
                                                                 <td style="width: 10%">MTU</td>
-                                                                <td style="width: 9%">TAG</td>
-                                                                <td style="width: 7%">PCI/PII</td>
-                                                                <td style="width: 7%">Input</td>
+                                                                <td style="width: 10%">TAG</td>
+                                                                <td style="width: 10%">PCI/PII</td>
                                                             </tr>
                                                             </thead>
                                                             <tbody>
@@ -1035,14 +1035,14 @@
                         let rItem = rItems[i];
                         console.log(rItem);
                         tbody_html += '<tr id="ip_' + rItem[0] + '"><td>'
+                            + rItem[8] + '</td><td>'
                             + rItem[1] + '</td><td>'
                             + rItem[2] + '</td><td>'
                             + rItem[3] + '</td><td>'
                             + rItem[4] + '</td><td>'
                             + rItem[5] + '</td><td>'
                             + rItem[6] + '</td><td>'
-                            + rItem[7] + '</td><td>'
-                            + rItem[8] + '</td></tr>';
+                            + rItem[7] + '</td></tr>';
                     }
                     if (tbody_html !== '') {
                         ipTable.destroy();

@@ -232,7 +232,7 @@ def search_ip_finder():
             return '', 200, headers
 
         ip_array = request.get_json()['ip_array']
-        dbs = ['DC_CDC_DCS_PRD', 'DC_CDC_DCS_STG', 'DC_DFW_DCS', 'DC_PDC_DCS_PRD', 'DC_PDC_DCS_STG', 'DC_PHX_DCS']
+        dbs = ['DC_CDC_DCS_PRD', 'DC_CDC_DCS_STG', 'DC_DFW_DCS', 'DC_PDC_DCS_PRD', 'DC_PDC_DCS_STG', 'DC_PHX_DCS', "PCI_DCW"]
         search_ips = functions.func_search_ip(ip_array, dbs)
         return jsonify({'status': 'success', 'message': search_ips})
 

@@ -7,7 +7,7 @@ import xmltodict
 import json
 import xml.etree.ElementTree as ET
 from xml.parsers.expat import ExpatError
-
+public_ip_tables = ["PDC_DCI_OUTSIDE", "CDC_DCI_OUTSIDE", "PHX_DCI_OUTSIDE", "DFW_DCI_OUTSIDE"]
 def get_current_time():
     date_string = str(datetime.datetime.now())
     return date_string.split('.')[0]
@@ -16,6 +16,44 @@ def custom_find_key(element, json_data):
     for i in range(0, len(paths)):
         json_data = json_data[paths[i]]
     return json_data
+def check_existing_table(table_name):
+    try:
+        db = sqlite3.connect('database.db')
+        cursor = db.cursor()
+        check_table_sql = "SELECT count(name) FROM sqlite_master WHERE type='table' AND name='" + table_name + "'"
+        cursor.execute(check_table_sql)
+        res = cursor.fetchone()
+        db.close()
+        if res[0] == 0:
+            return False
+        else:
+            return True
+    except:
+        return False
+def select_max_range_item_in_search(search_array, search_item):
+    check_flag = False
+    pop_indexes = []
+    for i in range(len(search_array)):
+        item = search_array[i]
+        if not item[8] == search_item[8]:
+            continue
+        arr_ip = item[1]
+        item_ip = search_item[1]
+        if not len(arr_ip.split('/')) == 2 or not len(item_ip.split('/')) == 2:
+            continue
+        exist_mask = int(arr_ip.split('/')[1])
+        new_mask = int(item_ip.split('/')[1])
+        if new_mask > exist_mask:
+            pop_indexes.append(i)
+        else:
+            check_flag = True
+    if check_flag:
+        return search_array
+    if len(pop_indexes) > 0:
+        for index in pop_indexes:
+            search_array.pop(index)
+    search_array.append(search_item)
+    return search_array
 def excel_database(file, table_name):
     df = pd.read_excel(file)
     df_array = df.to_numpy()
@@ -68,15 +106,20 @@ def func_search_ip(ips, dbs):
                     pci_status = pci_res[0][2]
                 exist_flag = False
                 for db in dbs:
+                    if not check_existing_table(db):
+                        continue
                     cur.execute("SELECT * FROM " + db)
                     nets = cur.fetchall()
                     for net in nets:
                         if net[1] == 'N/A':
                             continue
                         if ipaddress.IPv4Address(ip) in ipaddress.IPv4Network(net[1]):
+                            if net[1] == "0.0.0.0/0" and db not in public_ip_tables:
+                                continue
                             net = net + (pci_status,)
                             net = net + (ip,)
-                            search_res.append(net)
+                            # search_res.append(net)
+                            search_res = select_max_range_item_in_search(search_res, net)
                             exist_flag = True
                 if not exist_flag:
                     search_res.append(('None', ip, 'N/A', 'N/A', 'N/A', 'N/A', 'N/A', pci_status, ip))
@@ -310,8 +353,6 @@ def rt_to_db(file_type, filename, table_name, str_vrf, str_ipnexthop, str_map, t
                     #     break
         db_record_time(table_name)
         return {'status': 'success'}
-
-
 def get_value_by_key_from_dict(key, dictionary):
     for k, v in dictionary.items():
         if k == key:
