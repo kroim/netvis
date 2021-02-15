@@ -1,0 +1,643 @@
+{
+    "TABLE_vlanbriefxbrief": {
+        "ROW_vlanbriefxbrief": [
+            {
+                "vlanshowbr-vlanid": "1", 
+                "vlanshowbr-vlanid-utf": "1", 
+                "vlanshowbr-vlanname": "default", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": [
+                    "port-channel20,port-channel251,Ethernet1/9,Ethernet1/10,Ethernet1/11,Ethernet1/12,Ethernet1/13,Ethernet1/14,Ethernet1/15,Ethernet1/16,Ethernet1/17,Ethernet1/18,Ethernet1/19,Ethernet1/20,Ethernet1/21,Ethernet1/22,Ethernet1/23,Ethernet1/24,Ethernet1/25,Ethernet1/26,Ethernet1/27,Ethernet1/28,Ethernet1/29,Ethernet1/30,Ethernet1/31,Ethernet1/32,Ethernet1/33,Ethernet1/34,Ethernet1/35,Ethernet1/36,Ethernet1/37,Ethernet1/38,Ethernet1/39,Ethernet1/40,Ethernet1/41,Ethernet1/42,Ethernet1/43,Ethernet1/44,Ethernet1/45,Ethernet1/46,Ethernet1/47,Ethernet2/1,Ethernet2/2,Ethernet2/3,Ethernet2/4,Ethernet2/5,Ethernet2/6,Ethernet2/7,Ethernet2/8,Ethernet2/9,Ethernet2/10,Ethernet2/11,Ethernet2/12,Ethernet101/1/1,Ethernet101/1/2,Ethernet101/1/3,Ethernet101/1/4,Ethernet101/1/5,Ethernet101/1/6,Ethernet101/1/7,Ethernet101/1/8,Ethernet101/1/9,Ethernet101/1/10,Ethernet101/1/11", 
+                    "Ethernet101/1/12,Ethernet101/1/13,Ethernet101/1/14,Ethernet101/1/15,Ethernet101/1/16,Ethernet101/1/17,Ethernet101/1/18,Ethernet101/1/19,Ethernet101/1/20,Ethernet101/1/21,Ethernet101/1/22,Ethernet101/1/23,Ethernet101/1/24,Ethernet101/1/25,Ethernet101/1/26,Ethernet101/1/27,Ethernet101/1/28,Ethernet101/1/29,Ethernet101/1/30,Ethernet101/1/31,Ethernet101/1/32,Ethernet101/1/33,Ethernet101/1/34,Ethernet101/1/35,Ethernet101/1/36,Ethernet101/1/37,Ethernet101/1/38,Ethernet101/1/39,Ethernet101/1/40,Ethernet101/1/41,Ethernet102/1/6,Ethernet102/1/7,Ethernet102/1/8,Ethernet102/1/9,Ethernet102/1/10,Ethernet102/1/11,Ethernet102/1/12,Ethernet102/1/13,Ethernet102/1/18,Ethernet102/1/19,Ethernet102/1/21,Ethernet102/1/22,Ethernet102/1/23,Ethernet102/1/27,Ethernet102/1/28,Ethernet102/1/29,Ethernet102/1/30,Ethernet102/1/31,Ethernet102/1/32,Ethernet102/1/33,Ethernet102/1/34,Ethernet102/1/35,Ethernet102/1/36,Ethernet102/1/37,Ethernet102/1/38,Ethernet102/1/39,Ethernet102/1/40,Ethernet102/1/41,Ethernet102/1/42,Ethernet102/1/43,Ethernet102/1/44,Ethernet102/1/45,Ethernet102/1/46,Ethernet102/1/47", 
+                    "Ethernet102/1/48,Ethernet103/1/1,Ethernet103/1/2,Ethernet103/1/3,Ethernet103/1/4,Ethernet103/1/5,Ethernet103/1/6,Ethernet103/1/7,Ethernet103/1/8,Ethernet103/1/9,Ethernet103/1/10,Ethernet103/1/11,Ethernet103/1/12,Ethernet103/1/13,Ethernet103/1/14,Ethernet103/1/15,Ethernet103/1/16,Ethernet103/1/17,Ethernet103/1/18,Ethernet103/1/19,Ethernet103/1/20,Ethernet103/1/21,Ethernet103/1/22,Ethernet103/1/23,Ethernet103/1/24,Ethernet103/1/25,Ethernet103/1/26,Ethernet103/1/27,Ethernet103/1/28,Ethernet103/1/29,Ethernet103/1/30,Ethernet103/1/31,Ethernet103/1/32,Ethernet103/1/33,Ethernet103/1/34,Ethernet103/1/35,Ethernet103/1/36,Ethernet103/1/37,Ethernet103/1/38,Ethernet103/1/39,Ethernet103/1/40,Ethernet103/1/41,Ethernet103/1/42,Ethernet103/1/43,Ethernet103/1/44,Ethernet103/1/45,Ethernet103/1/46,Ethernet103/1/47,Ethernet103/1/48,Ethernet104/1/1,Ethernet104/1/2,Ethernet104/1/3,Ethernet104/1/4,Ethernet104/1/5,Ethernet104/1/6,Ethernet104/1/7,Ethernet104/1/8,Ethernet104/1/9,Ethernet104/1/10,Ethernet104/1/11,Ethernet104/1/12,Ethernet104/1/13,Ethernet104/1/14,Ethernet104/1/15", 
+                    "Ethernet104/1/16,Ethernet104/1/17,Ethernet104/1/18,Ethernet104/1/19,Ethernet104/1/20,Ethernet104/1/21,Ethernet104/1/22,Ethernet104/1/23,Ethernet104/1/24,Ethernet104/1/25,Ethernet104/1/26,Ethernet104/1/27,Ethernet104/1/28,Ethernet104/1/29,Ethernet104/1/30,Ethernet104/1/31,Ethernet104/1/32,Ethernet104/1/33,Ethernet104/1/34,Ethernet104/1/35,Ethernet104/1/36,Ethernet104/1/37,Ethernet104/1/38,Ethernet104/1/39,Ethernet104/1/40,Ethernet104/1/41,Ethernet104/1/42,Ethernet104/1/43,Ethernet104/1/44,Ethernet104/1/45,Ethernet104/1/46,Ethernet104/1/47,Ethernet104/1/48"
+                ]
+            }, 
+            {
+                "vlanshowbr-vlanid": "13", 
+                "vlanshowbr-vlanid-utf": "13", 
+                "vlanshowbr-vlanname": "MOD2_Yellow_Green_zone_vlan_13", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "17", 
+                "vlanshowbr-vlanid-utf": "17", 
+                "vlanshowbr-vlanname": "MOD2_Green_Blue_zone_vlan_17", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "18", 
+                "vlanshowbr-vlanid-utf": "18", 
+                "vlanshowbr-vlanname": "MOD2_Blue_zone_vlan_18", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "100", 
+                "vlanshowbr-vlanid-utf": "100", 
+                "vlanshowbr-vlanname": "MOD2_Yellow_Green_zone_vlan_100", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "101", 
+                "vlanshowbr-vlanid-utf": "101", 
+                "vlanshowbr-vlanname": "MOD2_Yellow_Green_zone_vlan_101", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "102", 
+                "vlanshowbr-vlanid-utf": "102", 
+                "vlanshowbr-vlanname": "MOD2_Yellow_Green_zone_vlan_102", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "103", 
+                "vlanshowbr-vlanid-utf": "103", 
+                "vlanshowbr-vlanname": "MOD2_Yellow_Green_zone_vlan_103", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "104", 
+                "vlanshowbr-vlanid-utf": "104", 
+                "vlanshowbr-vlanname": "MOD2_Yellow_Green_zone_vlan_104", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "105", 
+                "vlanshowbr-vlanid-utf": "105", 
+                "vlanshowbr-vlanname": "MOD2_Yellow_Green_zone_vlan_105", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "106", 
+                "vlanshowbr-vlanid-utf": "106", 
+                "vlanshowbr-vlanname": "MOD2_Yellow_Green_zone_vlan_106", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "107", 
+                "vlanshowbr-vlanid-utf": "107", 
+                "vlanshowbr-vlanname": "MOD2_Yellow_Green_zone_vlan_107", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "108", 
+                "vlanshowbr-vlanid-utf": "108", 
+                "vlanshowbr-vlanname": "MOD2_Yellow_Green_zone_vlan_108", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "109", 
+                "vlanshowbr-vlanid-utf": "109", 
+                "vlanshowbr-vlanname": "MOD2_Yellow_Green_zone_vlan_109", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "110", 
+                "vlanshowbr-vlanid-utf": "110", 
+                "vlanshowbr-vlanname": "MOD2_Yellow_Green_zone_vlan_110", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "111", 
+                "vlanshowbr-vlanid-utf": "111", 
+                "vlanshowbr-vlanname": "MOD2_Yellow_Green_zone_vlan_111", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "112", 
+                "vlanshowbr-vlanid-utf": "112", 
+                "vlanshowbr-vlanname": "MOD2_Yellow_Green_zone_vlan_112", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "113", 
+                "vlanshowbr-vlanid-utf": "113", 
+                "vlanshowbr-vlanname": "MOD2_Yellow_Green_zone_vlan_113", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "114", 
+                "vlanshowbr-vlanid-utf": "114", 
+                "vlanshowbr-vlanname": "MOD2_Yellow_Green_zone_vlan_114", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "115", 
+                "vlanshowbr-vlanid-utf": "115", 
+                "vlanshowbr-vlanname": "MOD2_Yellow_Green_zone_vlan_115", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "116", 
+                "vlanshowbr-vlanid-utf": "116", 
+                "vlanshowbr-vlanname": "MOD2_Yellow_Green_zone_vlan_116", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "117", 
+                "vlanshowbr-vlanid-utf": "117", 
+                "vlanshowbr-vlanname": "MOD2_Yellow_Green_zone_vlan_117", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "118", 
+                "vlanshowbr-vlanid-utf": "118", 
+                "vlanshowbr-vlanname": "MOD2_Yellow_Green_zone_vlan_118", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "200", 
+                "vlanshowbr-vlanid-utf": "200", 
+                "vlanshowbr-vlanname": "MOD2_Green_Blue_zone_vlan_200", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "201", 
+                "vlanshowbr-vlanid-utf": "201", 
+                "vlanshowbr-vlanname": "MOD2_Green_Blue_zone_vlan_201", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "202", 
+                "vlanshowbr-vlanid-utf": "202", 
+                "vlanshowbr-vlanname": "MOD2_Green_Blue_zone_vlan_202", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "203", 
+                "vlanshowbr-vlanid-utf": "203", 
+                "vlanshowbr-vlanname": "MOD2_Green_Blue_zone_vlan_203", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "204", 
+                "vlanshowbr-vlanid-utf": "204", 
+                "vlanshowbr-vlanname": "MOD2_Green_Blue_zone_vlan_204", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "205", 
+                "vlanshowbr-vlanid-utf": "205", 
+                "vlanshowbr-vlanname": "MOD2_Green_Blue_zone_vlan_205", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "206", 
+                "vlanshowbr-vlanid-utf": "206", 
+                "vlanshowbr-vlanname": "MOD2_Green_Blue_zone_vlan_206", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "207", 
+                "vlanshowbr-vlanid-utf": "207", 
+                "vlanshowbr-vlanname": "MOD2_Green_Blue_zone_vlan_207", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "300", 
+                "vlanshowbr-vlanid-utf": "300", 
+                "vlanshowbr-vlanname": "MOD2_Blue_zone_vlan_300", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "301", 
+                "vlanshowbr-vlanid-utf": "301", 
+                "vlanshowbr-vlanname": "MOD2_Blue_zone_vlan_301", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "302", 
+                "vlanshowbr-vlanid-utf": "302", 
+                "vlanshowbr-vlanname": "MOD2_Blue_zone_vlan_302", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "303", 
+                "vlanshowbr-vlanid-utf": "303", 
+                "vlanshowbr-vlanname": "MOD2_Blue_zone_vlan_303", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "304", 
+                "vlanshowbr-vlanid-utf": "304", 
+                "vlanshowbr-vlanname": "MOD2_Blue_zone_vlan_304", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "305", 
+                "vlanshowbr-vlanid-utf": "305", 
+                "vlanshowbr-vlanname": "MOD2_Blue_zone_vlan_305", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "306", 
+                "vlanshowbr-vlanid-utf": "306", 
+                "vlanshowbr-vlanname": "MOD2_Blue_zone_vlan_306", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "951", 
+                "vlanshowbr-vlanid-utf": "951", 
+                "vlanshowbr-vlanname": "MOD1_Stage_Green_Front_to_C1", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "952", 
+                "vlanshowbr-vlanid-utf": "952", 
+                "vlanshowbr-vlanname": "MOD1_Stage_Blue_Front_to_C2", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "1200", 
+                "vlanshowbr-vlanid-utf": "1200", 
+                "vlanshowbr-vlanname": "MOD1-Stage_Green_Back_1", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6,Ethernet102/1/1"
+            }, 
+            {
+                "vlanshowbr-vlanid": "1205", 
+                "vlanshowbr-vlanid-utf": "1205", 
+                "vlanshowbr-vlanname": "MOD1-Stage_Green_PHS_Mngd", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,port-channel1000,port-channel1001,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6,Ethernet102/1/14,Ethernet102/1/15,Ethernet102/1/24"
+            }, 
+            {
+                "vlanshowbr-vlanid": "1206", 
+                "vlanshowbr-vlanid-utf": "1206", 
+                "vlanshowbr-vlanname": "Stage_Green_4", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "1207", 
+                "vlanshowbr-vlanid-utf": "1207", 
+                "vlanshowbr-vlanname": "Sharp_Green_PHS", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "1208", 
+                "vlanshowbr-vlanid-utf": "1208", 
+                "vlanshowbr-vlanname": "NetScaler_Green_VIPs1", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "1209", 
+                "vlanshowbr-vlanid-utf": "1209", 
+                "vlanshowbr-vlanname": "NetScaler_Green_Transit", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,port-channel1000,port-channel1001,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6,Ethernet102/1/14,Ethernet102/1/15"
+            }, 
+            {
+                "vlanshowbr-vlanid": "1212", 
+                "vlanshowbr-vlanid-utf": "1212", 
+                "vlanshowbr-vlanname": "UVS_PHS_Stage_selfmanaged", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "1400", 
+                "vlanshowbr-vlanid-utf": "1400", 
+                "vlanshowbr-vlanname": "MOD1_Blue_Stage_1", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6,Ethernet102/1/3,Ethernet102/1/16,Ethernet102/1/17,Ethernet102/1/20,Ethernet102/1/25,Ethernet102/1/26"
+            }, 
+            {
+                "vlanshowbr-vlanid": "1402", 
+                "vlanshowbr-vlanid-utf": "1402", 
+                "vlanshowbr-vlanname": "MOD1-Stage_Blue_PHS_Mngd", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "1404", 
+                "vlanshowbr-vlanid-utf": "1404", 
+                "vlanshowbr-vlanname": "Stage_Blue_3", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "1700", 
+                "vlanshowbr-vlanid-utf": "1700", 
+                "vlanshowbr-vlanname": "MOD1_Prod_Network_Management", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "2015", 
+                "vlanshowbr-vlanid-utf": "2015", 
+                "vlanshowbr-vlanname": "heartbeat_2015", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "2016", 
+                "vlanshowbr-vlanid-utf": "2016", 
+                "vlanshowbr-vlanname": "heartbeat_2016", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "2020", 
+                "vlanshowbr-vlanid-utf": "2020", 
+                "vlanshowbr-vlanname": "heartbeat_2020", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "2028", 
+                "vlanshowbr-vlanid-utf": "2028", 
+                "vlanshowbr-vlanname": "heartbeat_2028", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6,Ethernet102/1/2"
+            }, 
+            {
+                "vlanshowbr-vlanid": "2029", 
+                "vlanshowbr-vlanid-utf": "2029", 
+                "vlanshowbr-vlanname": "heartbeat_2029", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "2034", 
+                "vlanshowbr-vlanid-utf": "2034", 
+                "vlanshowbr-vlanname": "heartbeat_2034", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6,Ethernet102/1/4,Ethernet102/1/5"
+            }, 
+            {
+                "vlanshowbr-vlanid": "2035", 
+                "vlanshowbr-vlanid-utf": "2035", 
+                "vlanshowbr-vlanname": "heartbeat_2035", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "2050", 
+                "vlanshowbr-vlanid-utf": "2050", 
+                "vlanshowbr-vlanname": "heartbeat_2050", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "2051", 
+                "vlanshowbr-vlanid-utf": "2051", 
+                "vlanshowbr-vlanname": "heartbeat_2051", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "2057", 
+                "vlanshowbr-vlanid-utf": "2057", 
+                "vlanshowbr-vlanname": "heartbeat_2057", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "2555", 
+                "vlanshowbr-vlanid-utf": "2555", 
+                "vlanshowbr-vlanname": "STAGE-ASW-MGMT", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "3100", 
+                "vlanshowbr-vlanid-utf": "3100", 
+                "vlanshowbr-vlanname": "STAGE-GREEN-1", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "3101", 
+                "vlanshowbr-vlanid-utf": "3101", 
+                "vlanshowbr-vlanname": "3101-SERVER-GREEN-XENAPP-INFRA", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "3102", 
+                "vlanshowbr-vlanid-utf": "3102", 
+                "vlanshowbr-vlanname": "3102-SERVER-GREEN-XENAPP-SESSION", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "3105", 
+                "vlanshowbr-vlanid-utf": "3105", 
+                "vlanshowbr-vlanname": "3105-SERVER-GREEN-EVS", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "3107", 
+                "vlanshowbr-vlanid-utf": "3107", 
+                "vlanshowbr-vlanname": "NGINX+_PLATFORM_STAGE", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "3275", 
+                "vlanshowbr-vlanid-utf": "3275", 
+                "vlanshowbr-vlanname": "STAGE-BLUE-1", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "3450", 
+                "vlanshowbr-vlanid-utf": "3450", 
+                "vlanshowbr-vlanname": "STAGE-RED-1", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "3575", 
+                "vlanshowbr-vlanid-utf": "3575", 
+                "vlanshowbr-vlanname": "STAGE-GREY-1", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "3576", 
+                "vlanshowbr-vlanid-utf": "3576", 
+                "vlanshowbr-vlanname": "Xenapp-InfMgt-Stage", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "3577", 
+                "vlanshowbr-vlanid-utf": "3577", 
+                "vlanshowbr-vlanname": "EVS-GREEN-GREY-1", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "3725", 
+                "vlanshowbr-vlanid-utf": "3725", 
+                "vlanshowbr-vlanname": "STAGE-GREEN-GREY-1", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "3750", 
+                "vlanshowbr-vlanid-utf": "3750", 
+                "vlanshowbr-vlanname": "STAGE-BLUE-GREY-1", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "3827", 
+                "vlanshowbr-vlanid-utf": "3827", 
+                "vlanshowbr-vlanname": "MOSAIC-STG-HB-1", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6,Ethernet101/1/42,Ethernet101/1/43,Ethernet101/1/44,Ethernet101/1/45,Ethernet101/1/46,Ethernet101/1/47,Ethernet101/1/48"
+            }, 
+            {
+                "vlanshowbr-vlanid": "3828", 
+                "vlanshowbr-vlanid-utf": "3828", 
+                "vlanshowbr-vlanname": "MOSAIC-PRD-HB-2", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "3902", 
+                "vlanshowbr-vlanid-utf": "3902", 
+                "vlanshowbr-vlanname": "dxc_oob_asw1-3", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet1/48,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "3903", 
+                "vlanshowbr-vlanid-utf": "3903", 
+                "vlanshowbr-vlanname": "dxc_oob_asw2-4", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }, 
+            {
+                "vlanshowbr-vlanid": "3967", 
+                "vlanshowbr-vlanid-utf": "3967", 
+                "vlanshowbr-vlanname": "DEFAULT-NULL", 
+                "vlanshowbr-vlanstate": "active", 
+                "vlanshowbr-shutstate": "noshutdown", 
+                "vlanshowplist-ifidx": "port-channel20,port-channel251,Ethernet2/1,Ethernet2/2,Ethernet2/5,Ethernet2/6"
+            }
+        ]
+    }
+}

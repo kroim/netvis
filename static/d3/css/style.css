@@ -1,0 +1,184 @@
+.dropbtn {
+    background-color: white;
+    color: #D2691E;
+    padding: 2px 10px;
+    font-size: 16px;
+    border: 2px solid #D2691E;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 15px;
+}
+.dropdown-content a {
+  color: #D2691E;
+  padding: 4px 10px;
+  text-decoration: none;
+  display: block;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.dropdown-content a:hover {background-color: #D2691E; color: white;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {    background-color: #D2691E; color: white;}
+
+input[type=text] {
+    float: right;
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #2196F3;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 2px 2px 2px 2px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* SSH Buttons */
+.but1 {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 2px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+    border-radius: 15px;
+}
+.but1c {
+    border-color: #DC143C;
+    color: #DC143C;
+}
+.but1c:hover {
+    background-color: #DC143C;
+    color: white;
+}
+
+/* Show Buttons */
+.but2 {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 2px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+    border-radius: 15px;
+}
+.but2c {
+    border-color: #D2691E;
+    color: #D2691E;
+}
+.but2c:hover {
+    background-color: #D2691E;
+    color: white;
+}
+
+/* Search,Snap Buttons */
+.but3 {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 2px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+    border-radius: 15px;
+}
+.but3c {
+    border-color: #2196F3;
+    color: #2196F3;
+}
+.but3c:hover {
+    background-color: #2196F3;
+    color: white;
+}
+input[type=text]:focus {
+    width: 15%;
+}
+
+
+
+/* Main Settings */
+.node {
+    cursor: pointer;
+}
+
+.overlay {
+    background-color: #EEE;
+}
+
+.node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+
+.node text {
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+.link {
+    fill: none;
+    stroke: rgba(200,200,200,0.5);
+    stroke-width: 1.5px;
+}
+.multiParentLink{
+    fill: none;
+    stroke: rgba(200,200,200,0.5);
+    stroke-width: 1.5px;
+}
+.templink {
+    fill: none;
+    stroke: red;
+    stroke-width: 3px;
+}
+
+.ghostCircle.show {
+    display: block;
+}
+
+.ghostCircle, .activeDrag .ghostCircle {
+    display: none;
+}
+
+/*div.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    background: rgba(20, 20, 20, 0.9);
+    border-radius: 10px;
+    pointer-events: none;
+    color: white;
+}*/
+
+tspan:nth-child(2n) {
+  display: block;
+}
+
+:fullscreen {
+    background-color: whitesmoke;
+}
+
+#full-screen-area {
+    display: none;
+}
+
+#full-screen-area:fullscreen {
+    overflow-y: scroll;
+    padding: 10px;
+    display: block;
+}

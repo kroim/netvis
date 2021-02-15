@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<title>Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 25%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=password], select, textarea {
+  width: 25%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.button {
+  background-color: #33A278;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body background="/js/grid.png">
+<form name="pyform" method="POST" action="/cgi-enabled/pull.py" accept-charset="utf-8">
+<h1>Login:</h1>
+<input type="text" name="username" placeholder="Username"/>
+</br>
+<input type="password" name="password" placeholder="Password"/>
+</br>
+<button class="button onclick="myFunction()" type="submit" name="submit" value="Submit">Submit</button>
+<p><small>Pulling data might take some time.....</small></p>
+
+</form>
+<script>
+function myFunction() {
+  alert("Python Script will run on background now ...");
+}
+</script>
+</body>
+</html>

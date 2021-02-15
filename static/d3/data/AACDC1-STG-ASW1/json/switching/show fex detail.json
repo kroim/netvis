@@ -1,0 +1,1418 @@
+{
+    "TABLE_fex_info": {
+        "ROW_fex_info": [
+            {
+                "chas_id": "101", 
+                "descr": "D1.M.070 RU 41", 
+                "fex_state": "Online", 
+                "fex_ver": "7.0(3)I7(6)", 
+                "sw_ver": "7.0(3)I7(6)", 
+                "fex_interim_ver": "7.0(3)I7(6)", 
+                "sw_interim_ver": "7.0(3)I7(6)", 
+                "model": "N2K-C2248TP-E-1GE", 
+                "serial": "FOX2018G104", 
+                "part_no": "73-13671-03", 
+                "card_id": "149", 
+                "mac": "00:da:55:ed:46:82", 
+                "num_macs": "64", 
+                "fex_sw_gen": "12594", 
+                "sw_sw_gen": "21", 
+                "pin_mode": "static", 
+                "max_link": "1", 
+                "fbr_port_control": "Eth1/1", 
+                "fcoe_admin": "false", 
+                "fcoe_oper": "true", 
+                "fex_aa_configured": "false", 
+                "TABLE_fbr_state": {
+                    "ROW_fbr_state": [
+                        {
+                            "fbr_index": "Po101", 
+                            "fbr_oper_state": "Up", 
+                            "fsm_state": "Active"
+                        }, 
+                        {
+                            "fbr_index": "Eth1/1", 
+                            "fbr_oper_state": "Up", 
+                            "fsm_state": "Active"
+                        }, 
+                        {
+                            "fbr_index": "Eth1/2", 
+                            "fbr_oper_state": "Up", 
+                            "fsm_state": "Active"
+                        }
+                    ]
+                }, 
+                "TABLE_fex_port": {
+                    "ROW_fex_port": [
+                        {
+                            "fex_port": "Eth101/1/1", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/2", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/3", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/4", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/5", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/6", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/7", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/8", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/9", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/10", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/11", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/12", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/13", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/14", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/15", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/16", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/17", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/18", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/19", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/20", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/21", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/22", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/23", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/24", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/25", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/26", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/27", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/28", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/29", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/30", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/31", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/32", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/33", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/34", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/35", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/36", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/37", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/38", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/39", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/40", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/41", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/42", 
+                            "fex_port_oper_state": "Up", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/43", 
+                            "fex_port_oper_state": "Up", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/44", 
+                            "fex_port_oper_state": "Up", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/45", 
+                            "fex_port_oper_state": "Up", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/46", 
+                            "fex_port_oper_state": "Up", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/47", 
+                            "fex_port_oper_state": "Up", 
+                            "fbr_port": "Po101"
+                        }, 
+                        {
+                            "fex_port": "Eth101/1/48", 
+                            "fex_port_oper_state": "Up", 
+                            "fbr_port": "Po101"
+                        }
+                    ]
+                }, 
+                "TABLE_logs": {
+                    "ROW_logs": [
+                        {
+                            "log": "06/25/2019 05:20:42.658778: Module register received"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:20:42.659646: State timer stopped"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:20:42.660760: Image Version Mismatch"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:20:42.662099: Registration response sent"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:20:42.662490: Requesting satellite to download image"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:24.493544: Image preload successful."
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:34.686384: Deleting route to FEX"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:34.692698: Module disconnected"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:34.694068: Module Offline"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:34.698415: Deleting route to FEX"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:34.702309: Module disconnected"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:34.703717: Offlining Module"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:34.703731: Alive timer stopped"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:37.12289: Deleting route to FEX"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:37.15763: Module disconnected"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:37.16837: Offlining Module"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:37.16849: Alive timer stopped"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:27:58.646474: Module register received"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:27:58.646933: State timer stopped"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:27:58.648558: Registration response sent"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:27:58.751567: State timer stopped"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:27:58.752189: Module Online Sequence"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:28:03.526121: Module Online"
+                        }
+                    ]
+                }
+            }, 
+            {
+                "chas_id": "102", 
+                "descr": "FEX102-D1.M.066.RU33", 
+                "fex_state": "Online", 
+                "fex_ver": "7.0(3)I7(6)", 
+                "sw_ver": "7.0(3)I7(6)", 
+                "fex_interim_ver": "7.0(3)I7(6)", 
+                "sw_interim_ver": "7.0(3)I7(6)", 
+                "model": "N2K-C2248TP-E-1GE", 
+                "serial": "FOX2132P8R5", 
+                "part_no": "73-13671-03", 
+                "card_id": "149", 
+                "mac": "70:f3:5a:dc:b1:a2", 
+                "num_macs": "64", 
+                "fex_sw_gen": "12594", 
+                "sw_sw_gen": "21", 
+                "pin_mode": "static", 
+                "max_link": "1", 
+                "fbr_port_control": "Eth1/3", 
+                "fcoe_admin": "false", 
+                "fcoe_oper": "true", 
+                "fex_aa_configured": "false", 
+                "TABLE_fbr_state": {
+                    "ROW_fbr_state": [
+                        {
+                            "fbr_index": "Po102", 
+                            "fbr_oper_state": "Up", 
+                            "fsm_state": "Active"
+                        }, 
+                        {
+                            "fbr_index": "Eth1/3", 
+                            "fbr_oper_state": "Up", 
+                            "fsm_state": "Active"
+                        }, 
+                        {
+                            "fbr_index": "Eth1/4", 
+                            "fbr_oper_state": "Up", 
+                            "fsm_state": "Active"
+                        }
+                    ]
+                }, 
+                "TABLE_fex_port": {
+                    "ROW_fex_port": [
+                        {
+                            "fex_port": "Eth102/1/1", 
+                            "fex_port_oper_state": "Up", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/2", 
+                            "fex_port_oper_state": "Up", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/3", 
+                            "fex_port_oper_state": "Up", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/4", 
+                            "fex_port_oper_state": "Up", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/5", 
+                            "fex_port_oper_state": "Up", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/6", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/7", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/8", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/9", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/10", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/11", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/12", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/13", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/14", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/15", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/16", 
+                            "fex_port_oper_state": "Up", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/17", 
+                            "fex_port_oper_state": "Up", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/18", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/19", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/20", 
+                            "fex_port_oper_state": "Up", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/21", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/22", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/23", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/24", 
+                            "fex_port_oper_state": "Up", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/25", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/26", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/27", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/28", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/29", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/30", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/31", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/32", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/33", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/34", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/35", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/36", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/37", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/38", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/39", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/40", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/41", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/42", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/43", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/44", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/45", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/46", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/47", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }, 
+                        {
+                            "fex_port": "Eth102/1/48", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po102"
+                        }
+                    ]
+                }, 
+                "TABLE_logs": {
+                    "ROW_logs": [
+                        {
+                            "log": "06/25/2019 05:20:14.397466: Module register received"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:20:14.397843: State timer stopped"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:20:14.398637: Image Version Mismatch"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:20:14.399585: Registration response sent"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:20:14.399784: Requesting satellite to download image"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:25:29.486971: Image preload successful."
+                        }, 
+                        {
+                            "log": "06/25/2019 05:25:39.59085: Deleting route to FEX"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:25:39.64038: Module disconnected"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:25:39.66160: Module Offline"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:25:39.110706: Deleting route to FEX"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:25:39.114362: Module disconnected"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:25:39.115510: Offlining Module"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:25:39.115529: Alive timer stopped"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:27:03.684859: Module register received"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:27:03.685212: State timer stopped"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:27:03.686676: Registration response sent"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:27:03.765213: State timer stopped"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:27:03.765742: Module Online Sequence"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:27:08.455795: Module Online"
+                        }
+                    ]
+                }
+            }, 
+            {
+                "chas_id": "103", 
+                "descr": "FEX103-D1.M.066.RU36", 
+                "fex_state": "Online", 
+                "fex_ver": "7.0(3)I7(6)", 
+                "sw_ver": "7.0(3)I7(6)", 
+                "fex_interim_ver": "7.0(3)I7(6)", 
+                "sw_interim_ver": "7.0(3)I7(6)", 
+                "model": "N2K-C2248TP-E-1GE", 
+                "serial": "FOX2132P8RE", 
+                "part_no": "73-13671-03", 
+                "card_id": "149", 
+                "mac": "70:f3:5a:dc:b3:62", 
+                "num_macs": "64", 
+                "fex_sw_gen": "12594", 
+                "sw_sw_gen": "21", 
+                "pin_mode": "static", 
+                "max_link": "1", 
+                "fbr_port_control": "Eth1/5", 
+                "fcoe_admin": "false", 
+                "fcoe_oper": "true", 
+                "fex_aa_configured": "false", 
+                "TABLE_fbr_state": {
+                    "ROW_fbr_state": [
+                        {
+                            "fbr_index": "Po103", 
+                            "fbr_oper_state": "Up", 
+                            "fsm_state": "Active"
+                        }, 
+                        {
+                            "fbr_index": "Eth1/5", 
+                            "fbr_oper_state": "Up", 
+                            "fsm_state": "Active"
+                        }, 
+                        {
+                            "fbr_index": "Eth1/6", 
+                            "fbr_oper_state": "Up", 
+                            "fsm_state": "Active"
+                        }
+                    ]
+                }, 
+                "TABLE_fex_port": {
+                    "ROW_fex_port": [
+                        {
+                            "fex_port": "Eth103/1/1", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/2", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/3", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/4", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/5", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/6", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/7", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/8", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/9", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/10", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/11", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/12", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/13", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/14", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/15", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/16", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/17", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/18", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/19", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/20", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/21", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/22", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/23", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/24", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/25", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/26", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/27", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/28", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/29", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/30", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/31", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/32", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/33", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/34", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/35", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/36", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/37", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/38", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/39", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/40", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/41", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/42", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/43", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/44", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/45", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/46", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/47", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }, 
+                        {
+                            "fex_port": "Eth103/1/48", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po103"
+                        }
+                    ]
+                }, 
+                "TABLE_logs": {
+                    "ROW_logs": [
+                        {
+                            "log": "06/25/2019 05:20:29.37668: Module register received"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:20:29.38005: State timer stopped"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:20:29.38728: Image Version Mismatch"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:20:29.39531: Registration response sent"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:20:29.39776: Requesting satellite to download image"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:31.804217: Image preload successful."
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:40.814651: Deleting route to FEX"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:40.819009: Module disconnected"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:40.820264: Module Offline"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:52.55571: Deleting route to FEX"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:52.61133: Module disconnected"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:52.62150: Offlining Module"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:52.62166: Alive timer stopped"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:28:05.619283: Module register received"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:28:05.619647: State timer stopped"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:28:05.621217: Registration response sent"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:28:05.702590: State timer stopped"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:28:05.703141: Module Online Sequence"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:28:10.621229: Module Online"
+                        }
+                    ]
+                }
+            }, 
+            {
+                "chas_id": "104", 
+                "descr": "FEX104-D1.M.066.RU39", 
+                "fex_state": "Online", 
+                "fex_ver": "7.0(3)I7(6)", 
+                "sw_ver": "7.0(3)I7(6)", 
+                "fex_interim_ver": "7.0(3)I7(6)", 
+                "sw_interim_ver": "7.0(3)I7(6)", 
+                "model": "N2K-C2248TP-E-1GE", 
+                "serial": "FOX2132P3PQ", 
+                "part_no": "73-13671-03", 
+                "card_id": "149", 
+                "mac": "70:f3:5a:dc:ac:22", 
+                "num_macs": "64", 
+                "fex_sw_gen": "12594", 
+                "sw_sw_gen": "21", 
+                "pin_mode": "static", 
+                "max_link": "1", 
+                "fbr_port_control": "Eth1/7", 
+                "fcoe_admin": "false", 
+                "fcoe_oper": "true", 
+                "fex_aa_configured": "false", 
+                "TABLE_fbr_state": {
+                    "ROW_fbr_state": [
+                        {
+                            "fbr_index": "Po104", 
+                            "fbr_oper_state": "Up", 
+                            "fsm_state": "Active"
+                        }, 
+                        {
+                            "fbr_index": "Eth1/7", 
+                            "fbr_oper_state": "Up", 
+                            "fsm_state": "Active"
+                        }, 
+                        {
+                            "fbr_index": "Eth1/8", 
+                            "fbr_oper_state": "Up", 
+                            "fsm_state": "Active"
+                        }
+                    ]
+                }, 
+                "TABLE_fex_port": {
+                    "ROW_fex_port": [
+                        {
+                            "fex_port": "Eth104/1/1", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/2", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/3", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/4", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/5", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/6", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/7", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/8", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/9", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/10", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/11", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/12", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/13", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/14", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/15", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/16", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/17", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/18", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/19", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/20", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/21", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/22", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/23", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/24", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/25", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/26", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/27", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/28", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/29", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/30", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/31", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/32", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/33", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/34", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/35", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/36", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/37", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/38", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/39", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/40", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/41", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/42", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/43", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/44", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/45", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/46", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/47", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }, 
+                        {
+                            "fex_port": "Eth104/1/48", 
+                            "fex_port_oper_state": "Down", 
+                            "fbr_port": "Po104"
+                        }
+                    ]
+                }, 
+                "TABLE_logs": {
+                    "ROW_logs": [
+                        {
+                            "log": "06/25/2019 05:20:21.682355: Module register received"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:20:21.682682: State timer stopped"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:20:21.683512: Image Version Mismatch"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:20:21.684269: Registration response sent"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:20:21.684548: Requesting satellite to download image"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:11.37394: Image preload successful."
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:20.225047: Deleting route to FEX"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:20.233362: Module disconnected"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:20.235670: Module Offline"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:20.239278: Deleting route to FEX"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:20.244214: Module disconnected"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:20.245608: Offlining Module"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:20.245637: Alive timer stopped"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:20.874436: Deleting route to FEX"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:20.877845: Module disconnected"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:20.879334: Offlining Module"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:26:20.879352: Alive timer stopped"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:27:44.570421: Module register received"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:27:44.570775: State timer stopped"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:27:44.572168: Registration response sent"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:27:44.647946: State timer stopped"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:27:44.648427: Module Online Sequence"
+                        }, 
+                        {
+                            "log": "06/25/2019 05:27:49.255844: Module Online"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

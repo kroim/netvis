@@ -1,0 +1,2386 @@
+{
+    "TABLE_interface": {
+        "ROW_interface": [
+            {
+                "interface": "mgmt0", 
+                "name": "AACDC-DCN-DSW1-Eth101/1/10", 
+                "state": "connected", 
+                "vlan": "routed", 
+                "duplex": "full", 
+                "speed": "1000", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/1", 
+                "name": "CDC-STG-ASW1-FEX101 U1", 
+                "state": "connected", 
+                "vlan": "1", 
+                "duplex": "full", 
+                "speed": "10G", 
+                "type": "Fabric Extender Transceiver"
+            }, 
+            {
+                "interface": "Ethernet1/2", 
+                "name": "CDC-STG-ASW1-FEX101 U2", 
+                "state": "connected", 
+                "vlan": "1", 
+                "duplex": "full", 
+                "speed": "10G", 
+                "type": "Fabric Extender Transceiver"
+            }, 
+            {
+                "interface": "Ethernet1/3", 
+                "name": "FEX | AACDC1-STG-ASW1-FEX102 | U1", 
+                "state": "connected", 
+                "vlan": "1", 
+                "duplex": "full", 
+                "speed": "10G", 
+                "type": "Fabric Extender Transceiver"
+            }, 
+            {
+                "interface": "Ethernet1/4", 
+                "name": "FEX | AACDC1-STG-ASW1-FEX102 | U2", 
+                "state": "connected", 
+                "vlan": "1", 
+                "duplex": "full", 
+                "speed": "10G", 
+                "type": "Fabric Extender Transceiver"
+            }, 
+            {
+                "interface": "Ethernet1/5", 
+                "name": "FEX | AACDC1-STG-ASW1-FEX103 | U1", 
+                "state": "connected", 
+                "vlan": "1", 
+                "duplex": "full", 
+                "speed": "10G", 
+                "type": "Fabric Extender Transceiver"
+            }, 
+            {
+                "interface": "Ethernet1/6", 
+                "name": "FEX | AACDC1-STG-ASW1-FEX103 | U2", 
+                "state": "connected", 
+                "vlan": "1", 
+                "duplex": "full", 
+                "speed": "10G", 
+                "type": "Fabric Extender Transceiver"
+            }, 
+            {
+                "interface": "Ethernet1/7", 
+                "name": "FEX | AACDC1-STG-ASW1-FEX104 | U1", 
+                "state": "connected", 
+                "vlan": "1", 
+                "duplex": "full", 
+                "speed": "10G", 
+                "type": "Fabric Extender Transceiver"
+            }, 
+            {
+                "interface": "Ethernet1/8", 
+                "name": "FEX | AACDC1-STG-ASW1-FEX104 | U2", 
+                "state": "connected", 
+                "vlan": "1", 
+                "duplex": "full", 
+                "speed": "10G", 
+                "type": "Fabric Extender Transceiver"
+            }, 
+            {
+                "interface": "Ethernet1/9", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/10", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/11", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/12", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/13", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/14", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/15", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/16", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/17", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/18", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/19", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/20", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/21", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/22", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/23", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/24", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/25", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/26", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/27", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/28", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/29", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/30", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/31", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/32", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/33", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/34", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/35", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/36", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/37", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/38", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/39", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/40", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/41", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/42", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/43", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "10Gbase-SR"
+            }, 
+            {
+                "interface": "Ethernet1/44", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "10Gbase-SR"
+            }, 
+            {
+                "interface": "Ethernet1/45", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "10Gbase-SR"
+            }, 
+            {
+                "interface": "Ethernet1/46", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "10Gbase-SR"
+            }, 
+            {
+                "interface": "Ethernet1/47", 
+                "name": "AVAILABLE-ASW-10G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet1/48", 
+                "name": "DXC_OOB", 
+                "state": "connected", 
+                "vlan": "3902", 
+                "duplex": "full", 
+                "speed": "1000", 
+                "type": "1000base-T"
+            }, 
+            {
+                "interface": "Ethernet2/1", 
+                "name": "Po20 | AACDC-STG-ASW2 | Eth 2/1", 
+                "state": "connected", 
+                "vlan": "trunk", 
+                "duplex": "full", 
+                "speed": "40G", 
+                "type": "QSFP-40G-SR-BD"
+            }, 
+            {
+                "interface": "Ethernet2/2", 
+                "name": "Po20 | AACDC-STG-ASW2 | Eth 2/2", 
+                "state": "connected", 
+                "vlan": "trunk", 
+                "duplex": "full", 
+                "speed": "40G", 
+                "type": "QSFP-40G-SR-BD"
+            }, 
+            {
+                "interface": "Ethernet2/3", 
+                "name": "AVAILABLE-ASW-40G-F", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "QSFP-40G-SR-BD"
+            }, 
+            {
+                "interface": "Ethernet2/4", 
+                "name": "AVAILABLE-ASW-40G-F", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "QSFP-40G-SR-BD"
+            }, 
+            {
+                "interface": "Ethernet2/5", 
+                "name": "Po251 | AACDC-STG-DSW1 | Eth2/7", 
+                "state": "connected", 
+                "vlan": "trunk", 
+                "duplex": "full", 
+                "speed": "40G", 
+                "type": "QSFP-40G-SR-BD"
+            }, 
+            {
+                "interface": "Ethernet2/6", 
+                "name": "Po251 | AACDC-STG-DSW2 | Eth2/7", 
+                "state": "connected", 
+                "vlan": "trunk", 
+                "duplex": "full", 
+                "speed": "40G", 
+                "type": "QSFP-40G-SR-BD"
+            }, 
+            {
+                "interface": "Ethernet2/7", 
+                "name": "AVAILABLE-ASW-40G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet2/8", 
+                "name": "AVAILABLE-ASW-40G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet2/9", 
+                "name": "AVAILABLE-ASW-40G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet2/10", 
+                "name": "AVAILABLE-ASW-40G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet2/11", 
+                "name": "AVAILABLE-ASW-40G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Ethernet2/12", 
+                "name": "AVAILABLE-ASW-40G-F", 
+                "state": "xcvrAbsent", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "port-channel20", 
+                "name": "AACDC-STG-ASW2 | Po20", 
+                "state": "connected", 
+                "vlan": "trunk", 
+                "duplex": "full", 
+                "speed": "40G", 
+                "type": "--"
+            }, 
+            {
+                "interface": "port-channel101", 
+                "name": "CDC-STG-ASW1-FEX101", 
+                "state": "connected", 
+                "vlan": "1", 
+                "duplex": "full", 
+                "speed": "10G", 
+                "type": "--"
+            }, 
+            {
+                "interface": "port-channel102", 
+                "name": "FEX | AACDC1-STG-ASW1-FEX102", 
+                "state": "connected", 
+                "vlan": "1", 
+                "duplex": "full", 
+                "speed": "10G", 
+                "type": "--"
+            }, 
+            {
+                "interface": "port-channel103", 
+                "name": "FEX | AACDC1-STG-ASW1-FEX103", 
+                "state": "connected", 
+                "vlan": "1", 
+                "duplex": "full", 
+                "speed": "10G", 
+                "type": "--"
+            }, 
+            {
+                "interface": "port-channel104", 
+                "name": "FEX | AACDC1-STG-ASW1-FEX104", 
+                "state": "connected", 
+                "vlan": "1", 
+                "duplex": "full", 
+                "speed": "10G", 
+                "type": "--"
+            }, 
+            {
+                "interface": "port-channel251", 
+                "name": "Po251 | AACDC-STG-DSW1/2", 
+                "state": "connected", 
+                "vlan": "trunk", 
+                "duplex": "full", 
+                "speed": "40G", 
+                "type": "--"
+            }, 
+            {
+                "interface": "port-channel1000", 
+                "name": "S-TRUNK | STAGE-GREEN | ESAPLP03", 
+                "state": "noOperMembers", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "port-channel1001", 
+                "name": "S-TRUNK | STAGE-GREEN | ESAPLP04", 
+                "state": "noOperMembers", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": "--"
+            }, 
+            {
+                "interface": "Vlan1", 
+                "name": "***DO NOT USE!***", 
+                "state": "down", 
+                "vlan": "routed", 
+                "duplex": "auto", 
+                "speed": "auto"
+            }, 
+            {
+                "interface": "Vlan2555", 
+                "name": "PROD-ASW-MGMT", 
+                "state": "connected", 
+                "vlan": "routed", 
+                "duplex": "auto", 
+                "speed": "auto"
+            }, 
+            {
+                "interface": "Vlan3902", 
+                "name": "DXC_OOB", 
+                "state": "connected", 
+                "vlan": "routed", 
+                "duplex": "auto", 
+                "speed": "auto"
+            }, 
+            {
+                "interface": "Vlan3903", 
+                "state": "connected", 
+                "vlan": "routed", 
+                "duplex": "auto", 
+                "speed": "auto"
+            }, 
+            {
+                "interface": "Ethernet101/1/1", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/2", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/3", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/4", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/5", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/6", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/7", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/8", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/9", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/10", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/11", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/12", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/13", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/14", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/15", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/16", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/17", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/18", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/19", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/20", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/21", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/22", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/23", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/24", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/25", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/26", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/27", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/28", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/29", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/30", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/31", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/32", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/33", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/34", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/35", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/36", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/37", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/38", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/39", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/40", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/41", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "notconnect", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/42", 
+                "name": "S-ACCESS | HB | egetldh01-hb1  | NIC1", 
+                "state": "connected", 
+                "vlan": "3827", 
+                "duplex": "full", 
+                "speed": "1000", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/43", 
+                "name": "S-ACCESS | HB | egetlth01-hb1  | NIC1", 
+                "state": "connected", 
+                "vlan": "3827", 
+                "duplex": "full", 
+                "speed": "1000", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/44", 
+                "name": "S-ACCESS | HB | egetlsh01-hb1  | NIC1", 
+                "state": "connected", 
+                "vlan": "3827", 
+                "duplex": "full", 
+                "speed": "1000", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/45", 
+                "name": "S-ACCESS | HB | egetlsh02-hb1  | NIC1", 
+                "state": "connected", 
+                "vlan": "3827", 
+                "duplex": "full", 
+                "speed": "1000", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/46", 
+                "name": "S-ACCESS | HB | egetlsc01-hb1  | NIC1", 
+                "state": "connected", 
+                "vlan": "3827", 
+                "duplex": "full", 
+                "speed": "1000", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/47", 
+                "name": "S-ACCESS | HB | egetlsc02-hb1  | NIC1", 
+                "state": "connected", 
+                "vlan": "3827", 
+                "duplex": "full", 
+                "speed": "1000", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet101/1/48", 
+                "name": "S-ACCESS | HB | egetlsc03-hb1  | NIC1", 
+                "state": "connected", 
+                "vlan": "3827", 
+                "duplex": "full", 
+                "speed": "1000", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/1", 
+                "name": "S-ACCESS | STAGE-GREEN | rmappd01 | N/A", 
+                "state": "connected", 
+                "vlan": "1200", 
+                "duplex": "full", 
+                "speed": "1000", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/2", 
+                "name": "S-ACCESS | N/A | esvmcs70-hb | N/A", 
+                "state": "connected", 
+                "vlan": "2028", 
+                "duplex": "full", 
+                "speed": "1000", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/3", 
+                "name": "S-ACCESS | STAGE-BLUE | adrdbt02 | N/A", 
+                "state": "connected", 
+                "vlan": "1400", 
+                "duplex": "full", 
+                "speed": "1000", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/4", 
+                "name": "S-ACCESS | N/A | adrdbt02-HB1 | N/A", 
+                "state": "connected", 
+                "vlan": "2034", 
+                "duplex": "full", 
+                "speed": "1000", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/5", 
+                "name": "S-ACCESS | N/A | adrdbt03-HB1 | N/A", 
+                "state": "connected", 
+                "vlan": "2034", 
+                "duplex": "full", 
+                "speed": "1000", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/6", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/7", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/8", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/9", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/10", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/11", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/12", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/13", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/14", 
+                "name": "S-TRUNK | STAGE-GREEN | ESAPLP03 | 1.1", 
+                "state": "notconnect", 
+                "vlan": "trunk", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/15", 
+                "name": "S-TRUNK | STAGE-GREEN | ESAPLP04 | 1.1", 
+                "state": "notconnect", 
+                "vlan": "trunk", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/16", 
+                "name": "S-ACCESS | STAGE-BLUE | chodbs21 | N/A", 
+                "state": "connected", 
+                "vlan": "1400", 
+                "duplex": "full", 
+                "speed": "1000", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/17", 
+                "name": "S-ACCESS | STAGE-BLUE | chodbs22 | N/A", 
+                "state": "connected", 
+                "vlan": "1400", 
+                "duplex": "full", 
+                "speed": "1000", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/18", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/19", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/20", 
+                "name": "S-ACCESS | STAGE-BLUE | adrdbt03 | N/A", 
+                "state": "connected", 
+                "vlan": "1400", 
+                "duplex": "full", 
+                "speed": "1000", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/21", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/22", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/23", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/24", 
+                "name": "S-ACCESS | STAGE-GREEN | aaapps12 | N/A", 
+                "state": "connected", 
+                "vlan": "1205", 
+                "duplex": "full", 
+                "speed": "1000", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/25", 
+                "name": "S-ACCESS | STAGE-BLUE | cgrdbs08.tul.aa.com | N/A", 
+                "state": "notconnect", 
+                "vlan": "1400", 
+                "duplex": "full", 
+                "speed": "1000", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/26", 
+                "name": "S-ACCESS | STAGE-BLUE | cgrdbs09.tul.aa.com | N/A", 
+                "state": "notconnect", 
+                "vlan": "1400", 
+                "duplex": "full", 
+                "speed": "1000", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/27", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/28", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/29", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/30", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/31", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/32", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/33", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/34", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/35", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/36", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/37", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/38", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/39", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/40", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/41", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/42", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/43", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/44", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/45", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/46", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/47", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet102/1/48", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/1", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/2", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/3", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/4", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/5", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/6", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/7", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/8", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/9", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/10", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/11", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/12", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/13", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/14", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/15", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/16", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/17", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/18", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/19", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/20", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/21", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/22", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/23", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/24", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/25", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/26", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/27", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/28", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/29", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/30", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/31", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/32", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/33", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/34", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/35", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/36", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/37", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/38", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/39", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/40", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/41", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/42", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/43", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/44", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/45", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/46", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/47", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet103/1/48", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/1", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/2", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/3", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/4", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/5", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/6", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/7", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/8", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/9", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/10", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/11", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/12", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/13", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/14", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/15", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/16", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/17", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/18", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/19", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/20", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/21", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/22", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/23", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/24", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/25", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/26", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/27", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/28", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/29", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/30", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/31", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/32", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/33", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/34", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/35", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/36", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/37", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/38", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/39", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/40", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/41", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/42", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/43", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/44", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/45", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/46", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/47", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }, 
+            {
+                "interface": "Ethernet104/1/48", 
+                "name": "AVAILABLE-FEX-1G-C", 
+                "state": "disabled", 
+                "vlan": "1", 
+                "duplex": "auto", 
+                "speed": "auto", 
+                "type": null
+            }
+        ]
+    }
+}

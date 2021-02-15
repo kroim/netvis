@@ -1,0 +1,101 @@
+{
+    "header_str": "Cisco Nexus Operating System (NX-OS) Software\nTAC support: http://www.cisco.com/tac\nCopyright (C) 2002-2019, Cisco and/or its affiliates.\nAll rights reserved.\nThe copyrights to certain works contained in this software are\nowned by other third parties and used and distributed under their own\nlicenses, such as open source.  This software is provided \"as is,\" and unless\notherwise stated, there is no warranty, express or implied, including but not\nlimited to warranties of merchantability and fitness for a particular purpose.\nCertain components of this software are licensed under\nthe GNU General Public License (GPL) version 2.0 or \nGNU General Public License (GPL) version 3.0  or the GNU\nLesser General Public License (LGPL) Version 2.1 or \nLesser General Public License (LGPL) Version 2.0. \nA copy of each such license is available at\nhttp://www.opensource.org/licenses/gpl-2.0.php and\nhttp://opensource.org/licenses/gpl-3.0.html and\nhttp://www.opensource.org/licenses/lgpl-2.1.php and\nhttp://www.gnu.org/licenses/old-licenses/library.txt.", 
+    "bios_ver_str": "07.65", 
+    "kickstart_ver_str": "7.0(3)I7(6)", 
+    "bios_cmpl_time": "09/04/2018", 
+    "kick_file_name": "bootflash:///nxos.7.0.3.I7.6.bin", 
+    "kick_cmpl_time": "3/5/2019 13:00:00", 
+    "kick_tmstmp": "03/05/2019 22:04:55", 
+    "chassis_id": "Nexus9000 C9396PX Chassis", 
+    "cpu_name": "Intel(R) Core(TM) i3- CPU @ 2.50GHz", 
+    "memory": "16401104", 
+    "mem_type": "kB", 
+    "proc_board_id": "SAL2028T69X", 
+    "host_name": "AACDC1-STG-ASW1", 
+    "bootflash_size": "51496280", 
+    "kern_uptm_days": "42", 
+    "kern_uptm_hrs": "13", 
+    "kern_uptm_mins": "7", 
+    "kern_uptm_secs": "51", 
+    "rr_usecs": "2244", 
+    "rr_ctime": "1561439748", 
+    "rr_reason": "Reset due to upgrade", 
+    "rr_sys_ver": "7.0(3)I4(8a)", 
+    "rr_service": null, 
+    "manufacturer": "Cisco Systems, Inc.", 
+    "TABLE_slot": {
+        "ROW_slot": {
+            "TABLE_slot_info": {
+                "ROW_slot_info": [
+                    {
+                        "type": "Nexus9000 C9396PX Chassis", 
+                        "model_num": "N9K-C9396PX", 
+                        "hw_ver": "1.0", 
+                        "part_num": "73-15605-06", 
+                        "part_revision": "B0", 
+                        "manuf_date": "Year 2016 Week 28", 
+                        "serial_num": "SAL2028T69X", 
+                        "CLEI_code": "CMMSE00DRA", 
+                        "num_slot_str": "2 Module slots"
+                    }, 
+                    {
+                        "status_ok_empty": "Module1  ok", 
+                        "type": "\"1/10G SFP+ Ethernet Module\"", 
+                        "num_submods": "0", 
+                        "model_num": "N9K-C9396PX", 
+                        "hw_ver": "1.0", 
+                        "part_num": "73-15605-06", 
+                        "part_revision": "B0", 
+                        "manuf_date": "Year 2016 Week 28", 
+                        "serial_num": "SAL2028T69X", 
+                        "CLEI_code": "CMMSE00DRA"
+                    }, 
+                    {
+                        "status_ok_empty": "Module2  ok", 
+                        "type": "40G Ethernet Expansion Module", 
+                        "model_num": "N9K-M12PQ", 
+                        "hw_ver": "1.4", 
+                        "part_num": "73-15576-03", 
+                        "part_revision": "E0", 
+                        "manuf_date": "Year 2016 Week 27", 
+                        "serial_num": "SAL2027T1PW", 
+                        "CLEI_code": "CMUIAJRCAA", 
+                        "num_slot_str": "2 PowerSupply Slots"
+                    }, 
+                    {
+                        "status_ok_empty": "PS1 ok", 
+                        "type": "650.00W 220v AC", 
+                        "model_num": "N9K-PAC-650W-B", 
+                        "hw_ver": "2", 
+                        "part_num": "341-0623-01", 
+                        "part_revision": "A0", 
+                        "manuf_date": "Year 2016 Week 26", 
+                        "serial_num": "DCB2026Y1DZ", 
+                        "CLEI_code": "CMUPAC0CAA"
+                    }, 
+                    {
+                        "status_ok_empty": "PS2 ok", 
+                        "type": "650.00W 220v AC", 
+                        "model_num": "N9K-PAC-650W-B", 
+                        "hw_ver": "2", 
+                        "part_num": "341-0623-01", 
+                        "part_revision": "A0", 
+                        "manuf_date": "Year 2016 Week 26", 
+                        "serial_num": "DCB2026Y190", 
+                        "CLEI_code": "CMUPAC0CAA", 
+                        "num_slot_str": "3 Fan slots"
+                    }, 
+                    {
+                        "status_ok_empty": "Fan1 ok"
+                    }, 
+                    {
+                        "status_ok_empty": "Fan2 ok"
+                    }, 
+                    {
+                        "status_ok_empty": "Fan3 ok"
+                    }
+                ]
+            }
+        }
+    }
+}

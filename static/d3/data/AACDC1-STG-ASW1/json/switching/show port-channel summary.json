@@ -1,0 +1,154 @@
+{
+    "TABLE_channel": {
+        "ROW_channel": [
+            {
+                "group": "20", 
+                "port-channel": "port-channel20", 
+                "layer": "S", 
+                "status": "U", 
+                "type": "Eth", 
+                "prtcl": "LACP", 
+                "TABLE_member": {
+                    "ROW_member": [
+                        {
+                            "port": "Ethernet2/1", 
+                            "port-status": "P"
+                        }, 
+                        {
+                            "port": "Ethernet2/2", 
+                            "port-status": "P"
+                        }
+                    ]
+                }
+            }, 
+            {
+                "group": "101", 
+                "port-channel": "port-channel101", 
+                "layer": "S", 
+                "status": "U", 
+                "type": "Eth", 
+                "prtcl": "NONE", 
+                "TABLE_member": {
+                    "ROW_member": [
+                        {
+                            "port": "Ethernet1/1", 
+                            "port-status": "P"
+                        }, 
+                        {
+                            "port": "Ethernet1/2", 
+                            "port-status": "P"
+                        }
+                    ]
+                }
+            }, 
+            {
+                "group": "102", 
+                "port-channel": "port-channel102", 
+                "layer": "S", 
+                "status": "U", 
+                "type": "Eth", 
+                "prtcl": "NONE", 
+                "TABLE_member": {
+                    "ROW_member": [
+                        {
+                            "port": "Ethernet1/3", 
+                            "port-status": "P"
+                        }, 
+                        {
+                            "port": "Ethernet1/4", 
+                            "port-status": "P"
+                        }
+                    ]
+                }
+            }, 
+            {
+                "group": "103", 
+                "port-channel": "port-channel103", 
+                "layer": "S", 
+                "status": "U", 
+                "type": "Eth", 
+                "prtcl": "NONE", 
+                "TABLE_member": {
+                    "ROW_member": [
+                        {
+                            "port": "Ethernet1/5", 
+                            "port-status": "P"
+                        }, 
+                        {
+                            "port": "Ethernet1/6", 
+                            "port-status": "P"
+                        }
+                    ]
+                }
+            }, 
+            {
+                "group": "104", 
+                "port-channel": "port-channel104", 
+                "layer": "S", 
+                "status": "U", 
+                "type": "Eth", 
+                "prtcl": "NONE", 
+                "TABLE_member": {
+                    "ROW_member": [
+                        {
+                            "port": "Ethernet1/7", 
+                            "port-status": "P"
+                        }, 
+                        {
+                            "port": "Ethernet1/8", 
+                            "port-status": "P"
+                        }
+                    ]
+                }
+            }, 
+            {
+                "group": "251", 
+                "port-channel": "port-channel251", 
+                "layer": "S", 
+                "status": "U", 
+                "type": "Eth", 
+                "prtcl": "LACP", 
+                "TABLE_member": {
+                    "ROW_member": [
+                        {
+                            "port": "Ethernet2/5", 
+                            "port-status": "P"
+                        }, 
+                        {
+                            "port": "Ethernet2/6", 
+                            "port-status": "P"
+                        }
+                    ]
+                }
+            }, 
+            {
+                "group": "1000", 
+                "port-channel": "port-channel1000", 
+                "layer": "S", 
+                "status": "D", 
+                "type": "Eth", 
+                "prtcl": "LACP", 
+                "TABLE_member": {
+                    "ROW_member": {
+                        "port": "Ethernet102/1/14", 
+                        "port-status": "D"
+                    }
+                }
+            }, 
+            {
+                "group": "1001", 
+                "port-channel": "port-channel1001", 
+                "layer": "S", 
+                "status": "D", 
+                "type": "Eth", 
+                "prtcl": "LACP", 
+                "TABLE_member": {
+                    "ROW_member": {
+                        "port": "Ethernet102/1/15", 
+                        "port-status": "D"
+                    }
+                }
+            }
+        ]
+    }
+}
