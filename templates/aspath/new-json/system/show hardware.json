@@ -1,0 +1,98 @@
+﻿{
+    "header_str": "Cisco Nexus Operating System (NX-OS) Software\nTAC support: http://www.cisco.com/tac\nCopyright (C) 2002-2017, Cisco and/or its affiliates.\nAll rights reserved.\nThe copyrights to ce
+rtain works contained in this software are\nowned by other third parties and used and distributed under their own\nlicenses, such as open source.  This software is provided \"as is,\" and unless\notherw
+ise stated, there is no warranty, express or implied, including but not\nlimited to warranties of merchantability and fitness for a particular purpose.\nCertain components of this software are licensed 
+under\nthe GNU General Public License (GPL) version 2.0 or \nGNU General Public License (GPL) version 3.0  or the GNU\nLesser General Public License (LGPL) Version 2.1 or \nLesser General Public License
+ (LGPL) Version 2.0. \nA copy of each such license is available at\nhttp://www.opensource.org/licenses/gpl-2.0.php and\nhttp://opensource.org/licenses/gpl-3.0.html and\nhttp://www.opensource.org/license
+s/lgpl-2.1.php and\nhttp://www.gnu.org/licenses/old-licenses/library.txt.", 
+    "bios_ver_str": "07.61", 
+    "kickstart_ver_str": "7.0(3)I7(2)", 
+    "bios_cmpl_time": "04/06/2017", 
+    "kick_file_name": "bootflash:///nxos.7.0.3.I7.2.bin", 
+    "kick_cmpl_time": "11/22/2017 13:00:00", 
+    "kick_tmstmp": "11/22/2017 21:55:29", 
+    "chassis_id": "Nexus9000 C9236C chassis", 
+    "cpu_name": "Intel(R) Xeon(R) CPU  @ 1.80GHz", 
+    "memory": "16400548", 
+    "mem_type": "kB", 
+    "proc_board_id": "GDO61361FU6", 
+    "host_name": "DFW1-DCC-BSW01", 
+    "bootflash_size": "53298520", 
+    "kern_uptm_days": "17", 
+    "kern_uptm_hrs": "5", 
+    "kern_uptm_mins": "44", 
+    "kern_uptm_secs": "11", 
+    "rr_usecs": "320050", 
+    "rr_ctime": "1553422529", 
+    "rr_reason": "Reset Requested due to Fatal Module Error", 
+    "rr_sys_ver": "7.0(3)I7(2)", 
+    "rr_service": "System manager", 
+    "manufacturer": "Cisco Systems, Inc.", 
+    "TABLE_slot": {
+        "ROW_slot": {
+            "TABLE_slot_info": {
+                "ROW_slot_info": [
+                    {
+                        "type": "Nexus9000 C9236C chassis", 
+                        "model_num": "N9K-C9236C", 
+                        "hw_ver": "1.1", 
+                        "part_num": "73-100768-06", 
+                        "part_revision": "A0", 
+                        "manuf_date": "Year 2017 Week 36", 
+                        "serial_num": "GDO61361FU6", 
+                        "CLEI_code": "CMMUR00BRB", 
+                        "num_slot_str": "0 Module slots"
+                    }, 
+                    {
+                        "status_ok_empty": "Module1  ok", 
+                        "type": "36x40/100G QSFP28 Ethernet Module", 
+                        "num_submods": "0", 
+                        "model_num": "N9K-C9236C", 
+                        "hw_ver": "1.1", 
+                        "part_num": "73-100768-06", 
+                        "part_revision": "A0", 
+                        "manuf_date": "Year 2017 Week 36", 
+                        "serial_num": "GDO61361FU6", 
+                        "CLEI_code": "CMMUR00BRB", 
+                        "num_slot_str": "2 PowerSupply Slots"
+                    }, 
+                    {
+                        "status_ok_empty": "PS1 ok", 
+                        "type": "650.00W 220v AC", 
+                        "model_num": "NXA-PAC-650W-PI", 
+                        "hw_ver": "2", 
+                        "part_num": "341-0728-02", 
+                        "part_revision": "A0", 
+                        "manuf_date": "Year 2017 Week 37", 
+                        "serial_num": "ART2137FCYM", 
+                        "CLEI_code": "CMUPAD0CAB"
+                    }, 
+                    {
+                        "status_ok_empty": "PS2 ok", 
+                        "type": "650.00W 220v AC", 
+                        "model_num": "NXA-PAC-650W-PI", 
+                        "hw_ver": "2", 
+                        "part_num": "341-0728-02", 
+                        "part_revision": "A0", 
+                        "manuf_date": "Year 2017 Week 37", 
+                        "serial_num": "ART2137FD03", 
+                        "CLEI_code": "CMUPAD0CAB", 
+                        "num_slot_str": "4 Fan slots"
+                    }, 
+                    {
+                        "status_ok_empty": "Fan1 ok"
+                    }, 
+                    {
+                        "status_ok_empty": "Fan2 ok"
+                    }, 
+                    {
+                        "status_ok_empty": "Fan3 ok"
+                    }, 
+                    {
+                        "status_ok_empty": "Fan4 ok"
+                    }
+                ]
+            }
+        }
+    }
+}

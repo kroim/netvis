@@ -1,0 +1,305 @@
+﻿{
+    "TABLE_vrf": {
+        "ROW_vrf": {
+            "vrf-name-out": "default", 
+            "TABLE_afi": {
+                "ROW_afi": [
+                    {
+                        "afi": "1", 
+                        "TABLE_safi": {
+                            "ROW_safi": {
+                                "safi": "1", 
+                                "af-name": "IPv4 Unicast", 
+                                "table-version": "3269482", 
+                                "router-id": "10.163.255.201", 
+                                "TABLE_rd": {
+                                    "ROW_rd": {
+                                        "TABLE_prefix": {
+                                            "ROW_prefix": [
+                                                {
+                                                    "ipprefix": "0.0.0.0/0", 
+                                                    "TABLE_path": {
+                                                        "ROW_path": [
+                                                            {
+                                                                "pathnr": "0", 
+                                                                "status": "valid", 
+                                                                "best": "multipath", 
+                                                                "type": "external", 
+                                                                "statuscode": "*", 
+                                                                "bestcode": "|", 
+                                                                "typecode": "e", 
+                                                                "ipnexthop": "10.163.253.237", 
+                                                                "weight": "250", 
+                                                                "aspath": "64861 64873 64872 53741 7018", 
+                                                                "origin": "?"
+                                                            }, 
+                                                            {
+                                                                "pathnr": "1", 
+                                                                "status": "valid", 
+                                                                "best": "multipath", 
+                                                                "type": "external", 
+                                                                "statuscode": "*", 
+                                                                "bestcode": "|", 
+                                                                "typecode": "e", 
+                                                                "ipnexthop": "10.163.253.233", 
+                                                                "weight": "250", 
+                                                                "aspath": "64861 64873 64872 53741 7018", 
+                                                                "origin": "?"
+                                                            }, 
+                                                            {
+                                                                "pathnr": "2", 
+                                                                "status": "valid", 
+                                                                "best": "multipath", 
+                                                                "type": "external", 
+                                                                "statuscode": "*", 
+                                                                "bestcode": "|", 
+                                                                "typecode": "e", 
+                                                                "ipnexthop": "10.163.253.229", 
+                                                                "weight": "250", 
+                                                                "aspath": "64861 64873 64872 53741 7018", 
+                                                                "origin": "?"
+                                                            }, 
+                                                            {
+                                                                "pathnr": "3", 
+                                                                "status": "valid", 
+                                                                "best": "none", 
+                                                                "type": "internal", 
+                                                                "statuscode": "*", 
+                                                                "bestcode": null, 
+                                                                "typecode": "i", 
+                                                                "ipnexthop": "10.163.247.72", 
+                                                                "weight": "0", 
+                                                                "aspath": "64861 64873 64872 53741 7018", 
+                                                                "origin": "?", 
+                                                                "localpref": "100"
+                                                            }, 
+                                                            {
+                                                                "pathnr": "4", 
+                                                                "status": "valid", 
+                                                                "best": "bestpath", 
+                                                                "type": "external", 
+                                                                "statuscode": "*", 
+                                                                "bestcode": ">", 
+                                                                "typecode": "e", 
+                                                                "ipnexthop": "10.163.253.225", 
+                                                                "weight": "250", 
+                                                                "aspath": "64861 64873 64872 53741 7018", 
+                                                                "origin": "?"
+                                                            }, 
+                                                            {
+                                                                "pathnr": "5", 
+                                                                "status": "valid", 
+                                                                "best": "none", 
+                                                                "type": "external", 
+                                                                "statuscode": "*", 
+                                                                "bestcode": null, 
+                                                                "typecode": "e", 
+                                                                "ipnexthop": "10.52.188.137", 
+                                                                "weight": "0", 
+                                                                "aspath": "64840 64840 64845 64848 53741 7018", 
+                                                                "origin": "i"
+                                                            }
+                                                        ]
+                                                    }
+                                                }, 
+                                                {
+                                                    "ipprefix": "4.36.201.0/24", 
+                                                    "TABLE_path": {
+                                                        "ROW_path": [
+                                                            {
+                                                                "pathnr": "0", 
+                                                                "status": "valid", 
+                                                                "best": "none", 
+                                                                "type": "internal", 
+                                                                "statuscode": "*", 
+                                                                "bestcode": null, 
+                                                                "typecode": "i", 
+                                                                "ipnexthop": "10.163.247.72", 
+                                                                "weight": "0", 
+                                                                "aspath": "64901 64820 64814 65250", 
+                                                                "origin": "?", 
+                                                                "localpref": "100"
+                                                            }, 
+                                                            {
+                                                                "pathnr": "1", 
+                                                                "status": "valid", 
+                                                                "best": "bestpath", 
+                                                                "type": "external", 
+                                                                "statuscode": "*", 
+                                                                "bestcode": ">", 
+                                                                "typecode": "e", 
+                                                                "ipnexthop": "10.163.253.212", 
+                                                                "weight": "0", 
+                                                                "aspath": "64901 64820 64814 65250", 
+                                                                "origin": "?"
+                                                            }, 
+                                                            {
+                                                                "pathnr": "2", 
+                                                                "status": "valid", 
+                                                                "best": "none", 
+                                                                "type": "external", 
+                                                                "statuscode": "*", 
+                                                                "bestcode": null, 
+                                                                "typecode": "e", 
+                                                                "ipnexthop": "10.163.253.200", 
+                                                                "weight": "0", 
+                                                                "aspath": "64901 13979 65001 64820 64814 65250", 
+                                                                "origin": "?"
+                                                            }, 
+                                                            {
+                                                                "pathnr": "3", 
+                                                                "status": "valid", 
+                                                                "best": "none", 
+                                                                "type": "external", 
+                                                                "statuscode": "*", 
+                                                                "bestcode": null, 
+                                                                "typecode": "e", 
+                                                                "ipnexthop": "10.52.188.137", 
+                                                                "weight": "0", 
+                                                                "aspath": "64840 64000 13979 65001 64820 64814 65250", 
+                                                                "origin": "?"
+                                                            }
+                                                        ]
+                                                    }
+                                                }, 
+                                                {
+                                                    "ipprefix": "8.8.134.15/32", 
+                                                    "TABLE_path": {
+                                                        "ROW_path": [
+                                                            {
+                                                                "pathnr": "0", 
+                                                                "status": "valid", 
+                                                                "best": "multipath", 
+                                                                "type": "external", 
+                                                                "statuscode": "*", 
+                                                                "bestcode": "|", 
+                                                                "typecode": "e", 
+                                                                "ipnexthop": "10.163.253.212", 
+                                                                "weight": "0", 
+                                                                "aspath": "64901 64800 64222 64220 64219", 
+                                                                "origin": "?"
+                                                            }, 
+                                                            {
+                                                                "pathnr": "1", 
+                                                                "status": "valid", 
+                                                                "best": "none", 
+                                                                "type": "internal", 
+                                                                "statuscode": "*", 
+                                                                "bestcode": null, 
+                                                                "typecode": "i", 
+                                                                "ipnexthop": "10.163.247.72", 
+                                                                "weight": "0", 
+                                                                "aspath": "64901 64800 64222 64220 64219", 
+                                                                "origin": "?", 
+                                                                "localpref": "100"
+                                                            }, 
+                                                            {
+                                                                "pathnr": "2", 
+                                                                "status": "valid", 
+                                                                "best": "bestpath", 
+                                                                "type": "external", 
+                                                                "statuscode": "*", 
+                                                                "bestcode": ">", 
+                                                                "typecode": "e", 
+                                                                "ipnexthop": "10.163.253.200", 
+                                                                "weight": "0", 
+                                                                "aspath": "64901 64800 64222 64220 64219", 
+                                                                "origin": "?"
+                                                            }, 
+                                                            {
+                                                                "pathnr": "3", 
+                                                                "status": "valid", 
+                                                                "best": "none", 
+                                                                "type": "external", 
+                                                                "statuscode": "*", 
+                                                                "bestcode": null, 
+                                                                "typecode": "e", 
+                                                                "ipnexthop": "10.52.188.137", 
+                                                                "weight": "0", 
+                                                                "aspath": "64840 64000 13979 64901 64800 64222 64220 64219", 
+                                                                "origin": "?"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {                                               
+                                                    "ipprefix": "217.117.146.0/24", 
+                                                    "TABLE_path": {
+                                                        "ROW_path": [
+                                                            {
+                                                                "pathnr": "0", 
+                                                                "status": "valid", 
+                                                                "best": "multipath", 
+                                                                "type": "external", 
+                                                                "statuscode": "*", 
+                                                                "bestcode": "|", 
+                                                                "typecode": "e", 
+                                                                "ipnexthop": "10.163.253.212", 
+                                                                "weight": "0", 
+                                                                "aspath": "64901 64800 64222 64220 64219", 
+                                                                "origin": "?"
+                                                            }, 
+                                                            {
+                                                                "pathnr": "1", 
+                                                                "status": "valid", 
+                                                                "best": "none", 
+                                                                "type": "internal", 
+                                                                "statuscode": "*", 
+                                                                "bestcode": null, 
+                                                                "typecode": "i", 
+                                                                "ipnexthop": "10.163.247.72", 
+                                                                "weight": "0", 
+                                                                "aspath": "64901 64800 64222 64220 64219", 
+                                                                "origin": "?", 
+                                                                "localpref": "100"
+                                                            }, 
+                                                            {
+                                                                "pathnr": "2", 
+                                                                "status": "valid", 
+                                                                "best": "bestpath", 
+                                                                "type": "external", 
+                                                                "statuscode": "*", 
+                                                                "bestcode": ">", 
+                                                                "typecode": "e", 
+                                                                "ipnexthop": "10.163.253.200", 
+                                                                "weight": "0", 
+                                                                "aspath": "64901 64800 64222 64220 64219", 
+                                                                "origin": "?"
+                                                            }, 
+                                                            {
+                                                                "pathnr": "3", 
+                                                                "status": "valid", 
+                                                                "best": "none", 
+                                                                "type": "external", 
+                                                                "statuscode": "*", 
+                                                                "bestcode": null, 
+                                                                "typecode": "e", 
+                                                                "ipnexthop": "10.52.188.137", 
+                                                                "weight": "0", 
+                                                                "aspath": "64840 64000 13979 64901 64800 64222 64220 64219", 
+                                                                "origin": "?"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }, 
+                    {
+                        "afi": "2", 
+                        "TABLE_safi": {
+                            "ROW_safi": {
+                                "safi": "1", 
+                                "af-name": "IPv6 Unicast"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

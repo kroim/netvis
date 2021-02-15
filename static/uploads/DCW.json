@@ -1,0 +1,1828 @@
+{
+   "data": {
+      "show": {
+         "__XML__BLK_Cmd_urib_show_routing_command_routing": {
+            "__XML__OPT_Cmd_urib_show_routing_command_vrf": [
+               {
+                  "__XML__OPT_Cmd_urib_show_routing_command_ip": {}
+               },
+               {
+                  "__XML__OPT_Cmd_urib_show_routing_command_ip": {
+                     "__XML__OPT_Cmd_urib_show_routing_command_unicast": {
+                        "__XML__OPT_Cmd_urib_show_routing_command_topology": {
+                           "__XML__OPT_Cmd_urib_show_routing_command_l3vm-info": {
+                              "__XML__OPT_Cmd_urib_show_routing_command_rpf": {
+                                 "__XML__OPT_Cmd_urib_show_routing_command_ip-addr": {
+                                    "__XML__OPT_Cmd_urib_show_routing_command_protocol": {
+                                       "__XML__OPT_Cmd_urib_show_routing_command_summary": {
+                                          "__XML__OPT_Cmd_urib_show_routing_command_vrf": [
+                                             {
+                                                "__XML__OPT_Cmd_urib_show_routing_command___readonly__": {
+                                                   "__readonly__": {
+                                                      "TABLE_vrf": {
+                                                         "ROW_vrf": [
+                                                            {
+                                                               "vrf-name-out": "default",
+                                                               "TABLE_addrf": {
+                                                                  "ROW_addrf": {
+                                                                     "addrf": "ipv4",
+                                                                     "TABLE_prefix": {
+                                                                        "ROW_prefix": [
+                                                                           {
+                                                                              "ipprefix": "0.0.0.0/0",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.29",
+                                                                                       "uptime": "P3M6DT16H39M45S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.37",
+                                                                                       "uptime": "P3M6DT16H39M45S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "4.36.201.0/24",
+                                                                              "ucast-nhops": "1",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P3M10DT8H12M23S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "8.8.134.15/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.29",
+                                                                                       "uptime": "P3M6DT16H39M45S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.37",
+                                                                                       "uptime": "P3M6DT16H39M45S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "9.93.213.133/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P3M15DT17H53M33S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P3M10DT8H12M23S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "10.0.0.0/8",
+                                                                              "ucast-nhops": "1",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P5M25DT16H22M58S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "10.5.1.0/24",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P2M16DT14H8M9S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P2M16DT14H8M10S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "10.6.1.60/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P1M18DT16H57M50S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P1M18DT16H57M49S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "10.6.1.61/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P6DT20H28M44S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P6DT20H28M44S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "10.6.1.62/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P6M9DT14H33M59S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P3M10DT8H12M23S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "10.6.1.63/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P6M9DT14H33M59S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P3M10DT8H12M23S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "10.6.1.64/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P6M9DT14H33M59S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P3M10DT8H12M23S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "10.6.1.65/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P6M9DT14H33M59S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P3M10DT8H12M23S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "10.6.1.66/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P6M9DT14H33M59S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P3M10DT8H12M23S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "10.6.1.67/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P6M9DT14H33M59S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P3M10DT8H12M23S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "10.6.1.68/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P6M9DT14H33M59S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P3M10DT8H12M23S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "10.6.1.69/32",
+                                                                              "ucast-nhops": "1",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P1DT6H31M8S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "10.6.1.71/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P3DT16H30M15S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P3DT16H30M15S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "10.6.1.72/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P6M9DT14H33M59S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P3M10DT8H12M23S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "10.6.1.74/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P4M13DT3H54M29S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P12DT6H26M25S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "10.6.1.75/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P4M13DT3H54M29S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P12DT6H26M25S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "10.6.1.76/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P4M13DT3H54M29S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P12DT6H26M25S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "10.6.1.77/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P4M13DT3H54M29S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P12DT6H26M25S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "10.6.1.78/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P4M13DT3H54M29S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P12DT6H26M25S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "10.6.1.79/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P4M13DT3H54M29S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P12DT6H26M25S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "10.6.1.81/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P2DT4H22M4S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P2DT4H22M4S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "208.71.239.128/25",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.29",
+                                                                                       "uptime": "P3M6DT16H41M1S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.37",
+                                                                                       "uptime": "P3M6DT16H41M1S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "209.114.76.208/28",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P3M15DT17H54M49S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P3M10DT8H13M39S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "209.120.244.101/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.29",
+                                                                                       "uptime": "P3M6DT16H41M1S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.37",
+                                                                                       "uptime": "P3M6DT16H41M1S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "209.196.20.14/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P3M15DT17H54M49S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P3M10DT8H13M39S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "210.105.0.247/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.29",
+                                                                                       "uptime": "P3M6DT16H41M1S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.37",
+                                                                                       "uptime": "P3M6DT16H41M1S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "212.31.69.33/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.29",
+                                                                                       "uptime": "P3M6DT16H41M1S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.37",
+                                                                                       "uptime": "P3M6DT16H41M1S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "213.70.140.107/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.29",
+                                                                                       "uptime": "P3M6DT16H41M1S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.37",
+                                                                                       "uptime": "P3M6DT16H41M1S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "213.199.154.0/24",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.29",
+                                                                                       "uptime": "P3M6DT16H41M1S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.37",
+                                                                                       "uptime": "P3M6DT16H41M1S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "213.206.137.192/27",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.29",
+                                                                                       "uptime": "P3M6DT16H41M1S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.37",
+                                                                                       "uptime": "P3M6DT16H41M1S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "213.244.175.0/24",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.29",
+                                                                                       "uptime": "P3M6DT16H41M1S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.37",
+                                                                                       "uptime": "P3M6DT16H41M1S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "216.32.180.0/24",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.29",
+                                                                                       "uptime": "P3M6DT16H41M1S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.37",
+                                                                                       "uptime": "P3M6DT16H41M1S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "216.32.181.0/24",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.29",
+                                                                                       "uptime": "P3M6DT16H41M1S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.37",
+                                                                                       "uptime": "P3M6DT16H41M1S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "216.52.81.38/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P3M15DT17H54M49S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P3M10DT8H13M39S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "216.52.81.39/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P3M15DT17H54M49S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P3M10DT8H13M39S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "216.58.144.208/28",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P29DT9H9M41S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P29DT9H9M41S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "216.58.150.0/27",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.48",
+                                                                                       "uptime": "P29DT8H50M2S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.52",
+                                                                                       "uptime": "P29DT8H50M2S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64901",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "216.62.186.77/32",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.29",
+                                                                                       "uptime": "P3M6DT16H41M1S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.37",
+                                                                                       "uptime": "P3M6DT16H41M1S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "216.148.222.32/27",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.29",
+                                                                                       "uptime": "P3M6DT16H41M1S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.37",
+                                                                                       "uptime": "P3M6DT16H41M1S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "217.117.146.0/24",
+                                                                              "ucast-nhops": "2",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.29",
+                                                                                       "uptime": "P3M6DT16H41M1S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    },
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.126.37",
+                                                                                       "uptime": "P3M6DT16H41M1S",
+                                                                                       "pref": "20",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "bgp-64800",
+                                                                                       "type": "external",
+                                                                                       "tag": "64222",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           }
+                                                                        ]
+                                                                     }
+                                                                  }
+                                                               }
+                                                            },
+                                                            {
+                                                               "vrf-name-out": "management",
+                                                               "TABLE_addrf": {
+                                                                  "ROW_addrf": {
+                                                                     "addrf": "ipv4",
+                                                                     "TABLE_prefix": {
+                                                                        "ROW_prefix": [
+                                                                           {
+                                                                              "ipprefix": "0.0.0.0/0",
+                                                                              "ucast-nhops": "1",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "FALSE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.124.1",
+                                                                                       "uptime": "P3M6DT17H2M33S",
+                                                                                       "pref": "1",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "static",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "10.234.124.0/24",
+                                                                              "ucast-nhops": "1",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "TRUE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.124.5",
+                                                                                       "ifname": "mgmt0",
+                                                                                       "uptime": "P3M6DT17H2M35S",
+                                                                                       "pref": "0",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "direct",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "10.234.124.5/32",
+                                                                              "ucast-nhops": "1",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "TRUE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.234.124.5",
+                                                                                       "ifname": "mgmt0",
+                                                                                       "uptime": "P3M6DT17H2M35S",
+                                                                                       "pref": "0",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "local",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           }
+                                                                        ]
+                                                                     }
+                                                                  }
+                                                               }
+                                                            },
+                                                            {
+                                                               "vrf-name-out": "dxc_oob",
+                                                               "TABLE_addrf": {
+                                                                  "ROW_addrf": {
+                                                                     "addrf": "ipv4",
+                                                                     "TABLE_prefix": {
+                                                                        "ROW_prefix": [
+                                                                           {
+                                                                              "ipprefix": "10.87.72.0/22",
+                                                                              "ucast-nhops": "1",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "TRUE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.87.72.42",
+                                                                                       "ifname": "Eth1/46",
+                                                                                       "uptime": "P2Y8M19DT16H31M40S",
+                                                                                       "pref": "0",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "direct",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           },
+                                                                           {
+                                                                              "ipprefix": "10.87.72.42/32",
+                                                                              "ucast-nhops": "1",
+                                                                              "mcast-nhops": "0",
+                                                                              "attached": "TRUE",
+                                                                              "TABLE_path": {
+                                                                                 "ROW_path": [
+                                                                                    {
+                                                                                       "ipnexthop": "10.87.72.42",
+                                                                                       "ifname": "Eth1/46",
+                                                                                       "uptime": "P2Y8M19DT16H31M40S",
+                                                                                       "pref": "0",
+                                                                                       "metric": "0",
+                                                                                       "clientname": "local",
+                                                                                       "stale": "FALSE",
+                                                                                       "unres": "FALSE",
+                                                                                       "hidden": "FALSE",
+                                                                                       "stale-label": "FALSE",
+                                                                                       "ubest": "TRUE"
+                                                                                    }
+                                                                                 ]
+                                                                              }
+                                                                           }
+                                                                        ]
+                                                                     }
+                                                                  }
+                                                               }
+                                                            }
+                                                         ]
+                                                      }
+                                                   }
+                                                }
+                                             }
+                                          ]
+                                       }
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            ],
+            "ip": {
+               "route": ""
+            }
+         }
+      }
+   },
+   "_xmlns:nf": "urn:ietf:params:xml:ns:netconf:base:1.0",
+   "_xmlns": "http://www.cisco.com/nxos:1.0:urib"
+}

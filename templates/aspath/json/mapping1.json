@@ -1,0 +1,33 @@
+{
+  "maps": [
+    {
+      "name": "DFW1-DCC-BSW01",
+      "text": "RED(BGP AS 64861)",
+      "url": "https://www.google.com"
+    },
+    {
+      "name": "64800",
+      "text": "test"
+    },
+    {
+      "name": "13979",
+      "text": "ATT",
+	  "url": "https://www.google.com"
+    },
+    {
+      "name": "65180",
+      "text": "site1",
+      "url": "https://www.google.com"
+    },
+    {
+      "name": "65181",
+      "text": "site2",
+      "url": "https://www.youtube.com"
+    },
+    {
+      "name": "65187",
+      "text": "site3",
+      "url": "https://www.yahoo.com"
+    }
+  ]
+}

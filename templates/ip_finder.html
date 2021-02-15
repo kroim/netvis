@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "partials/head.html" %}
+<body class="hold-transition sidebar-mini">
+<div class="wrapper"
+     style='font-family: "Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol" !important;'>
+    {% include "partials/header.html" %}
+    {% include "partials/sidebar.html" %}
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+
+        <script type="text/javascript">
+            $(function () {
+                //Toggle for parent one//
+
+                $("body").on("click", ".parent1 h2 a", function (e) {
+                    if (e) e.preventDefault();
+                    if (e.target != this) {
+                        return;
+                    }
+                    $(".endpoint1").slideToggle();
+                });
+
+                //Toggle for parent Two//
+
+                $("body").on("click", ".parent2 h2 a", function (e) {
+                    if (e) e.preventDefault();
+                    if (e.target != this) {
+                        return;
+                    }
+                    $(".endpoint2").slideToggle();
+                });
+
+
+                //toggleOperation
+
+
+                //Toggle for Parent one Child one//
+
+                $("body").on("click", ".p1c1", function (e) {
+                    if (e) e.preventDefault();
+                    if (e.target != this) {
+                        return;
+                    }
+                    $(".c1").slideToggle();
+                });
+
+                //Toggle for Parent one Child Two//
+
+                $("body").on("click", ".p1c2", function (e) {
+                    if (e) e.preventDefault();
+                    if (e.target != this) {
+                        return;
+                    }
+                    $(".c2").slideToggle();
+                });
+
+                //Toggle for Parent one Child Three//
+
+                $("body").on("click", ".p1c3", function (e) {
+                    if (e) e.preventDefault();
+                    if (e.target != this) {
+                        return;
+                    }
+                    $(".c3").slideToggle();
+                });
+
+                //Toggle for Parent one Child Four//
+
+                $("body").on("click", ".p1c4", function (e) {
+                    if (e) e.preventDefault();
+                    if (e.target != this) {
+                        return;
+                    }
+                    $(".c4").slideToggle();
+                });
+
+                //Toggle for Parent one Child Five//
+
+                $("body").on("click", ".p1c5", function (e) {
+                    if (e) e.preventDefault();
+                    if (e.target != this) {
+                        return;
+                    }
+                    $(".c5").slideToggle();
+                });
+
+
+                //Toggle for Parent Two Child One//
+
+                $("body").on("click", ".p2c1", function (e) {
+                    if (e) e.preventDefault();
+                    if (e.target != this) {
+                        return;
+                    }
+                    $(".c6").slideToggle();
+                });
+
+                //Toggle for Paret Two Child Two//
+
+                $("body").on("click", ".p2c2", function (e) {
+                    if (e) e.preventDefault();
+                    if (e.target != this) {
+                        return;
+                    }
+                    $(".c7").slideToggle();
+                });
+
+            });
+
+            // Function for hide Child Content when page loads//
+
+            $(document).ready(function () {
+                $(".c1,.c2,.c3,.c4,.c5,.c6,.c7").hide();
+            });
+
+            // Upload the excel file function for Child1 of Parent 1 //
+
+            $(function () {
+                $(".p1c1").click(function () {
+                    val = 0;
+                    upload_xlsx = "upload-xlsx1";
+                    inputs = "#input1";
+                    input_ID = 'input1';
+                    tables = "#table1";
+                    table_ID = "table1";
+                    outputs = "#output1";
+                    output_ID = "output1";
+                    outputs = "#output11";
+                    output_ID2 = "output11";
+                    //get();
+                    $("[name=" + upload_xlsx + "]").change(function () {
+                        $(inputs).html("");
+                        ExportToTable();
+                    });
+
+                });
+
+                // Upload the excel file function for Child2 of Parent 1 //
+
+                $(".p1c2").click(function () {
+                    val = 2;
+                    upload_xlsx = "upload-xlsx2";
+                    inputs = "#input2";
+                    input_ID = "input2";
+                    tables = "#table2";
+                    table_ID = "table2";
+                    outputs = "#output2";
+                    output_ID = "output2";
+                    //get();
+                    $("[name=" + upload_xlsx + "]").change(function () {
+                        $(inputs).html("");
+                        ExportToTable1();
+                    });
+
+                });
+
+                // Upload the excel file function for Child3 of Parent 1 //
+
+                $(".p1c3").click(function () {
+                    val = 3;
+                    upload_xlsx = "upload-xlsx3";
+                    inputs = "#input3";
+                    input_ID = "input3";
+                    tables = "#table3";
+                    table_ID = "table3";
+                    outputs = "#output3";
+                    output_ID = "output3";
+                    //get();
+                    $("[name=" + upload_xlsx + "]").change(function () {
+                        $(inputs).html("");
+                        ExportToTable();
+                    });
+
+                });
+
+                // Upload the excel file function for Child4 of Parent 1 //
+
+                $(".p1c4").click(function () {
+                    val = 4;
+                    upload_xlsx = "upload-xlsx4";
+                    inputs = "#input4";
+                    input_ID = "input4";
+                    tables = "#table4";
+                    table_ID = "table4";
+                    outputs = "#output4";
+                    output_ID = "output4";
+                    //get();
+                    $("[name=" + upload_xlsx + "]").change(function () {
+                        $(inputs).html("");
+                        ExportToTable();
+                    });
+
+                });
+
+                // Upload the excel file function for Child5 of Parent 1 //
+
+                $(".p1c5").click(function () {
+                    val = 5;
+                    upload_xlsx = "upload-xlsx5";
+                    inputs = "#input5";
+                    input_ID = "input5";
+                    tables = "#table5";
+                    table_ID = "table5";
+                    outputs = "#output5";
+                    output_ID = "output5";
+                    //get();
+                    $("[name=" + upload_xlsx + "]").change(function () {
+                        $(inputs).html("");
+                        ExportToTable();
+                    });
+
+                });
+
+                // Upload the excel file function for Child1 of Parent 2 //
+
+                $(".p2c1").click(function () {
+                    val = 3;
+                    upload_xlsx = "upload-xlsx3";
+                    inputs = "#input3";
+                    input_ID = "input3";
+                    tables = "#table3";
+                    table_ID = "table3";
+                    outputs = "#output3";
+                    output_ID = "output3";
+                    //get();
+                    $("[name=" + upload_xlsx + "]").change(function () {
+                        $(inputs).html("");
+                        ExportToTable();
+                    });
+
+                });
+
+                // Upload the excel file function for Child2 of Parent 2 //
+
+                $(".p2c2").click(function () {
+                    val = 4;
+                    upload_xlsx = "upload-xlsx4";
+                    inputs = "#input4";
+                    input_ID = "input4";
+                    tables = "#table4";
+                    table_ID = "table4";
+                    outputs = "#output4";
+                    output_ID = "output4";
+                    //get();
+                    $("[name=" + upload_xlsx + "]").change(function () {
+                        $(inputs).html("");
+                        ExportToTable();
+                    });
+
+                });
+
+                //Function for print a Excel File Data in Tabular form//
+
+
+            });
+
+            // Function to import excel sheet data into table //
+            // Access/Trunk-Port
+            function ExportToTable() {
+                var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.xlsx|.xls)$/;
+                /*Checks whether the file is a valid excel file*/
+                if (regex.test($("[name=" + upload_xlsx + "]").val().toLowerCase())) {
+                    var xlsxflag = false; /*Flag for checking whether excel is .xls format or .xlsx format*/
+                    if ($("[name=" + upload_xlsx + "]").val().toLowerCase().indexOf(".xlsx") > 0) {
+                        xlsxflag = true;
+                    }
+                    /*Checks whether the browser supports HTML5*/
+                    if (typeof (FileReader) != "undefined") {
+                        var reader = new FileReader();
+                        reader.onload = function (e) {
+                            var data = e.target.result;
+                            /*Converts the excel data in to object*/
+                            if (xlsxflag) {
+                                var workbook = XLSX.read(data, {
+                                    type: 'binary'
+                                });
+                            } else {
+                                var workbook = XLS.read(data, {
+                                    type: 'binary'
+                                });
+                            }
+                            /*Gets all the sheetnames of excel in to a variable*/
+                            var sheet_name_list = workbook.SheetNames;
+
+                            // Variable "Val" will select the sheet number to show //
+
+                            var cnt = val; /*This is used for restricting the script to consider only first sheet of excel*/
+                            sheet_name_list.forEach(function (y) {
+                                /*Iterate through all sheets*/
+                                /*Convert the cell value to Json*/
+                                if (xlsxflag) {
+                                    var exceljson = XLSX.utils.sheet_to_json(workbook.Sheets[y]);
+                                } else {
+                                    var exceljson = XLS.utils.sheet_to_row_object_array(workbook.Sheets[y]);
+                                }
+                                if (exceljson.length > 0 && cnt == val) {
+                                    BindJqurery(exceljson, inputs);
+                                    // If value is "0" then it will show the firest sheet by default//
+                                    if (val == 0) {
+                                        cnt++;
+                                    } else {
+                                        val;
+                                    }
+
+                                }
+                            });
+                            $(inputs).hide();
+                        }
+                        if (xlsxflag) {
+                            /*If excel file is .xlsx extension than creates a Array Buffer from excel*/
+                            reader.readAsArrayBuffer($("[name=" + upload_xlsx + "]")[0].files[0]);
+                        } else {
+                            reader.readAsBinaryString($("[name=" + upload_xlsx + "]")[0].files[0]);
+                        }
+                    } else {
+                        alert("Sorry! Your browser does not support HTML5!");
+                    }
+                } else {
+                    alert("Please upload a valid Excel file!");
+                }
+            }
+
+
+            function BindJqurery(jsondata, dropid) {
+                /*Function used to convert the JSON array to select tag*/
+                var count = jsondata.length;
+                var data = "";
+                var table = "<table class='table table-bordered table-striped'>";
+                table += "<tr style='background:#ffffc5;'>";
+                table += "<td style='font-weight:bold;font-size:14'>Server Name</td><td style='font-weight:bold;font-size:14'>Port Type</td><td style='font-weight:bold;font-size:14'>Vlan's Allowed</td><td style='font-weight:bold;font-size:14'>Switch</td><td style='font-weight:bold;font-size:14'>Interface</td><td style='font-weight:bold;font-size:14'>BPDU Guard</td><td style='font-weight:bold;font-size:14'>Port Fast</td><td style='font-weight:bold;font-size:14'>MTU</td><td style='font-weight:bold;font-size:14'>Speed</td><td style='font-weight:bold;font-size:14'>Admin State UP</td>";
+                table += "</tr>";
+                $.each(jsondata, function (key, value) {
+                    if (key == (count - 1)) {
+                        var module1 = value["Module"];
+                        if (typeof module1 === "undefined") {
+                            module1 = "1";
+                        }
+                        var bpdumain1 = value["BPDU Guard"];
+                        if (typeof bpdumain1 === "undefined") {
+                            bpdumain1 = "true";
+                        }
+                        var pfmain1 = value["Port Fast"];
+                        if (typeof pfmain1 === "undefined") {
+                            pfmain1 = "true";
+                        }
+                        var mtumain1 = value["MTU"];
+                        if (typeof mtumain1 === "undefined") {
+                            mtumain1 = "jumbo";
+                        }
+                        var speedmain1 = value["Speed"];
+                        if (typeof speedmain1 === "undefined") {
+                            speedmain1 = "Auto";
+                        }
+                        var adminmain1 = value["Admin State UP"];
+                        if (typeof adminmain1 === "undefined") {
+                            adminmain1 = "true";
+                        }
+                        var vlanmain1 = value["Vlan's Allowed*"];
+                        var ptmain1 = value["Port Type*"];
+                        if (typeof vlanmain1 === "undefined" && ptmain1 === "Trunk") {
+                            vlanmain1 = "all";
+                        }
+                        if (typeof vlanmain1 === "undefined" && ptmain1 === "Access") {
+                            vlanmain1 = "X";
+                        }
+                        var shmain1 = value["Server Hostname (Not FQDN)*"];
+                        if (typeof shmain1 === "undefined") {
+                            shmain1 = "";
+                        }
+                        var dismain1 = value["Description (One Word)*"];
+                        if (typeof dismain1 === "undefined") {
+                            dismain1 = "";
+                        }
+                        var platmain1 = value["Platform type*"];
+                        if (typeof platmain1 === "undefined") {
+                            platmain1 = "";
+                        }
+                        var nicmain1 = value["NIC*"];
+                        if (typeof nicmain1 === "undefined") {
+                            nicmain1 = "";
+                        }
+                        var ifmain1 = value["Interface Function*"];
+                        if (typeof ifmain1 === "undefined") {
+                            ifmain1 = "";
+                        }
+                        var fexmain1 = value["1Gig FEX*"];
+                        if (typeof fexmain1 === "undefined") {
+                            fexmain1 = "X";
+                        }
+                        var portmain1 = value["Port*"];
+                        if (typeof portmain1 === "undefined") {
+                            portmain1 = "X";
+                        }
+                        var swnmain1 = value["Switch Hostname*"];
+                        if (typeof swnmain1 === "undefined") {
+                            swnmain1 = "X";
+                        }
+
+                        if (value["1Gig FEX*"] == "NO") {
+                            var inter = "Ethernet" + module1 + "/" + portmain1;
+                        } else {
+                            var inter = "Ethernet" + fexmain1 + "/" + module1 + "/" + portmain1;
+                        }
+
+                        // this is the last colum
+                        var newdis = shmain1 + "-" + dismain1 + "-" + platmain1 + "-" + nicmain1 + "-" + ifmain1;
+                        data += newdis + " " + ptmain1 + " " + vlanmain1 + " " + swnmain1 + " " + inter + " " + bpdumain1 + " " + pfmain1 + " " + mtumain1 + " " + speedmain1 + " " + adminmain1;
+                    } else {
+
+                        var module1 = value["Module"];
+                        if (typeof module1 === "undefined") {
+                            module1 = "1";
+                        }
+                        var bpdumain1 = value["BPDU Guard"];
+                        if (typeof bpdumain1 === "undefined") {
+                            bpdumain1 = "true";
+                        }
+                        var pfmain1 = value["Port Fast"];
+                        if (typeof pfmain1 === "undefined") {
+                            pfmain1 = "true";
+                        }
+                        var mtumain1 = value["MTU"];
+                        if (typeof mtumain1 === "undefined") {
+                            mtumain1 = "jumbo";
+                        }
+                        var speedmain1 = value["Speed"];
+                        if (typeof speedmain1 === "undefined") {
+                            speedmain1 = "Auto";
+                        }
+                        var adminmain1 = value["Admin State UP"];
+                        if (typeof adminmain1 === "undefined") {
+                            adminmain1 = "true";
+                        }
+                        var vlanmain1 = value["Vlan's Allowed*"];
+                        var ptmain1 = value["Port Type*"];
+                        if (typeof vlanmain1 === "undefined" && ptmain1 === "Trunk") {
+                            vlanmain1 = "all";
+                        }
+                        if (typeof vlanmain1 === "undefined" && ptmain1 === "Access") {
+                            vlanmain1 = "X";
+                        }
+                        var shmain1 = value["Server Hostname (Not FQDN)*"];
+                        if (typeof shmain1 === "undefined") {
+                            shmain1 = "";
+                        }
+                        var dismain1 = value["Description (One Word)*"];
+                        if (typeof dismain1 === "undefined") {
+                            dismain1 = "";
+                        }
+                        var platmain1 = value["Platform type*"];
+                        if (typeof platmain1 === "undefined") {
+                            platmain1 = "";
+                        }
+                        var nicmain1 = value["NIC*"];
+                        if (typeof nicmain1 === "undefined") {
+                            nicmain1 = "";
+                        }
+                        var ifmain1 = value["Interface Function*"];
+                        if (typeof ifmain1 === "undefined") {
+                            ifmain1 = "";
+                        }
+                        var fexmain1 = value["1Gig FEX*"];
+                        if (typeof fexmain1 === "undefined") {
+                            fexmain1 = "X";
+                        }
+                        var portmain1 = value["Port*"];
+                        if (typeof portmain1 === "undefined") {
+                            portmain1 = "X";
+                        }
+                        var swnmain1 = value["Switch Hostname*"];
+                        if (typeof swnmain1 === "undefined") {
+                            swnmain1 = "X";
+                        }
+                        // these are other columns
+                        if (value["1Gig FEX*"] == "NO") {
+                            var inter = "Ethernet" + module1 + "/" + portmain1;
+                        } else {
+                            var inter = "Ethernet" + fexmain1 + "/" + module1 + "/" + portmain1;
+                        }
+
+                        var newdis = shmain1 + "-" + dismain1 + "-" + platmain1 + "-" + nicmain1 + "-" + ifmain1;
+                        data += newdis + " " + ptmain1 + " " + vlanmain1 + " " + swnmain1 + " " + inter + " " + bpdumain1 + " " + pfmain1 + " " + mtumain1 + " " + speedmain1 + " " + adminmain1 + "\n";
+                    }
+
+                    table += "<tr><td>" + newdis + "</td><td>" + ptmain1 + "</td><td>" + vlanmain1 + "</td><td>" + swnmain1 + "</td><td>" + inter + "</td><td>" + bpdumain1 + "</td><td>" + pfmain1 + "</td><td>" + mtumain1 + "</td><td>" + speedmain1 + "</td><td>" + adminmain1 + "</td></tr>";
+
+                });
+                table += "</table>";
+                //console.log(table);
+                $(tables).html(table);
+                $(inputs).html(data);
+            }
+
+
+            // LAG-Access/Trunk-Port
+
+
+        </script>
+
+        <section class="swagger-section" style="overflow:hidden">
+            <div id="swagger-ui-container" class="swagger-ui-wrap" data-file="lan fabric.json">
+                <ul id="resources">
+                    <li class="resource"></li>
+                    <li id="resource_Control_-_Inventory" class="resource">
+                        <div class="heading parent1" id="p1">
+                            <h2>
+                                <a href="" class="parent1">Network Tools</a>
+                            </h2>
+                        </div>
+                        <ul class="endpoints endpoint1" id="Control_-_Inventory_endpoint_list" style="">
+                            <! -- PARENT1 and Child 1 -->
+
+                            <div id="p1c1">
+                                <li class="endpoint">
+                                    <ul class="operations">
+                                        <li class="post operation po1">
+                                            <div class="heading">
+                                                <h3>
+                                                    <span class="http_method"><a href="" class="">CLEAR</a></span>
+                                                    <span class="path"><a href="javascript:" class="p1c1">IP Finder</a></span>
+                                                </h3>
+                                            </div>
+                                            <div class="content c1" id="csrf" style="">
+                                                <form accept-charset="UTF-8" class="sandbox" id="ip-finder-form">
+                                                    <textarea class="body-textarea" placeholder="IP Addresses" id="output1"></textarea>
+                                                    <br>
+                                                    <br>
+                                                    <input class="submit" type="button" value="Find" onclick="process1()">
+                                                    <br>
+                                                    <table class="fullwidth response-messages">
+                                                        <thead>
+                                                        <tr>
+                                                            <th></th>
+                                                        </tr>
+                                                        </thead>
+                                                    </table>
+                                                    <br>
+
+                                                    <!-- /.card-header -->
+                                                    <!--                                                    <div id="jsGrid1"></div>-->
+                                                    <div class="table-responsive data-table">
+                                                        <table class="table table-striped table-bordered" id="ip_search_table" style="width: 100%;">
+                                                            <thead>
+                                                            <tr>
+                                                                <td style="width: 10%">IP</td>
+                                                                <td style="width: 10%">Subnet</td>
+                                                                <td style="width: 25%">Location</td>
+                                                                <td style="width: 15%">VRF</td>
+                                                                <td style="width: 10%">L3</td>
+                                                                <td style="width: 10%">MTU</td>
+                                                                <td style="width: 10%">TAG</td>
+                                                                <td style="width: 10%">PCI/PII</td>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <!-- /.card-body -->
+
+                                                </form>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </div>
+
+                            <! -- PARENT1 and Child 2 -->
+                            <li class="endpoint child2">
+                                <ul class="operations">
+                                    <li class="post operation po2">
+                                        <div class="heading">
+                                            <h3>
+                                                <span class="http_method"><a href="#" class="">CLEAR</a></span>
+                                                <span class="path"><a href="" class="p1c2">Routing table</a></span>
+                                            </h3>
+                                        </div>
+                                        <div class="content c2">
+                                            <form action="/netmikoroute" method="post" id="ip-routing-form">
+                                                <div style="margin:0;padding:0;display:inline"></div>
+                                                <textarea type="text" class="form-control" placeholder="Username" name="usern" value="{{routing}}" onfocus=this.value='c65GZTPBX'></textarea>
+                                                <br>
+                                                <input type="text" class="form-control" placeholder="Username" name="usern" value="{{usern}}" onfocus=this.value='c65GZTPBX'>
+                                                <br>
+                                                <input class="submit" type="button" value="VERIFY ON MPLS" onclick="routing1()">
+
+                                                <div class="table-responsive data-table">
+                                                    <table class="table table-striped table-bordered" id="ip_search_table" style="width: 100%;">
+                                                        <thead>
+                                                        <tr>
+                                                            <td style="width: 100%">ROUTING</td>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+
+                                            </form>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- CHILD 3 -->
+                            <li class="endpoint child3">
+                                <ul class="operations">
+                                    <li class="post operation po2">
+                                        <div class="heading">
+                                            <h3>
+                       <span class="http_method">
+                       <a href="" class="">CLEAR</a>
+                       </span>
+                                                <span class="path">
+                       <a href="" class="p1c3">Child 3</a>
+                       </span>
+                                            </h3>
+                                        </div>
+                                        <div class="content c3">
+                                            <form accept-charset="UTF-8" class="sandbox">
+                                                <div style="margin:0;padding:0;display:inline"></div>
+                                                <table>
+                                                    <tbody class="operation-params">
+                                                    <tr>
+                                                        <td class="code"><label></label></td>
+                                                        <input class="submit" type="file" value="Upload" name="upload-xlsx3" onclick="//process()">
+                                                        <br>
+                                                        <br>
+                                                        <div id="table3"></div>
+                                                        <textarea class="body-textarea" placeholder="EXCEL" id="input3" style="display: none;"></textarea>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table class="fullwidth response-messages">
+                                                    <thead>
+                                                    <tr>
+                                                        <th></th>
+                                                    </tr>
+                                                    </thead>
+                                                </table>
+                                                <br>
+                                                <input class="submit" type="button" value="Generate" onclick="process()">
+                                                <br>
+                                                <br>
+                                                <textarea class="body-textarea" placeholder="OUTPUT" id="output3"></textarea>
+                                                <br>
+                                                <br>
+                                                <table class="fullwidth response-messages">
+                                                    <thead>
+                                                    <tr>
+                                                        <th></th>
+                                                    </tr>
+                                                    </thead>
+                                                </table>
+                                                <br>
+                                                <input class="parameter required" placeholder="Username">
+                                                <br>
+                                                <br>
+                                                <input class="parameter required" placeholder="Password">
+                                                <br>
+                                                <br>
+                                                <input class="submit" type="button" value="Token" onclick="process()">
+                                                &nbsp;
+                                                <input class="parameter required" placeholder="Blank Token">
+                                                <br>
+                                                <br>
+                                                <input class="submit" type="button" value="API CALL PUSH" onclick="process()">
+                                            </form>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- Child 4 -->
+                            <li class="endpoint child4">
+                                <ul class="operations">
+                                    <li class="post operation po2">
+                                        <div class="heading">
+                                            <h3>
+                       <span class="http_method">
+                       <a href="" class="">CLEAR</a>
+                       </span>
+                                                <span class="path">
+                       <a href="" class="p1c4">Child 4</a>
+                       </span>
+                                            </h3>
+                                        </div>
+                                        <div class="content c4">
+                                            <form accept-charset="UTF-8" class="sandbox">
+                                                <div style="margin:0;padding:0;display:inline"></div>
+                                                <table>
+                                                    <tbody class="operation-params">
+                                                    <tr>
+                                                        <td class="code"><label></label></td>
+                                                        <input class="submit" type="file" value="Upload" name="upload-xlsx4" onclick="//process()">
+                                                        <br>
+                                                        <br>
+                                                        <div id="table4"></div>
+                                                        <textarea class="body-textarea" placeholder="EXCEL" id="input4" style="display: none;"></textarea>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table class="fullwidth response-messages">
+                                                    <thead>
+                                                    <tr>
+                                                        <th></th>
+                                                    </tr>
+                                                    </thead>
+                                                </table>
+                                                <br>
+                                                <input class="submit" type="button" value="Generate" onclick="process()">
+                                                <br>
+                                                <br>
+                                                <textarea class="body-textarea" placeholder="OUTPUT" id="output4"></textarea>
+                                                <br>
+                                                <br>
+                                                <table class="fullwidth response-messages">
+                                                    <thead>
+                                                    <tr>
+                                                        <th></th>
+                                                    </tr>
+                                                    </thead>
+                                                </table>
+                                                <br>
+                                                <input class="parameter required" placeholder="Username">
+                                                <br>
+                                                <br>
+                                                <input class="parameter required" placeholder="Password">
+                                                <br>
+                                                <br>
+                                                <input class="submit" type="button" value="Token" onclick="process()">
+                                                &nbsp;
+                                                <input class="parameter required" placeholder="Blank Token">
+                                                <br>
+                                                <br>
+                                                <input class="submit" type="button" value="API CALL PUSH" onclick="process()">
+                                            </form>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- CHILD 5 -->
+                            <li class="endpoint child5">
+                                <ul class="operations">
+                                    <li class="post operation po2">
+                                        <div class="heading">
+                                            <h3>
+                       <span class="http_method">
+                       <a href="" class="">CLEAR</a>
+                       </span>
+                                                <span class="path">
+                       <a href="" class="p1c5">Child 5</a>
+                       </span>
+                                            </h3>
+                                        </div>
+                                        <div class="content c5">
+                                            <form accept-charset="UTF-8" class="sandbox">
+                                                <div style="margin:0;padding:0;display:inline"></div>
+                                                <table>
+                                                    <tbody class="operation-params">
+                                                    <tr>
+                                                        <td class="code"><label></label></td>
+                                                        <input class="submit" type="file" value="Upload" name="upload-xlsx5" onclick="//process()">
+                                                        <br>
+                                                        <br>
+                                                        <div id="table5"></div>
+                                                        <textarea class="body-textarea" placeholder="EXCEL" id="input5" style="display: none;"></textarea>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table class="fullwidth response-messages">
+                                                    <thead>
+                                                    <tr>
+                                                        <th></th>
+                                                    </tr>
+                                                    </thead>
+                                                </table>
+                                                <br>
+                                                <input class="submit" type="button" value="Generate" onclick="process()">
+                                                <br>
+                                                <br>
+                                                <textarea class="body-textarea" placeholder="OUTPUT" id="output5"></textarea>
+                                                <br>
+                                                <br>
+                                                <table class="fullwidth response-messages">
+                                                    <thead>
+                                                    <tr>
+                                                        <th></th>
+                                                    </tr>
+                                                    </thead>
+                                                </table>
+                                                <br>
+                                                <input class="parameter required" placeholder="Username">
+                                                <br>
+                                                <br>
+                                                <input class="parameter required" placeholder="Password">
+                                                <br>
+                                                <br>
+                                                <input class="submit" type="button" value="Token" onclick="process()">
+                                                &nbsp;
+                                                <input class="parameter required" placeholder="Blank Token">
+                                                <br>
+                                                <br>
+                                                <input class="submit" type="button" value="API CALL PUSH" onclick="process()">
+                                            </form>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                </ul>
+            </div>
+        </section>
+
+        <script type="text/javascript">
+            // Access/Trunk-Port
+            function process() {
+                var html = "{\r\n";
+                html += "        \"policy\": \"int_access_host_11_1\",\r\n";
+                html += "        \"interfaces\": [\r\n";
+                var html1 = "{\r\n";
+                html1 += "        \"policy\": \"int_trunk_host_11_1\",\r\n";
+                html1 += "        \"interfaces\": [\r\n";
+                var input = document.getElementById(input_ID).value;
+
+                var splitt = input.split("\n");
+                //console.log(input);
+                for (var i = 0; i < splitt.length; i++) {
+                    var splittt = splitt[i].split("\t");
+                    if (splittt.length == 1)
+                        splittt = splitt[i].split(" ");
+                    var name = splittt[0];
+                    var type1 = splittt[1];
+                    var vlan = splittt[2];
+                    var switch1 = splittt[3];
+                    var interface1 = splittt[4];
+                    var bpdu1 = splittt[5];
+                    var portfast1 = splittt[6];
+                    var mtu1 = splittt[7];
+                    var speed1 = splittt[8];
+                    var admin1 = splittt[9];
+                    if (type1 == "Access") {
+                        html += gethtml(name, type1, vlan, switch1, interface1, bpdu1, portfast1, mtu1, speed1, admin1);
+                        if (i < splitt.length - 1)
+                            html += ",";
+
+                    } else {
+                        html1 += gethtml(name, type1, vlan, switch1, interface1, bpdu1, portfast1, mtu1, speed1, admin1);
+                        if (i < splitt.length - 1)
+                            html1 += ",";
+
+                    }
+
+                }
+                html += "        ]\r\n";
+                html += "}\r\n";
+
+                html1 += "        ]\r\n";
+                html1 += "}\r\n";
+
+                document.getElementById(output_ID).value = html;
+                document.getElementById(output_ID2).value = html1;
+            }
+
+            function gethtml(name, type1, vlan, switch1, interface1, bpdu1, portfast1, mtu1, speed1, admin1) {
+                var switch1 = switch1.replace("SV7-CER-BSW1", "SAL2036UXCR");
+                var switch1 = switch1.replace("SV7-CER-BSW2", "FDO21132K4A");
+                var switch1 = switch1.replace("SV7-CER-LSW101", "SAL2036UXCL");
+                var switch1 = switch1.replace("SV7-CER-LSW102", "FDO21132K3K");
+                var switch1 = switch1.replace("SV7-CER-LSW103", "SAL2038V3M3");
+                var switch1 = switch1.replace("SV7-CER-LSW104", "SV7-CER-LSW104");
+                var switch1 = switch1.replace("SV7-CER-LSW105", "FGE20240C5G");
+                var switch1 = switch1.replace("SV7-CER-LSW106", "FGE20240C4Z");
+                var switch1 = switch1.replace("SV7-CER-LSW201", "FDO24021BEQ");
+                var switch1 = switch1.replace("SV7-CER-LSW202", "FDO24021BV1");
+                var switch1 = switch1.replace("SV7-CER-LSW203", "FDO24020MP0");
+                var switch1 = switch1.replace("SV7-CER-LSW204", "FDO24020MWN");
+                var switch1 = switch1.replace("SV7-CER-LSW205", "SAL2035UU28");
+                var switch1 = switch1.replace("SV7-CER-LSW206", "SAL2035UU2F");
+                var switch1 = switch1.replace("SV7-CER-LSW207", "FDO24020MVH");
+                var switch1 = switch1.replace("SV7-CER-LSW208", "FDO24020MV2");
+                var bpdu1 = bpdu1.replace("undefined", "true");
+                var portfast1 = portfast1.replace("undefined", "true");
+                var mtu1 = mtu1.replace("undefined", "jumbo");
+                var speed1 = speed1.replace("undefined", "Auto");
+                var admin1 = admin1.replace("undefined", "true");
+
+                if (type1 == "Access") {
+
+                    var html = "";
+                    html += "    {\r\n";
+                    html += "        \"serialNumber\": \"" + switch1 + "\",\r\n";
+                    html += "        \"interfaceType\": \"INTERFACE_ETHERNET\",\r\n";
+                    html += "        \"ifName\": \"" + name + "\",\r\n";
+                    html += "        \"fabricName\": \"DFW-SV7-CER\",\r\n";
+                    html += "        \"nvPairs\": {\r\n";
+                    html += "            \"BPDUGUARD_ENABLED\": \"" + bpdu1 + "\",\r\n";
+                    html += "            \"PORTTYPE_FAST_ENABLED\": " + portfast1 + ",\r\n";
+                    html += "            \"MTU\": \"" + mtu1 + "\",\r\n";
+                    html += "            \"SPEED\": \"" + speed1 + "\",\r\n";
+                    html += "            \"ACCESS_VLAN\": \"" + vlan + "\",\r\n";
+                    html += "            \"DESC\": \"" + name + "\",\r\n";
+                    html += "            \"CONF\": \"\",\r\n";
+                    html += "            \"ADMIN_STATE\": " + admin1 + ",\r\n";
+                    html += "            \"INTF_NAME\": \"" + interface1 + "\"\r\n";
+                    html += "        }\r\n";
+                    html += "    }\r\n";
+                    return html;
+                } else {
+
+                    var vlan = vlan.replace("undefined", "all");
+                    var html = "";
+                    html += "    {\r\n";
+                    html += "        \"serialNumber\": \"" + switch1 + "\",\r\n";
+                    html += "        \"interfaceType\": \"INTERFACE_ETHERNET\",\r\n";
+                    html += "        \"ifName\": \"" + name + "\",\r\n";
+                    html += "        \"fabricName\": \"DFW-SV7-CER\",\r\n";
+                    html += "        \"nvPairs\": {\r\n";
+                    html += "            \"BPDUGUARD_ENABLED\": \"" + bpdu1 + "\",\r\n";
+                    html += "            \"PORTTYPE_FAST_ENABLED\": " + portfast1 + ",\r\n";
+                    html += "            \"MTU\": \"" + mtu1 + "\",\r\n";
+                    html += "            \"SPEED\": \"" + speed1 + "\",\r\n";
+                    html += "            \"ALLOWED_VLANS\": \"" + vlan + "\",\r\n";
+                    html += "            \"DESC\": \"" + name + "\",\r\n";
+                    html += "            \"CONF\": \"\",\r\n";
+                    html += "            \"ADMIN_STATE\": " + admin1 + ",\r\n";
+                    html += "            \"INTF_NAME\": \"" + interface1 + "\"\r\n";
+                    html += "        }\r\n";
+                    html += "    }\r\n";
+                    return html;
+                }
+            }
+
+
+        </script>
+
+    </div>
+    <!-- /.content-wrapper -->
+    {% include "partials/footer.html" %}
+</div>
+<!-- ./wrapper -->
+{% include "partials/foot.html" %}
+
+<!--<script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.7.7/xlsx.core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xls/0.7.4-a/xls.core.min.js"></script>
+<link rel="stylesheet" href="{{url_for('static', filename='plugins/slider/bundle.min.css')}}">
+
+<script type="text/javascript" src="{{url_for('static', filename='plugins/jsgrid/demos/db.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='plugins/jsgrid/jsgrid.min.js')}}"></script>
+<link rel="stylesheet" href="{{url_for('static', filename='plugins/jsgrid/jsgrid.min.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='plugins/jsgrid/jsgrid-theme.min.css')}}">
+<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+
+<script type="text/javascript" src="{{url_for('static', filename='d3/js/d3.v3.min.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='d3/js/utility.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='d3/js/ajaxindicator.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='d3/js/bgpTree.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='d3/js/colorTree.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='d3/js/multiParentTree.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='d3/js/renderInitialTable.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='d3/js/renderInfoTable.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='d3/js/renderTxtFile.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='d3/js/forSwitching.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='d3/js/forRouting.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='d3/js/preloader.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='d3/data/mapping-ssh.js')}}"></script>
+<script>
+    let ipTable;
+    $(function () {
+        ipTable = $('#ip_search_table').DataTable({bSort: false});
+    });
+
+    function validateIpAddress(ip_address) {
+        if (/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(ip_address)) {
+            return true;
+        } else {
+            alert("You have entered an invalid IP address!");
+            return false;
+        }
+    }
+
+    function process1() {
+        let ip_content = $('#ip-finder-form #output1').val();
+        let ipArray = ip_content.split('\n');
+        let newIpArr = [];
+        for (let i = 0; i < ipArray.length; i++) {
+            if (!validateIpAddress(ipArray[i])) return;
+            newIpArr.push(ipArray[i].trim())
+        }
+        $.ajax({
+            url: "{{url_for('search_ip_finder')}}",
+            type: "POST",
+            contentType: "application/json",
+            data: JSON.stringify({
+                ip_array: newIpArr
+            }),
+            success: function (res) {
+                if (res.status === 'success') {
+                    let rItems = res.message;
+                    let tbody_html = '';
+                    for (let i = 0; i < rItems.length; i++) {
+                        let rItem = rItems[i];
+                        console.log(rItem);
+                        tbody_html += '<tr id="ip_' + rItem[0] + '"><td>'
+                            + rItem[8] + '</td><td>'
+                            + rItem[1] + '</td><td>'
+                            + rItem[2] + '</td><td>'
+                            + rItem[3] + '</td><td>'
+                            + rItem[4] + '</td><td>'
+                            + rItem[5] + '</td><td>'
+                            + rItem[6] + '</td><td>'
+                            + rItem[7] + '</td></tr>';
+                    }
+                    if (tbody_html !== '') {
+                        ipTable.destroy();
+                        $('#ip_search_table tbody').html(tbody_html);
+                        ipTable = $('#ip_search_table').DataTable({bSort: false});
+                    }
+                } else alert(res.message);
+            }
+        })
+    }
+    
+
+    function routing1() {
+        let ip_content = $('#ip-routing-form #abc1').val();
+        alert(ip_content);
+    }    
+
+
+</script>
+</body>
+</html>
