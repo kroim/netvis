@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Netvis v1.00</title>
-    <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/png" sizes="32x32">
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+{% include "partials/head.html" %}
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+    {% include "partials/header.html" %}
+    {% include "partials/sidebar.html" %}
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1 class="m-0 text-dark"></h1>
+                    </div><!-- /.col -->
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        </ol>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="{{url_for('static', filename='plugins/fontawesome-free/css/all.min.css')}}">
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- icheck bootstrap -->
-    <link rel="stylesheet" href="{{url_for('static', filename='plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="{{url_for('static', filename='dist/css/adminlte.min.css')}}">
-    <!-- Google Font: Source Sans Pro -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-</head>
-<body class="hold-transition login-page" style="background-color:tan;">
-<div class="login-box">
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="login-box">
     <div class="login-logo">
 		<img src="{{ url_for('static', filename='aa1.png') }}" width="375">
     </div>
     <!-- /.login-logo -->
     <div class="card">
         <div class="card-body login-card-body" style="background-color:lightgoldenrodyellow;">
-		
+
             <p class="login-box-msg">Please Enter your Login credentials</p>
 
             <form action="/netmikoconfig" method="post">
@@ -75,7 +82,7 @@
                         <option value="SV7_DCW">DCW</option>
                     </select>
                 </div>
-                <div class="input-group mb-3">                    
+                <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Username" name="usern" value="{{usern}}" onfocus=this.value='c65GZTPBX'>
                     <div class="input-group-append">
                         <div class="input-group-text">
@@ -103,7 +110,13 @@
         <!-- /.login-card-body -->
     </div>
 </div>
+            </div>
+        </section>
+    </div>
+    {% include "partials/footer.html" %}
+</div>
 <!-- /.login-box -->
+{% include "partials/foot.html" %}
 <script>
     function myFunction() {
         alert("Script will execute now !!");
