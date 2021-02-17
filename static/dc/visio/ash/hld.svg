@@ -336,12 +336,15 @@
 		</g>
 		<g id="shape122-152" v:mID="122" v:groupContext="shape" transform="translate(371.25,-501.187)">
 			<title>Sheet.122</title>
-			<ellipse cx="2.53125" cy="645.609" rx="2.53125" ry="2.39062" class="st11"/>
-			  <a xlink:href="https://alligator.io"></a>
+			<a xlink:href="#" id="open_modalRXTX">
+				<ellipse cx="2.53125" cy="645.609" rx="2.53125" ry="2.39062" class="st11"/>
+			</a>
 		</g>
 		<g id="shape128-154" v:mID="128" v:groupContext="shape" transform="translate(397.687,-501.187)">
 			<title>Sheet.128</title>
-			<ellipse cx="2.53125" cy="645.609" rx="2.53125" ry="2.39062" class="st11"/>
+			<a xlink:href="#">
+				<ellipse cx="2.53125" cy="645.609" rx="2.53125" ry="2.39062" class="st11"/>
+			</a>
 		</g>
 		<g id="shape129-156" v:mID="129" v:groupContext="shape" transform="translate(9.00001,-594)">
 			<title>Sheet.129</title>

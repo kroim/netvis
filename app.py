@@ -26,7 +26,6 @@ def dashboard():
         return redirect(url_for('login'))
     else:
         sidebar = {'title': 'Netvis', 'menu': 'dashboard', 'submenu': ''}
-        print(session)
         return render_template('dashboard.html', session=session, sidebar=sidebar)
 
 
