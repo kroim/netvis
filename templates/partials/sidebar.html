@@ -247,14 +247,14 @@
                     </ul>                                        
                 </li>                                                     
                 {% if session.user[3] == 1 %}               
-                <li class="nav-item has-treeview {% if sidebar.menu == 'far' %} menu-open {% endif %}">
-                    <a href="#" class="nav-link {% if sidebar.menu == 'far' %} active {% endif %}">
+                <li class="nav-item has-treeview {% if sidebar.menu == 'settings' %} menu-open {% endif %}">
+                    <a href="#" class="nav-link {% if sidebar.menu == 'settings' %} active {% endif %}">
                         <i class="nav-icon fas fa-user-cog"></i>
                         <p>Settings<i class="right fas fa-angle-left"></i></p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="/user-manage" class="nav-link {% if sidebar.menu == 'user-manage' %} active {% endif %}">
+                            <a href="/user-manage" class="nav-link {% if sidebar.submenu == 'user-manage' %} active {% endif %}">
                                 <i class="far fa-circle nav-icon" style="color: #339af0;"></i>
                                 <p>Users</p>
                             </a>
@@ -262,7 +262,7 @@
                     </ul>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="/admin" class="nav-link {% if sidebar.menu == 'admin' %} active {% endif %}">
+                            <a href="/admin" class="nav-link {% if sidebar.submenu == 'admin' %} active {% endif %}">
                                 <i class="far fa-circle nav-icon" style="color: #339af0;"></i>
                                 <p>Database</p>
                             </a>
@@ -270,7 +270,7 @@
                     </ul>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="/netmikoconfig" class="nav-link {% if sidebar.submenu == 'far' %} active {% endif %}">
+                            <a href="/netmikoconfig" class="nav-link {% if sidebar.submenu == 'configuration' %} active {% endif %}">
                                 <i class="far fa-circle nav-icon" style="color: #339af0;"></i>
                                 <p>Configuration</p>
                             </a>

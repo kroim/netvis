@@ -94,7 +94,7 @@ def admin():
         table_names = functions.get_table_names()
         pci_rows = functions.get_pci()
     records = functions.get_record_time()
-    sidebar = {'title': 'Netvis', 'menu': 'admin', 'submenu': ''}
+    sidebar = {'title': 'Netvis', 'menu': 'settings', 'submenu': 'admin'}
     return render_template('admin.html', session=session, sidebar=sidebar, db_rows=pci_rows, table_names=table_names)
 
 
@@ -429,12 +429,10 @@ def user_management():
             return redirect(url_for('login'))
         if not session['user'][3] == 1:
             return redirect(url_for('error404'))
-        print(session['user'])
         if session['user'][3] != 1:
             return redirect(url_for('error404'))
-        sidebar = {'title': 'User Management', 'menu': 'user-manage'}
+        sidebar = {'title': 'User Management', 'menu': 'settings', 'submenu': 'user-manage'}
         users = functions.db_manage_user('all', 'none', 'none')
-        print("users: ", users)
         return render_template('user_management.html', session=session, sidebar=sidebar, users=users)
     else:
         if 'user' not in session:
