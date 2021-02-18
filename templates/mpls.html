@@ -1,79 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Bgp & Color</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">	
-    <link rel="stylesheet" href="{{url_for('static', filename='aspath/css/style.css')}}">	
-    <script src="{{url_for('static', filename='aspath/js/jquery-1.10.2.min.js')}}"></script>
-    <script src="{{url_for('static', filename='aspath/js/d3.v3.min.js')}}"></script>
-    <script src="{{url_for('static', filename='aspath/js/canvas-toBlob.js')}}"></script>
-    <script src="{{url_for('static', filename='aspath/js/FileSaver.min.js')}}"></script>
-    <script src="{{url_for('static', filename='aspath/js/bgpTree.js')}}"></script>
-    <script src="{{url_for('static', filename='aspath/js/colorTree.js')}}"></script>
-</head>
-<body style="background-color:#EEE">
-<button type="button" class="but1 but1c" style="margin-right: 30px" onclick="window.open('www.w3schools.com')">SSH</button>
+{% include "partials/head.html" %}
 
-<div class="dropdown">
-  <button class="dropbtn">Routing</button>
-  <div class="dropdown-content">
-	<!--<a id="btnColor">INT BRIEF</a> -->
-    <a id="btnBgp">BGP</a>
-	
-  </div>
+<link rel="stylesheet" href="{{url_for('static', filename='aspath/css/style.css')}}">
+<script src="{{url_for('static', filename='aspath/js/d3.v3.min.js')}}"></script>
+<script src="{{url_for('static', filename='aspath/js/canvas-toBlob.js')}}"></script>
+<script src="{{url_for('static', filename='aspath/js/FileSaver.min.js')}}"></script>
+<script src="{{url_for('static', filename='aspath/js/bgpTree.js')}}"></script>
+<script src="{{url_for('static', filename='aspath/js/colorTree.js')}}"></script>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+    {% include "partials/header.html" %}
+    {% include "partials/sidebar.html" %}
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1 class="m-0 text-dark"></h1>
+                    </div><!-- /.col -->
+                    <div class="col-sm-6">
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <button type="button" class="but1 but1c" style="margin-right: 30px" onclick="window.open('www.w3schools.com')">SSH</button>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Routing</button>
+                    <div class="dropdown-content">
+                        <!--<a id="btnColor">INT BRIEF</a> -->
+                        <a id="btnBgp">BGP</a>
+
+                    </div>
+                </div>
+
+                <button type="button" class="but3 but3c" style="margin-right: 5px" id="btnSave">Snap</button>
+                <button type="button" class="but3 but3c" style="margin-right: 5px" id="btnSearch">Search</button>
+                <input type="text" id="inputKey" style="margin-right: 5px" placeholder="Search..." onkeydown="keyDown(event)"/>
+                <div>
+                    <div id="tree-container"></div>
+                </div>
+            </div>
+        </section>
+    </div>
 </div>
 
-<button type="button" class="but3 but3c" style="margin-right: 5px" id="btnSave">Snap</button>
-<button type="button" class="but3 but3c" style="margin-right: 5px" id="btnSearch">Search</button>
-<input type="text" id="inputKey" style="margin-right: 5px" placeholder="Search..." onkeydown="keyDown(event)"/>
-<div>
-    <div id="tree-container"></div>
-</div>
 <!--<p><iframe src="new-json/system/log.txt" id="log" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;"></iframe></p>-->
 <!--<p><iframe src="new-json/system/config.txt" id="log" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;"></iframe></p>-->
 
 </body>
 <script>
-    function ajaxindicatorstart(text)
-    {
-        if(jQuery('body').find('#resultLoading').attr('id') !== 'resultLoading'){
-            jQuery('body').append('<div id="resultLoading" style="display:none"><div><img src="/static/aspath/ajax-loader.gif"><div>'+text+'</div></div><div class="bg"></div></div>');
+    function ajaxindicatorstart(text) {
+        if (jQuery('body').find('#resultLoading').attr('id') !== 'resultLoading') {
+            jQuery('body').append('<div id="resultLoading" style="display:none"><div><img src="/static/aspath/ajax-loader.gif"><div>' + text + '</div></div><div class="bg"></div></div>');
         }
         jQuery('#resultLoading').css({
-            'width':'100%',
-            'height':'100%',
-            'position':'fixed',
-            'z-index':'10000000',
-            'top':'0',
-            'left':'0',
-            'right':'0',
-            'bottom':'0',
-            'margin':'auto'
+            'width': '100%',
+            'height': '100%',
+            'position': 'fixed',
+            'z-index': '10000000',
+            'top': '0',
+            'left': '0',
+            'right': '0',
+            'bottom': '0',
+            'margin': 'auto'
         });
 
         jQuery('#resultLoading .bg').css({
-            'background':'#000000',
-            'opacity':'0.7',
-            'width':'100%',
-            'height':'100%',
-            'position':'absolute',
-            'top':'0'
+            'background': '#000000',
+            'opacity': '0.7',
+            'width': '100%',
+            'height': '100%',
+            'position': 'absolute',
+            'top': '0'
         });
 
         jQuery('#resultLoading>div:first').css({
             'width': '250px',
-            'height':'75px',
+            'height': '75px',
             'text-align': 'center',
             'position': 'fixed',
-            'top':'0',
-            'left':'0',
-            'right':'0',
-            'bottom':'0',
-            'margin':'auto',
-            'font-size':'16px',
-            'z-index':'10',
-            'color':'#ffffff'
+            'top': '0',
+            'left': '0',
+            'right': '0',
+            'bottom': '0',
+            'margin': 'auto',
+            'font-size': '16px',
+            'z-index': '10',
+            'color': '#ffffff'
 
         });
 
@@ -81,8 +103,8 @@
         jQuery('#resultLoading').fadeIn(300);
         jQuery('body').css('cursor', 'wait');
     }
-    function ajaxindicatorstop()
-    {
+
+    function ajaxindicatorstop() {
         jQuery('#resultLoading .bg').height('100%');
         jQuery('#resultLoading').fadeOut(300);
         jQuery('body').css('cursor', 'default');
@@ -94,9 +116,9 @@
      */
     ajaxindicatorstart("Loading...   Please Wait...");
     var bgpData = {}, bgpDataOriginal = {}, bgpDataLoaded = false;
-    var colorData={}, colorDataOriginal={}, colorDataLoaded=false;
-    var mappingData=[];
-    const MODE_NONE=0, MODE_BGP = 1, MODE_COLOR = 2;
+    var colorData = {}, colorDataOriginal = {}, colorDataLoaded = false;
+    var mappingData = [];
+    const MODE_NONE = 0, MODE_BGP = 1, MODE_COLOR = 2;
     var modeSetting = MODE_NONE;
 
     /**
@@ -107,9 +129,10 @@
         bgpData.children = [];
 
     }
-    function initColor(){
-        colorData.name="DFW1-DCC-BSW01";
-        colorData.children=[];
+
+    function initColor() {
+        colorData.name = "DFW1-DCC-BSW01";
+        colorData.children = [];
     }
 
     /**
@@ -150,14 +173,13 @@
             var paths = host[i].TABLE_path.ROW_path;
 //console.log(host[i]);
             for (var j = 0; j < paths.length; j++) {
-			//console.log(paths);
+                //console.log(paths);
                 var isNone = false;
                 if (paths[j].best === "bestpath") {
                     isNone = true;
                 } else {
                     isNone = false;
                 }
-				console.log(isNone);
                 if (paths[j].best === "bestpath") {
                     if (paths[j] && paths[j].aspath) {
                         var asPaths = paths[j].aspath.split(" ");
@@ -177,7 +199,7 @@
                         // if searchmode: check if it matches
 
                         if (key && key.length > 0) {
-                            if (ipprefix.indexOf(key, 0) >= 0 || paths[j].aspath.indexOf(key,0)>=0) {
+                            if (ipprefix.indexOf(key, 0) >= 0 || paths[j].aspath.indexOf(key, 0) >= 0) {
                                 //console.log("key="+key+"-"+ipprefix);
                                 addChildNode(bgpData, childNode);
                             } else {
@@ -204,50 +226,56 @@
      * @param data
      * @param key
      */
-    var vrf=[];
-    var intf=[];
+    var vrf = [];
+    var intf = [];
 
-    function generateColorData(data, key){
+    function generateColorData(data, key) {
         initColor();
-        vrf=data.TABLE_vrf;
-        intf=data.TABLE_intf;
-        var count=vrf.length>intf.length?vrf.length:intf.length;
-        for (var i=0;i<count;i++){
-            var child={};child.children=[];
-            var temp0=vrf[i].ROW_vrf['vrf-name-out'];
-            var temp1=intf[i].ROW_intf['prefix'];
-            var temp2=intf[i].ROW_intf['intf-name'];
-            var temp3=intf[i].ROW_intf['proto-state'];
-            var temp4=intf[i].ROW_intf['link-state'];
-            var temp5=intf[i].ROW_intf['admin-state'];
+        vrf = data.TABLE_vrf;
+        intf = data.TABLE_intf;
+        var count = vrf.length > intf.length ? vrf.length : intf.length;
+        for (var i = 0; i < count; i++) {
+            var child = {};
+            child.children = [];
+            var temp0 = vrf[i].ROW_vrf['vrf-name-out'];
+            var temp1 = intf[i].ROW_intf['prefix'];
+            var temp2 = intf[i].ROW_intf['intf-name'];
+            var temp3 = intf[i].ROW_intf['proto-state'];
+            var temp4 = intf[i].ROW_intf['link-state'];
+            var temp5 = intf[i].ROW_intf['admin-state'];
 
             if (key && key.length) {
                 if (
-                    (temp0.indexOf(key)<0)&&
-                    (temp1.indexOf(key)<0)&&
-                    (temp2.indexOf(key)<0)&&
-                    (temp3.indexOf(key)<0)&&
-                    (temp4.indexOf(key)<0)&&
-                    (temp5.indexOf(key)<0)){
+                    (temp0.indexOf(key) < 0) &&
+                    (temp1.indexOf(key) < 0) &&
+                    (temp2.indexOf(key) < 0) &&
+                    (temp3.indexOf(key) < 0) &&
+                    (temp4.indexOf(key) < 0) &&
+                    (temp5.indexOf(key) < 0)) {
                     continue;
                 }
             }
 
-            child.name=temp0;
-            child.color=temp0;
-            child.children.push({name:temp1,color:temp0,children:[{name:temp2,color:temp0, children:[{name:temp3,children:[{name:temp4,children:[{name:temp5}]}]}]}]});
+            child.name = temp0;
+            child.color = temp0;
+            child.children.push({
+                name: temp1,
+                color: temp0,
+                children: [{name: temp2, color: temp0, children: [{name: temp3, children: [{name: temp4, children: [{name: temp5}]}]}]}]
+            });
             addChildNode(colorData, child);
         }
         //console.log(colorData);
         return colorData;
-		
+
     }
-//console.log(colorData);
+
+    //console.log(colorData);
     /**
      * render Tree of Dendrogram
      * @param data
      */
-    function renderTree(data){
+    function renderTree(data) {
         switch (modeSetting) {
             case MODE_BGP:
                 renderBGPTree(data);
@@ -258,24 +286,24 @@
             default:
                 break;
         }
-     }
+    }
 
-    function keyDown(event){
-        if (event.key=='Enter')
+    function keyDown(event) {
+        if (event.key == 'Enter')
             $('#btnSearch').click();
     }
 
     $(document).ready(function () {
         // show dendrogram for Bgp
         $('#btnBgp').click(function () {
-            document.getElementById('inputKey').value="";
+            document.getElementById('inputKey').value = "";
             modeSetting = MODE_BGP;
             $('#btnSearch').click();
         });
 
         // show dendrogram for Color
         $('#btnColor').click(function () {
-            document.getElementById('inputKey').value="";
+            document.getElementById('inputKey').value = "";
             modeSetting = MODE_COLOR;
             $('#btnSearch').click();
         });
@@ -287,7 +315,7 @@
             //alert('key = ' + key);
             ajaxindicatorstart("Loading...   Please Wait...");
             d3.select("svg").remove();
-            setTimeout(function(){
+            setTimeout(function () {
                 var extractData;
                 switch (modeSetting) {
                     case MODE_BGP:
@@ -335,7 +363,7 @@
             async: false,
             success: function (data) {
                 //console.log(data);
-                if (!colorDataLoaded){
+                if (!colorDataLoaded) {
                     colorDataOriginal = data;
                     colorDataLoaded = true;
                 }
@@ -351,7 +379,7 @@
             dataType: 'json',
             async: false,
             success: function (data) {
-                mappingData=data.maps;
+                mappingData = data.maps;
             }
         });
 

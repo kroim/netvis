@@ -51,7 +51,7 @@ def mpls():
     if 'user' not in session:
         return redirect(url_for('login'))
     else:
-        sidebar = {'title': 'Netvis', 'menu': 'mpls', 'submenu': ''}
+        sidebar = {'title': 'Bgp & Color', 'menu': 'mpls', 'submenu': ''}
         return render_template('/mpls.html', session=session, sidebar=sidebar)
 
 

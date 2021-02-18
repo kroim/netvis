@@ -15,9 +15,6 @@
                         <h1 class="m-0 text-dark"></h1>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
-                        <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        </ol>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
             </div><!-- /.container-fluid -->
@@ -28,88 +25,89 @@
         <section class="content">
             <div class="container-fluid">
                 <div class="login-box">
-    <div class="login-logo">
-		<img src="{{ url_for('static', filename='aa1.png') }}" width="375">
-    </div>
-    <!-- /.login-logo -->
-    <div class="card">
-        <div class="card-body login-card-body" style="background-color:lightgoldenrodyellow;">
+                    <div class="login-logo">
+                        <img src="{{ url_for('static', filename='aa1.png') }}" width="375">
+                    </div>
+                    <!-- /.login-logo -->
+                    <div class="card">
+                        <div class="card-body login-card-body" style="background-color:lightgoldenrodyellow;">
 
-            <p class="login-box-msg">Please Enter your Login credentials</p>
+                            <p class="login-box-msg">Please Enter your Login credentials</p>
 
-            <form action="/netmikoconfig" method="post">
-                <div class="input-group mb-3">
-                    <select style="width: 360px;" name="PDC_NETMIKO">
-                        <option value="" disabled selected hidden>PDC</option>
-                        <option value="PDC_DCS_DCW">PDC DCS/DCW</option>
-                        <option value="PDC_DCI">PDC DCI</option>
-                    </select>
-                    <select style="width: 360px;" name="CDC_NETMIKO">
-                        <option value="" disabled selected hidden>CDC</option>
-                        <option value="CDC_DCS_DCW">CDC DCS/DCW</option>
-                        <option value="CDC_DCI">CDC DCI</option>
-                    </select>
-                    <select style="width: 360px;" name="SCC_NETMIKO">
-                        <option value="" disabled selected hidden>SCC</option>
-                        <option value="N/A">N/A</option>
-                    </select>
-                    <select style="width: 360px;" name="PHX_NETMIKO">
-                        <option value="" disabled selected hidden>PHX</option>
-                        <option value="N/A">N/A</option>
-                    </select>
-                    <select style="width: 360px;" name="DFW_NETMIKO">
-                        <option value="" disabled selected hidden>DFW</option>
-                        <option value="N/A">N/A</option>
-                    </select>
-                    <select style="width: 360px;" name="ASH_NETMIKO">
-                        <option value="" disabled selected hidden>ASH</option>
-                        <option value="ASH_DCS_DCW">ASH DCS/DCW</option>
-                    </select>
-                    <select style="width: 360px;" name="SJC_NETMIKO">
-                        <option value="" disabled selected hidden>SJC</option>
-                        <option value="SJC_DCS_DCW">SJC DCS/DCW</option>
-                    </select>
-                    <select style="width: 360px;" name="PDT_NETMIKO">
-                        <option value="" disabled selected hidden>PDT</option>
-                        <option value="N/A">N/A</option>
-                    </select>
-                    <select style="width: 360px;" name="PSA_NETMIKO">
-                        <option value="" disabled selected hidden>PSA</option>
-                        <option value="N/A">N/A</option>
-                    </select>
-                    <select style="width: 360px;" name="SV7_NETMIKO">
-                        <option value="" disabled selected hidden>SV7</option>
-                        <option value="SV7_DCW">DCW</option>
-                    </select>
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Username" name="usern" value="{{usern}}" onfocus=this.value='c65GZTPBX'>
-                    <div class="input-group-append">
-                        <div class="input-group-text">
-                            <span class="fas fa-user"></span>
+                            <form action="/netmikoconfig" method="post">
+                                <div class="input-group mb-3">
+                                    <select style="width: 360px;" name="PDC_NETMIKO">
+                                        <option value="" disabled selected hidden>PDC</option>
+                                        <option value="PDC_DCS_DCW">PDC DCS/DCW</option>
+                                        <option value="PDC_DCI">PDC DCI</option>
+                                    </select>
+                                    <select style="width: 360px;" name="CDC_NETMIKO">
+                                        <option value="" disabled selected hidden>CDC</option>
+                                        <option value="CDC_DCS_DCW">CDC DCS/DCW</option>
+                                        <option value="CDC_DCI">CDC DCI</option>
+                                    </select>
+                                    <select style="width: 360px;" name="SCC_NETMIKO">
+                                        <option value="" disabled selected hidden>SCC</option>
+                                        <option value="N/A">N/A</option>
+                                    </select>
+                                    <select style="width: 360px;" name="PHX_NETMIKO">
+                                        <option value="" disabled selected hidden>PHX</option>
+                                        <option value="N/A">N/A</option>
+                                    </select>
+                                    <select style="width: 360px;" name="DFW_NETMIKO">
+                                        <option value="" disabled selected hidden>DFW</option>
+                                        <option value="N/A">N/A</option>
+                                    </select>
+                                    <select style="width: 360px;" name="ASH_NETMIKO">
+                                        <option value="" disabled selected hidden>ASH</option>
+                                        <option value="ASH_DCS_DCW">ASH DCS/DCW</option>
+                                    </select>
+                                    <select style="width: 360px;" name="SJC_NETMIKO">
+                                        <option value="" disabled selected hidden>SJC</option>
+                                        <option value="SJC_DCS_DCW">SJC DCS/DCW</option>
+                                    </select>
+                                    <select style="width: 360px;" name="PDT_NETMIKO">
+                                        <option value="" disabled selected hidden>PDT</option>
+                                        <option value="N/A">N/A</option>
+                                    </select>
+                                    <select style="width: 360px;" name="PSA_NETMIKO">
+                                        <option value="" disabled selected hidden>PSA</option>
+                                        <option value="N/A">N/A</option>
+                                    </select>
+                                    <select style="width: 360px;" name="SV7_NETMIKO">
+                                        <option value="" disabled selected hidden>SV7</option>
+                                        <option value="SV7_DCW">DCW</option>
+                                    </select>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Username" name="usern" value="{{usern}}" onfocus=this.value='c65GZTPBX'>
+                                    <div class="input-group-append">
+                                        <div class="input-group-text">
+                                            <span class="fas fa-user"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="password" class="form-control" placeholder="Password" name="passw" value="{{passw}}"
+                                           onfocus=this.value='12-17-2020@ZXCvbn430@'>
+                                    <div class="input-group-append">
+                                        <div class="input-group-text">
+                                            <span class="fas fa-lock"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <!-- /.col -->
+                                    <div class="col-12">
+                                        <button class="btn btn-primary btn-block" onclick="myFunction()" type="submit">Run Script</button>
+                                    </div>
+                                    <!-- /.col -->
+                                </div>
+                            </form>
                         </div>
+                        <!-- /.login-card-body -->
                     </div>
                 </div>
-                <div class="input-group mb-3">
-                    <input type="password" class="form-control" placeholder="Password" name="passw" value="{{passw}}" onfocus=this.value='12-17-2020@ZXCvbn430@'>
-                    <div class="input-group-append">
-                        <div class="input-group-text">
-                            <span class="fas fa-lock"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- /.col -->
-                    <div class="col-12">
-                        <button class="btn btn-primary btn-block" onclick="myFunction()" type="submit">Run Script</button>
-                    </div>
-                    <!-- /.col -->
-                </div>
-            </form>
-        </div>
-        <!-- /.login-card-body -->
-    </div>
-</div>
             </div>
         </section>
     </div>
